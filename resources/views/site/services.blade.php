@@ -105,7 +105,7 @@
 
 
     <!-- about-section -->
-    <section class="about-section p_relative">
+    {{-- <section class="about-section p_relative">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-6.png') }});"></div>
         <div class="auto-container">
             <div class="row align-items-center">
@@ -148,12 +148,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- about-section end -->
 
 
     <!-- feature-section -->
-    <section class="feature-section">
+    {{-- <section class="feature-section">
         <div class="auto-container">
             <div class="inner-container">
                 <div class="shape" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-7.png') }});"></div>
@@ -197,12 +197,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- feature-section end -->
 
 
     <!-- dream-section -->
-    <section class="dream-section p_relative">
+    {{-- <section class="dream-section p_relative">
         <div class="bg-layer parallax-bg" data-parallax='{"y": 100}' style="background-image: url({{ asset('assets/site-assets/images/background/dream-bg.jpg') }});"></div>
         <div class="pattern-layer-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-9.png') }});"></div>
         <figure class="image-layer"><img src="{{ asset('assets/site-assets/images/resource/women-1.png') }}" alt=""></figure>
@@ -225,12 +225,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- dream-section end -->
 
 
     <!-- countries-section -->
-    <section class="countries-section p_relative centred">
+    {{-- <section class="countries-section p_relative centred">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-10.png') }});"></div>
             <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-11.png') }});"></div>
@@ -361,12 +361,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- countries-section end -->
 
 
     <!-- coaching-section -->
-    <section class="coaching-section sec-pad">
+    {{-- <section class="coaching-section sec-pad">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-12.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title mb_50">
@@ -433,12 +433,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- coaching-section end -->
 
 
     <!-- chooseus-section -->
-    <section class="chooseus-section p_relative hrwa">
+    {{-- <section class="chooseus-section p_relative hrwa">
         <div class="auto-container">
             <div class="sec-title centred mb_60">
                 <span class="sub-title">Why Choose Us</span>
@@ -495,14 +495,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- chooseus-section end -->
 
 
     
 
     <!-- education-section -->
-    <section class="education-section alternat-2 p_relative">
+    {{-- <section class="education-section alternat-2 p_relative">
         <div class="bg-layer-2" style="background-image: url({{ asset('assets/site-assets/images/banner/banner-2.jpg') }});"></div>
         <div class="bg-layer parallax-bg" data-parallax='{"y": 100}' style="background-image: url({{ asset('assets/site-assets/images/background/education-bg.jpg') }});"></div>
         <figure class="image-layer wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="{{ asset('assets/site-assets/images/resource/men-1.png') }}" alt=""></figure>
@@ -535,12 +535,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- education-section end -->
 
 
     <!-- passport-section -->
-    <section class="passport-section centred p_relative">
+    {{-- <section class="passport-section centred p_relative">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/banner/banner-3.jpg') }});"></div>
             <!-- <div class="pattern-2" style="background-image: url(assets/images/shape/shape-21.png);"></div>
@@ -551,7 +551,7 @@
                 <figure class="image-box"><img src="assets/images/icons/passport-1.png" alt=""></figure>
             </div>
         </div> -->
-    </section>
+    </section> --}}
     <!-- passport-section end -->
 
 
@@ -559,7 +559,7 @@
 
 
     <!-- news-section -->
-    <section class="news-section sec-pad">
+    {{-- <section class="news-section sec-pad">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-23.png') }});"></div>
             <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-24.png') }});"></div>
@@ -626,7 +626,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- news-section end -->
     
 @endsection

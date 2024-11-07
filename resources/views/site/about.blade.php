@@ -45,13 +45,13 @@
                     <div class="content_block_one">
                         <div class="content-box p_relative ml_110">
                             <div class="sec-title mb_30">
-                                <span class="sub-title">We are looking for</span>
-                                <h2>We became an exam preparation authority.</h2>
+                                <span class="sub-title">About Us</span>
+                                <h2>Welcome to {{ config('app.name') }} — Your Trusted Partner to a New Life in Germany. </h2>
                             </div>
                             <div class="text mb_30">
-                                <p>Quisque dignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut gravida libero. Proin porttitor viverra aliquet.</p>
+                                <p>Our team comprises experienced immigration specialists with comprehensive expertise in German immigration laws and regulatory frameworks. We meticulously navigate each step to ensure your journey to professional success in Germany is seamless, compliant, and strategically designed. Act today and seize unparalleled career opportunities in one of Europe’s leading economic hubs.</p>
                             </div>
-                            <div class="list-inner mb_50 p_relative">
+                            {{-- <div class="list-inner mb_50 p_relative">
                                 <ul class="list-style-one clearfix">
                                     <li>Nulla nulla erat, gravida at leo</li>
                                     <li>Amet minim mollit no duis deserut</li>
@@ -62,9 +62,9 @@
                                     <li>Pellentesque pretium elit augue</li>
                                     <li>Aenean in ipsum vel quam</li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <div class="btn-box">
-                                <a href="{{ route('about') }}" class="theme-btn btn-one"><span>More Details</span></a>
+                                <a href="{{ route('contact') }}" class="theme-btn btn-one"><span>Get an Expert Consultation Today</span></a>
                             </div>
                         </div>
                     </div>
@@ -81,39 +81,21 @@
             <div class="inner-container">
                 <div class="shape-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-41.png') }});"></div>
                 <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
+                    <div class="col-lg-6 col-md-6 col-sm-12 feature-block">
                         <div class="feature-block-one">
                             <div class="inner-box hsae">
                                 <div class="icon-box"><i class="icon-17"></i></div>
-                                <h3><a href="javascript:void(0);">Visa</a></h3>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet.</p>
+                                <h3><a href="javascript:void(0);">Mission</a></h3>
+                                <p>Our mission is to deliver tailored, expert guidance, ensuring each client experiences a streamlined and results-focused journey. We are dedicated to empowering professionals to realize their career and lifestyle goals in Germany with precision and confidence.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-                        <div class="feature-block-one">
-                            <div class="inner-box hsae">
-                                <div class="icon-box"><i class="icon-18"></i></div>
-                                <h3><a href="javascript:void(0);">Passport</a></h3>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
+                    <div class="col-lg-6 col-md-6 col-sm-12 feature-block">
                         <div class="feature-block-one">
                             <div class="inner-box hsae">
                                 <div class="icon-box"><i class="icon-19"></i></div>
-                                <h3><a href="javascript:void(0);">Immigration</a></h3>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-                        <div class="feature-block-one">
-                            <div class="inner-box hsae">
-                                <div class="icon-box"><i class="icon-20"></i></div>
-                                <h3><a href="javascript:void(0);">Translation</a></h3>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet.</p>
+                                <h3><a href="javascript:void(0);">Vision</a></h3>
+                                <p>To be the most trusted and reliable partner in German immigration consulting, setting an unmatched standard for excellence in Chancenkarte services. Our commitment is to empower our clients with clear, professional guidance, making their journey to Germany seamless, successful, and efficient. We aim to become a strategic ally to our clients, dedicated to helping them realize their dreams with confidence and competence.</p>
                             </div>
                         </div>
                     </div>
@@ -125,7 +107,7 @@
 
 
     <!-- countries-style-three -->
-    <section class="countries-style-three alternat-2 sec-pad">
+    {{-- <section class="countries-style-three alternat-2 sec-pad">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-63.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title mb_60 centred">
@@ -347,12 +329,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- countries-style-three end -->
 
 
     <!-- countries-style-five -->
-    <section class="countries-style-five p_relative">
+    {{-- <section class="countries-style-five p_relative">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-61.png') }});"></div>
             <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-62.png') }});"></div>
@@ -421,12 +403,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- countries-style-five end -->
 
 
     <!-- chooseus-section -->
-    <section class="chooseus-section p_relative">
+    {{-- <section class="chooseus-section p_relative">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-71.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title centred mb_60">
@@ -484,7 +466,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- chooseus-section end -->
 
 
@@ -513,8 +495,9 @@
         </div>
         <div class="auto-container">
             <div class="sec-title mb_50 centred">
-                <span class="sub-title">Expert Team Members</span>
-                <h2>Our Team at Your Service</h2>
+                <span class="sub-title">Our People</span>
+                <h2>Meet the Experts Behind Your Chancenkarte Success</h2>
+                <p>Our team comprises dedicated immigration specialists, career consultants, and regulatory experts who bring extensive knowledge of Germany’s immigration laws. With extensive experience in immigration and job market trends, our team offers personalized, reliable support tailored to your unique profile and goals. We’re committed to helping you succeed every step of the way.</p>
             </div>
             <div class="row clearfix">
                 @foreach($teams as $team)
