@@ -63,6 +63,7 @@
                                 <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                                 <li><a href="{{ route('data-security-measures') }}">Data Security Measures</a></li>
                                 <li><a href="{{ route('terms-conditions') }}">Terms & Conditions</a></li>
+                                <li><a href="{{ route('faq') }}">FAQ</a></li>
                             </ul>
                         </div>
                     </div>

@@ -65,6 +65,13 @@
                 </a>
             </li>
 
+            <li>
+                <a href="{{ route('faqs.index') }}" class="">
+                    <div class="parent-icon"><i class="material-icons-outlined">call</i></div>
+                    <div class="menu-title">FAQ</div>
+                </a>
+            </li>
+
             {{-- <li>
                 <a href="javascript:;" class="has-arrow">
                     <div class="parent-icon">

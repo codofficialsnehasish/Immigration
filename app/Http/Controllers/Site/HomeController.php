@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Banner;
 use App\Models\Testimonials;
+use App\Models\Service;
 
 class HomeController extends Controller
 {
@@ -14,6 +15,7 @@ class HomeController extends Controller
     {
         $banner = Banner::where('visibility',1)->first();
         $testimonials = Testimonials::where('is_visible',1)->get();
-        return view('site.welcome',compact('banner','testimonials'));
+        $services = Service::where('visibility',1)->get();
+        return view('site.welcome',compact('banner','testimonials','services'));
     }
 }

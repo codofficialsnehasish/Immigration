@@ -34,8 +34,9 @@
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-5.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title centred mb_50">
-                <span class="sub-title">Visa Categories</span>
-                <h2>Assisting you in fulfilling your eligibility <br />for immigrant registration.</h2>
+                {{-- <span class="sub-title">Visa Categories</span> --}}
+                <h2>Fast. Agile. Top-Notch!Ace Your Chancenkarte Journey with Us</h2>
+                <p>Discover our expertly crafted packages, each tailored to enhance your Chancenkarte application journey. We ensure success-driven consultations and guidance.</p>
             </div>
             <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
                 @foreach($services as $service)

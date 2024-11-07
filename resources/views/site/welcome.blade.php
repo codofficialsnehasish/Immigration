@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- banner-style-three -->
-    <section class="banner-style-three p_relative">
+    {{-- <section class="banner-style-three p_relative">
         <div class="pattern-layer">
             <!-- <div class="pattern-1" style="background-image: url(assets/images/shape/shape-38.png);"></div>
             <div class="pattern-2" style="background-image: url(assets/images/shape/shape-39.png);"></div> -->
@@ -25,6 +25,51 @@
                 </div>
             </div> 
         </div> -->
+    </section> --}}
+    <!-- banner-style-three end -->
+
+    <!-- banner-style-three -->
+    <section class="banner-style-three p_relative">
+        <div class="pattern-layer">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    {{-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> --}}
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="banner_text">
+                            <h2>Let Your Germany Dream Take A Flight. </h2>
+                            <p>Navigate the Chancenkarte aka Opportunity Card with ease and confidence. Start your journey with us, your expert immigration partner and guide. </p>
+                            <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
+                        </div>
+                        <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Los Angeles" class="d-block w-100">
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="banner_text">
+                            <h2>Give Wings To Your Professional Aspirations. </h2>
+                            <p>Maximize your Chancenkarte success with our  strategic consultation and tailored solutions. </p>
+                            <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
+                        </div>
+                        <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Chicago" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
     </section>
     <!-- banner-style-three end -->
 
@@ -39,10 +84,11 @@
                         <div class="feature-block-one">
                             <div class="inner-box">
                                 <!-- <div class="icon-box"><i class="icon-17"></i></div> -->
-                                <h3><a href="{{ route('home') }}">People Immigration Confidently...</a></h3>
-                                <p>MCS has been recruiting and prepping talented professionals for over twenty years. We provide a unique value proposition.</p>
+                                <h3><a href="{{ route('contact') }}">Introduction</a></h3>
+                                <p>Step into a future brimming with opportunities with the German Opportunity Card. We empower you with expertise, winning insights, and a steadfast commitment to your success. 
+                                </p>
                                 <div class="btn-box">
-                                    <a href="{{ route('home') }}" class="theme-btn btn-two"><span>View The Categories</span></a>
+                                    <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Get an Expert Consultation Today.</span></a>
                                 </div>
                             </div>
                         </div>
@@ -68,25 +114,32 @@
                     <div class="content_block_six">
                         <div class="content-box mr_20">
                             <div class="sec-title mb_20">
-                                <span class="sub-title">Who we are?</span>
-                                <h2>Leading firm for immigration services.</h2>
+                                {{-- <span class="sub-title">Why Choose Us ?</span> --}}
+                                <h2>Why Choose Us ?</h2>
                             </div>
-                            <div class="text mb_30">
+                            {{-- <div class="text mb_30">
                                 <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet magna suscipit, fermentum mattis erat rutrum.Porta semper lacus cursus.</p>
-                            </div>
+                            </div> --}}
                             <div class="inner-box mb_40">
                                 <div class="single-item">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-13.png" alt=""></div>
-                                    <h5>Overseas education and study visa consultants.</h5>
+                                    <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
+                                    <h5>Expertise You Can Trust</h5>
+                                    <p style="font-size:12px;">Armed with a deep understanding of German immigration policies, our approach is rooted in legal integrity and absolute transparency. More than just facilitators, we’re your expert guide, offering credible advice every step of the way. </p>
                                 </div>
                                 <div class="single-item">
-                                    <div class="icon-box"><img src="assets/images/icons/icon-14.png" alt=""></div>
-                                    <h5>Top-ranked universities guarantee admissions.</h5>
+                                    <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
+                                    <h5>Precision-Driven Approach </h5>
+                                    <p style="font-size:12px;">With a commitment to thoroughness and compliance, we ensure that from the initial assessments to final approvals, every step is meticulously managed. </p>
+                                </div>
+                                <div class="single-item">
+                                    <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
+                                    <h5>Personalized Attention and Guidance </h5>
+                                    <p style="font-size:12px;">Driven by professionals who are deeply acquainted with every aspect of German immigration, we don't take shortcuts. For us, you’re not just a client; when we partner with you, we commit to giving it all to make your application fail-safe.  </p>
                                 </div>
                             </div>
-                            <div class="btn-box">
+                            {{-- <div class="btn-box">
                                 <a href="{{ route('about') }}" class="theme-btn btn-two"><span>More Details</span></a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -107,8 +160,41 @@
     </section>
     <!-- about-style-three end -->
 
+    <!-- dream-style-two -->
+    <section class="dream-style-two sec-pad p_relative">
+        <div class="outer-container clearfix">
+            <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/dream-bg-2.jpg') }});"></div>
+            <div class="content-column">
+                <div class="pattern-layer">
+                    <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-51.png') }});"></div>
+                    <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-52.png') }});"></div>
+                </div>
+                <div class="content_block_two">
+                    <div class="content-box p_relative d_block">
+                        <div class="sec-title light mb_20">
+                            <span class="sub-title">Our Services</span>
+                            <h2>Chancenkarte Consulting</h2>
+                        </div>
+                        <div class="text mb_25">
+                            <p>Our dedicated Chancenkarte consulting service provides tailored advice on eligibility checks, documentation, application processes, and more. We bring best-case solutions to help you negotiate the complexities of the Opportunity Card with confidence. </p>
+                        </div>
+                        {{-- <ul class="list-item p_relative clearfix mb_50">
+                            <li><a href="{{ route('home') }}">1. Entering & Leaving From Country <i class="icon-9"></i></a></li>
+                            <li><a href="{{ route('home') }}">2. Help & Support <i class="icon-9"></i></a></li>
+                            <li><a href="{{ route('home') }}">3. Country Citizenship <i class="icon-9"></i></a></li>
+                        </ul> --}}
+                        <div class="btn-box">
+                            <a href="{{ route('service') }}" class="theme-btn"><span>Know More</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dream-style-two end -->
 
-    <!-- coaching-style-three -->
+
+    {{-- <!-- coaching-style-three -->
     <section class="coaching-style-three">
         <div class="outer-container clearfix">
             <div class="coaching-block-three">
@@ -193,7 +279,7 @@
             </div>
         </div>
     </section>
-    <!-- coaching-style-three end -->
+    <!-- coaching-style-three end --> --}}
 
 
     <!-- help-section -->
@@ -205,8 +291,10 @@
         </div>
         <div class="auto-container">
             <div class="sec-title light mb_60">
-                <span class="sub-title">HOW WE HELP CLIENTS</span>
-                <h2>Follow the steps on the website <br />to apply for the visa online.</h2>
+                {{-- <span class="sub-title">HOW WE HELP CLIENTS</span> --}}
+                <h2>Eligibility Assessment Section</h2>
+                <p>The Opportunity Card operates on a points-based system, designed to assess candidates across various criteria, such as age, qualifications, professional experience, and language proficiency.</p>
+                <p>Chancenkarte Points System Overview</p>
             </div>
             <div class="row clearfix">
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
@@ -216,8 +304,8 @@
                                 <div class="icon mb_18"><i class="icon-42"></i></div>
                                 <span class="count-text">01</span>
                             </div>
-                            <h3><a href="javascript:void(0);">Fill In The <br />Required Form</a></h3>
-                            <p>Equaly blame belongs those fail their all duty through weak shrinking.</p>
+                            <h3><a href="javascript:void(0);">Basic Requirements</a></h3>
+                            <p> Applicants must demonstrate sufficient German (A1) or English (B2) language skills and at least two years of vocational training, compliant with standards in their home country. Adequate financial means are also required, such as an employment contract for a part-time position (up to 20 hours weekly).</p>
                         </div>
                     </div>
                 </div>
@@ -228,8 +316,8 @@
                                 <span class="count-text">02</span>
                                 <div class="icon mt_18"><i class="icon-43"></i></div>
                             </div>
-                            <h3><a href="javascript:void(0);">Submit All Your <br />Attested Documents</a></h3>
-                            <p>Equaly blame belongs those fail their all duty through weak shrinking.</p>
+                            <h3><a href="javascript:void(0);">4 Points</a></h3>
+                            <p>Awarded for partial recognition of foreign professional qualifications or permission to practice a regulated profession (e.g., teacher, nurse, engineer). These criteria are met by a select number of applicants.</p>
                         </div>
                     </div>
                 </div>
@@ -240,8 +328,38 @@
                                 <div class="icon mb_13"><i class="icon-44"></i></div>
                                 <span class="count-text">03</span>
                             </div>
-                            <h3><a href="javascript:void(0);">Get Ready To <br />Receive your Visa</a></h3>
-                            <p>Equaly blame belongs those fail their all duty through weak shrinking.</p>
+                            <h3><a href="javascript:void(0);">3 Points</a></h3>
+                            <p>EThese points are available to those with five years of professional experience (within the last seven years) in their field and two years of initial training according to home country standards. Alternatively, B2-level German language proficiency also earns three points.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                    <div class="single-item">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <div class="icon mb_13"><i class="icon-44"></i></div>
+                                <span class="count-text">04</span>
+                            </div>
+                            <h3><a href="javascript:void(0);">2 Points</a></h3>
+                            <p>Awarded for two years of recent work experience preceded by vocational training (within the last five years). Applicants under 35 or with B1-level German skills also qualify for two points.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                    <div class="single-item">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <div class="icon mb_13"><i class="icon-44"></i></div>
+                                <span class="count-text">05</span>
+                            </div>
+                            <h3><a href="javascript:void(0);">1 Point</a></h3>
+                            <p>Given to applicants under 40 or those with documented prior stays in Germany (minimum six months; tourist visits excluded). Additional points are awarded for:
+                                - High-level English proficiency (C1) or moderate German skills (A2).
+                         - A degree or vocational training in an area identified as a labor shortage in Germany.
+                                - Applying for the Opportunity Card jointly with a spouse.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -252,7 +370,7 @@
 
 
     <!-- countries-style-four end -->
-    <section class="countries-style-four sec-pad">
+    {{-- <section class="countries-style-four sec-pad">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-48.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title centred mb_60">
@@ -298,7 +416,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- countries-style-four end -->
 
 
@@ -313,9 +431,9 @@
         <div class="auto-container">
             <div class="content_block_three">
                 <div class="content-box p_relative d_block">
-                    <h2>Looking for Quality <span>Education In</span> Abroad?</h2>
-                    <p>Where did this incorrect belief that everyone dislikes praising happiness come from? Explain to me how this erroneous theory ended up being devised.</p>
-                    <ul class="country-list">
+                    <h2>Check your eligibility for the Chancenkarte instantly.</h2>
+                    <p>Our Eligibility Assessment tool is designed to help you know your Chancenkarte eligibility in a few easy steps.</p>
+                    {{-- <ul class="country-list">
                         <li>
                             <div class="flag"><img src="{{ asset('assets/site-assets/images/icons/flag-1.png') }}" alt=""></div>
                             <span>United Kingdom</span>
@@ -332,7 +450,10 @@
                             <div class="flag"><img src="{{ asset('assets/site-assets/images/icons/flag-4.png') }}" alt=""></div>
                             <span>Australia</span>
                         </li>
-                    </ul>
+                    </ul> --}}
+                    <div class="btn-box">
+                        <a href="javascript:void(0);" class="theme-btn"><span>Take the First Step to Chancenkarte Now. </span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -340,7 +461,7 @@
     <!-- education-section end -->
 
 
-    <!-- skills-section -->
+    {{-- <!-- skills-section -->
     <section class="skills-section alternat-2 pt_200 pb_150">
         <div class="pattern-layer-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-49.png') }});"></div>
         <!-- <div class="pattern-layer-3" style="background-image: url(assets/images/shape/shape-50.png);"></div> -->
@@ -382,10 +503,10 @@
             </div>
         </div>
     </section>
-    <!-- skills-section end -->
+    <!-- skills-section end --> --}}
 
 
-    <!-- dream-style-two -->
+    {{-- <!-- dream-style-two -->
     <section class="dream-style-two sec-pad p_relative">
         <div class="outer-container clearfix">
             <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/dream-bg-2.jpg') }});"></div>
@@ -416,9 +537,9 @@
             </div>
         </div>
     </section>
-    <!-- dream-style-two end -->
+    <!-- dream-style-two end --> --}}
 
-    <!-- passport-section -->
+    {{-- <!-- passport-section -->
     <section class="passport-section centred p_relative">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/banner/banner-3.jpg') }});"></div>
@@ -431,10 +552,10 @@
             </div>
         </div> -->
     </section>
-    <!-- passport-section end -->
+    <!-- passport-section end --> --}}
 
 
-    <section class="skills-section alternat-2 gi_o">
+    {{-- <section class="skills-section alternat-2 gi_o">
         <div class="pattern-layer-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-49.png') }});"></div>
         <!-- <div class="pattern-layer-3" style="background-image: url(assets/images/shape/shape-50.png);"></div> -->
         <figure class="image-layer"><img src="{{ asset('assets/site-assets/images/banner/banner-5.jpg') }}" alt=""></figure>
@@ -455,7 +576,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     @if($testimonials->isNotEmpty())
     <section class="testimonial-style-three">

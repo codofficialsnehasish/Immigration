@@ -20,11 +20,14 @@ class RedirectIfAuthenticated
 
     public function handle(Request $request, Closure $next, $guard = null)
     {
+        // echo $guard;die;
         if ($guard == "admin" && auth()->guard($guard)->check()) {
             return redirect()->route('admin.dashboard');
         }
 
         if ($guard == "web" && auth()->guard($guard)->check()) {
+            echo auth()->gard();
+            die;
             return redirect()->route('dashboard');
         }
 

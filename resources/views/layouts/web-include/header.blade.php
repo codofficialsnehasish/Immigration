@@ -117,19 +117,12 @@
                                     </ul>
                                 </li>   -->
 
-                                <li><a href="{{ route('about') }}">About Us</a></li> 
+                                <li><a class="active" href="{{ route('about') }}">About Us</a></li> 
                                 <li><a href="{{ route('how-it-works') }}">How It Works</a></li> 
                                 <li><a href="{{ route('service') }}">OUR SERVICES</a></li> 
-                                <li><a href="#">Blog & Resources</a></li> 
+                                <li><a href="{{ route('blogs-resources.index') }}">Blog & Resources</a></li> 
                                 <li><a href="{{ route('contact') }}">Contact Us</a></li> 
                                 @auth
-                                {{-- <li><a href="{{ route('logout') }}">Logout</a></li>  --}}
-                                {{-- <form method="POST" action="{{ route('logout') }}" id="logout-form">
-                                    @csrf
-                                    <li>
-                                        <a href="javascript:void(0);" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                                    </li> 
-                                </form> --}}
                                 <li>
                                     <a href="javascript:void(0);" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                                 </li>

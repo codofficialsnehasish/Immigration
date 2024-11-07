@@ -8,6 +8,7 @@ use App\Http\Controllers\{
     BannerController,
     TestimonialsController,
     LegalInformationController,
+    FaqControllers,
 };
 
 use App\Http\Controllers\Site\{
@@ -15,6 +16,8 @@ use App\Http\Controllers\Site\{
     AboutUs,
     HomeController,
     LegalInfo,
+    BlogResources,
+    FAQController,
 };
 
 use Illuminate\Support\Facades\Route;
@@ -43,6 +46,13 @@ Route::controller(LegalInfo::class)->group( function() {
     Route::get('terms-conditions','terms_conditions')->name('terms-conditions');
 });
 
+Route::controller(BlogResources::class)->group( function() {
+    Route::get('blogs-resources','index')->name('blogs-resources.index');
+    Route::get('blogs-details','blog_details')->name('blogs-resources.details');
+});
+
+Route::get('faq',[FAQController::class,'index'])->name('faq');
+
 Route::get('/dashboard', function () {
     return view('site.user-dashboard.dashboard');
 })->middleware(['auth:web', 'verified'])->name('dashboard');
@@ -67,6 +77,7 @@ Route::middleware(['auth:admin', 'verified'])->group(function () {
     Route::resource('banner',BannerController::class);
     Route::resource('testimonials',TestimonialsController::class);
     Route::resource('legal-information',LegalInformationController::class);
+    Route::resource('faqs',FaqControllers::class);
 });
 
 require __DIR__.'/auth.php';

@@ -30,7 +30,7 @@ class BannerController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => 'nullable',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'title' => 'nullable',
             'visibility' => 'required|in:0,1'
         ]);
         if ($validator->fails()) {
