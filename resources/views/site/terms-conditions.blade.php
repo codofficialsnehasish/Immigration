@@ -9,9 +9,15 @@
 @endsection
 
 @section('content')
-    <section class="about-section p_relative hrwa">
-        <h1>Terms & Conditions</h1>
-        <p>{!! $terms_conditions !!}</p>
+    <section class="about-section p_relative hrwa gt_re">
+        <div class="container">
+            <div class="row">
+  
+                <h1>Terms & Conditions</h1>
+                <p>{!! $terms_conditions !!}</p>
+        
+            </div>
+        </div>
     </section>
     
 @endsection

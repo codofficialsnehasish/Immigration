@@ -8,10 +8,16 @@
 <link href="{{ asset('assets/site-assets/css/elements-css/team.css') }}" rel="stylesheet">
 @endsection
 
+
 @section('content')
-    <section class="about-section p_relative hrwa">
-        <h1>Data Security Measures</h1>
-        <p>{!! $data_security_measures !!}</p>
+    <section class="about-section p_relative hrwa gt_re">
+        <div class="container">
+            <div class="row">
+  
+                <h1>Data Security Measures</h1>
+                <p>{!! $data_security_measures !!}</p>
+        
+            </div>
+        </div>
     </section>
-    
 @endsection

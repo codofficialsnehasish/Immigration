@@ -32,7 +32,7 @@
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-6.png') }});"></div>
         <div class="auto-container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div class="col-lg-4 col-md-12 col-sm-12 image-column">
                     <div class="image_block_one">
                         <div class="image-box p_relative d_block">
                             <figure class="image image-1"><img src="{{ asset('assets/site-assets/images/resource/about-1.jpg') }}" alt=""></figure>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="col-lg-8 col-md-12 col-sm-12 content-column">
                     <div class="content_block_one">
                         <div class="content-box p_relative ml_110">
                             <div class="sec-title mb_30">
@@ -76,7 +76,7 @@
 
 
     <!-- feature-section -->
-    <section class="feature-section about-page alternat-3 pb_150">
+    <section class="feature-section about-page alternat-3 pb_90">
         <div class="auto-container">
             <div class="inner-container">
                 <div class="shape-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-41.png') }});"></div>

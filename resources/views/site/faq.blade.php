@@ -13,7 +13,7 @@
     <section class="page-title centred p_relative">
         <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
-        <div class="auto-container">
+        <div class="container">
             <div class="content-box">
                 <h1>FAQ</h1>
                 <ul class="bread-crumb clearfix">
@@ -27,8 +27,8 @@
 
 
     <!-- help-section -->
-    <section class="help-section alternat-2 p_relative">
-        <div class="auto-container">
+    {{-- <section class="help-section alternat-2 p_relative">
+        <div class="container">
             <div class="sec-title mb_60">
                 <span class="sub-title">HOW WE HELP CLIENTS</span>
                 <h2>Follow the steps on the website <br />to apply for the visa online.</h2>
@@ -72,19 +72,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- help-section end -->
 
 
     @if($faqs->isNotEmpty())
     <!-- faq-section -->
     <section class="faq-section pb_150">
-        <div class="auto-container">
-            <div class="sec-title mb_60">
+        <div class="container">
+            {{-- <div class="sec-title mb_60">
                 <span class="sub-title">Expert Team Members</span>
                 <h2>Get Every Able Answers</h2>
                 <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet magna suscipit, fermentum mattis erat rutrum.Porta semper lacus cursus, feugiat primis ultrice and ligula risus auctor tempus feugiat dolor and lacinia</p>
-            </div>
+            </div> --}}
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 faq-column">
                     <div class="faq-content">

@@ -14,7 +14,7 @@
 
 .help-section .single-item .inner-box{
   position: relative;
-  padding-left: 125px;
+  padding-left: 90px;
 }
 
 .help-section .single-item .inner-box .icon-box{
@@ -38,7 +38,7 @@
 .help-section .single-item .inner-box .icon-box .icon{
   position: relative;
   display: block;
-  font-size: 65px;
+  font-size: 47px;
   color: #e52719;
 }
 
@@ -143,7 +143,9 @@
   color: var(--secondary-color);
 }
 
-
+.single-item {
+    padding-bottom: 20px;
+}
 
 
 

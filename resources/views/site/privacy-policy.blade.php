@@ -9,9 +9,15 @@
 @endsection
 
 @section('content')
-    <section class="about-section p_relative hrwa">
+    <section class="about-section p_relative hrwa gt_re">
+        <div class="container">
+            <div class="row">
+  
         <h1>Privacy Policy</h1>
         <p>{!! $privacy_policy !!}</p>
+        
+        </div>
+        </div>
     </section>
     
 @endsection

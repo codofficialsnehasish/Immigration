@@ -28,6 +28,44 @@
 
 
 
+    {{-- @if($services->isNotEmpty())
+    <!-- visa-section -->
+    <section class="visa-section sec-pad">
+        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-5.png') }});"></div>
+        <div class="auto-container">
+            <div class="sec-title centred mb_50">
+                <!-- <span class="sub-title">Visa Categories</span> -->
+                <h2>Fast. Agile. Top-Notch!Ace Your Chancenkarte Journey with Us</h2>
+                <p>Discover our expertly crafted packages, each tailored to enhance your Chancenkarte application journey. We ensure success-driven consultations and guidance.</p>
+            </div>
+            <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+                @foreach($services as $service)
+                <div class="visa-block-one vfrd_2">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="{{ asset($service->image) }}" alt=""></figure>
+                        <div class="lower-content">
+                            <div class="icon-box"><i class="icon-12"></i></div>
+                            <h3><a href="{{ route('service.details',$service->id) }}">{{ $service->name }}</a></h3>
+                            <!-- <p>Sed gravida nisl a porta tincidunt. Integertheoo aliquam nisi sit amet.</p>
+                            <ul class="list-style-one clearfix">
+                                <li>Nulla nulla erat, gravida at leo</li>
+                                <li>Amet minim mollit no duis deserut</li>
+                                <li>dolor do amet sint Velit officia</li>
+                            </ul> -->
+                            {!! $service->description !!}
+                            <div class="link-btn">
+                                <a href="{{ route('service.details',$service->id) }}"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+    <!-- visa-section end -->
+    @endif --}}
+
     @if($services->isNotEmpty())
     <!-- visa-section -->
     <section class="visa-section sec-pad">
@@ -38,7 +76,7 @@
                 <h2>Fast. Agile. Top-Notch!Ace Your Chancenkarte Journey with Us</h2>
                 <p>Discover our expertly crafted packages, each tailored to enhance your Chancenkarte application journey. We ensure success-driven consultations and guidance.</p>
             </div>
-            <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+            <div class="">
                 @foreach($services as $service)
                 <div class="visa-block-one">
                     <div class="inner-box">
@@ -60,43 +98,6 @@
                     </div>
                 </div>
                 @endforeach
-                {{-- <div class="visa-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-2.jpg') }}" alt=""></figure>
-                        <div class="lower-content">
-                            <div class="icon-box"><i class="icon-13"></i></div>
-                            <h3><a href="javascript:void(0);">Residence Visa</a></h3>
-                            <p>Sed gravida nisl a porta tincidunt. Integertheoo aliquam nisi sit amet.</p>
-                            <ul class="list-style-one clearfix">
-                                <li>Quisque tincidunt porta libero</li>
-                                <li>Donec magna sem, consectetur</li>
-                                <li>Pellentesque consequat dignissim velit</li>
-                            </ul>
-                            <div class="link-btn">
-                                <a href="javascript:void(0);"><span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="visa-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-3.jpg') }}" alt=""></figure>
-                        <div class="lower-content">
-                            <div class="icon-box"><i class="icon-14"></i></div>
-                            <h3><a href="javascript:void(0);">Business Visa</a></h3>
-                            <p>Sed gravida nisl a porta tincidunt. Integertheoo aliquam nisi sit amet.</p>
-                            <ul class="list-style-one clearfix">
-                                <li>Aliquam molestie risus sit amet ex</li>
-                                <li>vitae varius quam consequat</li>
-                                <li>Praesent in aliquam felis, vitae</li>
-                            </ul>
-                            <div class="link-btn">
-                                <a href="javascript:void(0);"><span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>

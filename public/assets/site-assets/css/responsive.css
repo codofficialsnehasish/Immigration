@@ -40,6 +40,19 @@
   .main-header .menu-right-content li{
     margin-right: 0px;
   }
+.image-layer img {
+    width: 70%;
+}
+}
+
+@media only screen and (max-width: 1350px){
+
+.home_about {
+    padding-top: 80px !important;
+    padding-bottom: 50px !important;
+}
+
+
 
 }
 
@@ -101,6 +114,16 @@
     width: 230px;
     height: 230px;
   }
+
+.image-layer img {
+    width: 70%;
+}
+
+
+.home_about {
+    padding-top: 80px !important;
+    padding-bottom: 50px !important;
+}
 
 }
 
@@ -250,7 +273,10 @@
     padding-bottom: 30px;
   }
 
-
+.home_about {
+    padding-top: 80px !important;
+    padding-bottom: 50px !important;
+}
 
 }
 

@@ -82,9 +82,9 @@
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-6 col-sm-12 feature-block">
                         <div class="feature-block-one">
-                            <div class="inner-box">
+                            <div class="inner-box cvfr">
                                 <!-- <div class="icon-box"><i class="icon-17"></i></div> -->
-                                <h3><a href="{{ route('contact') }}">Introduction</a></h3>
+                                <h3><a href="{{ route('contact') }}" style="color: #fff !important;font-size: 26px;">Introduction</a></h3>
                                 <p>Step into a future brimming with opportunities with the German Opportunity Card. We empower you with expertise, winning insights, and a steadfast commitment to your success. 
                                 </p>
                                 <div class="btn-box">
@@ -102,7 +102,7 @@
 
 
     <!-- about-style-three -->
-    <section class="about-style-three p_relative">
+    <section class="about-style-three p_relative home_about">
         <div class="pattern-layer">
             <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-43.png') }});"></div>
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-42.png') }});"></div>
@@ -124,17 +124,17 @@
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Expertise You Can Trust</h5>
-                                    <p style="font-size:12px;">Armed with a deep understanding of German immigration policies, our approach is rooted in legal integrity and absolute transparency. More than just facilitators, we’re your expert guide, offering credible advice every step of the way. </p>
+                                    <p style="font-size:14px;">Armed with a deep understanding of German immigration policies, our approach is rooted in legal integrity and absolute transparency. More than just facilitators, we’re your expert guide, offering credible advice every step of the way. </p>
                                 </div>
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Precision-Driven Approach </h5>
-                                    <p style="font-size:12px;">With a commitment to thoroughness and compliance, we ensure that from the initial assessments to final approvals, every step is meticulously managed. </p>
+                                    <p style="font-size:14px;">With a commitment to thoroughness and compliance, we ensure that from the initial assessments to final approvals, every step is meticulously managed. </p>
                                 </div>
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Personalized Attention and Guidance </h5>
-                                    <p style="font-size:12px;">Driven by professionals who are deeply acquainted with every aspect of German immigration, we don't take shortcuts. For us, you’re not just a client; when we partner with you, we commit to giving it all to make your application fail-safe.  </p>
+                                    <p style="font-size:14px;">Driven by professionals who are deeply acquainted with every aspect of German immigration, we don't take shortcuts. For us, you’re not just a client; when we partner with you, we commit to giving it all to make your application fail-safe.  </p>
                                 </div>
                             </div>
                             {{-- <div class="btn-box">
@@ -283,7 +283,7 @@
 
 
     <!-- help-section -->
-    <section class="help-section p_relative">
+    <section class="help-section p_relative dfgfg">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-45.png') }});"></div>
             <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-46.png') }});"></div>

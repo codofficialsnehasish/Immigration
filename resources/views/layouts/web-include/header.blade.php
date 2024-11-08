@@ -117,11 +117,11 @@
                                     </ul>
                                 </li>   -->
 
-                                <li><a class="active" href="{{ route('about') }}">About Us</a></li> 
-                                <li><a href="{{ route('how-it-works') }}">How It Works</a></li> 
-                                <li><a href="{{ route('service') }}">OUR SERVICES</a></li> 
-                                <li><a href="{{ route('blogs-resources.index') }}">Blog & Resources</a></li> 
-                                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
+                                <li @if(request()->segment(1) == 'about') class="active" @endif><a href="{{ route('about') }}">About Us</a></li> 
+                                <li @if(request()->segment(1) == 'how-it-works') class="active" @endif><a href="{{ route('how-it-works') }}">How It Works</a></li> 
+                                <li @if(request()->segment(1) == 'service') class="active" @endif><a href="{{ route('service') }}">Our Services</a></li> 
+                                <li @if(request()->segment(1) == 'blogs-resources') class="active" @endif><a href="{{ route('blogs-resources.index') }}">Blog & Resources</a></li> 
+                                <li @if(request()->segment(1) == 'contact-us') class="active" @endif><a href="{{ route('contact') }}">Contact Us</a></li> 
                                 @auth
                                 <li>
                                     <a href="javascript:void(0);" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
