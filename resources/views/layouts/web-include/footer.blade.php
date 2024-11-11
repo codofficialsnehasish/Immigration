@@ -9,7 +9,7 @@
                         <!-- <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt=""></a></figure> -->
                         <figure class="footer-logo"><a href="{{ route('home') }}">{{ config('app.name') }}</a></figure>
                         <div class="text">
-                            <p>Our team comprises experienced immigration specialists with comprehensive expertise in German immigration laws and regulatory frameworks. We meticulously navigate each step to ensure your journey to professional success in Germany is seamless, compliant, and strategically designed.</p>
+                            <p>Your Partner in Achieving Career Success in Germany.</p>
                             <ul class="social-links clearfix">
                                 <li><a href="#"><i class="icon-4"></i></a></li>
                                 <li><a href="#"><i class="icon-5"></i></a></li>

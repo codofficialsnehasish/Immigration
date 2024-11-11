@@ -74,7 +74,8 @@
             <div class="sec-title centred mb_50">
                 {{-- <span class="sub-title">Visa Categories</span> --}}
                 <h2>Fast. Agile. Top-Notch!Ace Your Chancenkarte Journey with Us</h2>
-                <p>Discover our expertly crafted packages, each tailored to enhance your Chancenkarte application journey. We ensure success-driven consultations and guidance.</p>
+                <p>Complete Chancenkarte Visa Services to Help Skilled Professionals Secure Job 
+                    Opportunities in Germany and Build a Successful Career.</p>
             </div>
             <div class="">
                 @foreach($services as $service)

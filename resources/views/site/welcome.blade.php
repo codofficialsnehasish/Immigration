@@ -44,8 +44,8 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="banner_text">
-                            <h2>Let Your Germany Dream Take A Flight. </h2>
-                            <p>Navigate the Chancenkarte aka Opportunity Card with ease and confidence. Start your journey with us, your expert immigration partner and guide. </p>
+                            <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>
+                            <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>
                             <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
                         </div>
                         <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Los Angeles" class="d-block w-100">
@@ -53,8 +53,8 @@
 
                     <div class="carousel-item">
                         <div class="banner_text">
-                            <h2>Give Wings To Your Professional Aspirations. </h2>
-                            <p>Maximize your Chancenkarte success with our  strategic consultation and tailored solutions. </p>
+                            <h2>Achieve Your German Dream with Chancenkarte Support </h2>
+                            <p>Let Your Germany Dream Become Reality with Professional Immigration Support Tailored for Chancenkarte Success. </p>
                             <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
                         </div>
                         <img src="{{ asset('assets/site-assets/images/banner/banner-6.jpg') }}" alt="Chicago" class="d-block w-100">
@@ -84,11 +84,15 @@
                         <div class="feature-block-one">
                             <div class="inner-box cvfr">
                                 <!-- <div class="icon-box"><i class="icon-17"></i></div> -->
-                                <h3><a href="{{ route('contact') }}" style="color: #fff !important;font-size: 26px;">Introduction</a></h3>
-                                <p>Step into a future brimming with opportunities with the German Opportunity Card. We empower you with expertise, winning insights, and a steadfast commitment to your success. 
+                                <h3><a href="{{ route('contact') }}" style="color: #fff !important;font-size: 26px;">What is a Chancenkarte Visa or an Opportunity Card ?</a></h3>
+                                <p>
+                                    The Chancenkarte Visa also known as the Opportunity Card is a German work 
+                                    visa that helps skilled professionals find job opportunities in Germany. 
+                                    Chancenkarte allows eligible candidates to live in Germany and search for 
+                                    employment in their field. 
                                 </p>
                                 <div class="btn-box">
-                                    <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Get an Expert Consultation Today.</span></a>
+                                    <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Get an Expert Consultation Today</span></a>
                                 </div>
                             </div>
                         </div>
@@ -123,18 +127,27 @@
                             <div class="inner-box mb_40">
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
-                                    <h5>Expertise You Can Trust</h5>
-                                    <p style="font-size:14px;">Armed with a deep understanding of German immigration policies, our approach is rooted in legal integrity and absolute transparency. More than just facilitators, we’re your expert guide, offering credible advice every step of the way. </p>
+                                    <h5>Trusted Immigration Expertise for Germany</h5>
+                                    <p style="font-size:14px;">With in-depth knowledge of German immigration policies and Chancenkarte Visa 
+                                        requirements, we are your trusted partners in securing a successful visa 
+                                        application. Our expert advice is rooted in legal precision and transparency, 
+                                        ensuring you receive reliable, compliant support throughout the Chancenkarte 
+                                        application process. </p>
                                 </div>
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
-                                    <h5>Precision-Driven Approach </h5>
-                                    <p style="font-size:14px;">With a commitment to thoroughness and compliance, we ensure that from the initial assessments to final approvals, every step is meticulously managed. </p>
+                                    <h5>Precision-Driven Approach</h5>
+                                    <p style="font-size:14px;">We prioritize attention to detail and accuracy in managing your Chancenkarte
+                                        Visa application. From initial assessments to final approvals, our team ensures 
+                                        flawless documentation, strict adherence to German visa policies, and a thorough 
+                                        process to give your Opportunity Card application the best chance of success. </p>
                                 </div>
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
-                                    <h5>Personalized Attention and Guidance </h5>
-                                    <p style="font-size:14px;">Driven by professionals who are deeply acquainted with every aspect of German immigration, we don't take shortcuts. For us, you’re not just a client; when we partner with you, we commit to giving it all to make your application fail-safe.  </p>
+                                    <h5>Personalized Guidance and Support </h5>
+                                    <p style="font-size:14px;">Our seasoned immigration professionals provide personalized guidance tailored 
+                                        to your unique needs. You’re not just a client – you’re a partner, and we are here 
+                                        to make your Chancenkarte application process smooth, reliable, and stress-free.  </p>
                                 </div>
                             </div>
                             {{-- <div class="btn-box">
@@ -176,7 +189,10 @@
                             <h2>Chancenkarte Consulting</h2>
                         </div>
                         <div class="text mb_25">
-                            <p>Our dedicated Chancenkarte consulting service provides tailored advice on eligibility checks, documentation, application processes, and more. We bring best-case solutions to help you negotiate the complexities of the Opportunity Card with confidence. </p>
+                            <p>We specialize in Chancenkarte Visa services that simplify your journey to 
+                                Germany. From eligibility assessments to seamless application support, our 
+                                experienced team is dedicated to helping skilled professionals turn career 
+                                aspirations into reality with the Opportunity Card. </p>
                         </div>
                         {{-- <ul class="list-item p_relative clearfix mb_50">
                             <li><a href="{{ route('home') }}">1. Entering & Leaving From Country <i class="icon-9"></i></a></li>
