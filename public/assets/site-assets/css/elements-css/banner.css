@@ -395,7 +395,7 @@
   overflow: hidden;
   background: #F5F5F5;
   /* padding: 287px 0px 366px 0px; */
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 
 .banner-style-three .content-box{

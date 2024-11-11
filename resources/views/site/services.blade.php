@@ -30,7 +30,7 @@
 
     {{-- @if($services->isNotEmpty())
     <!-- visa-section -->
-    <section class="visa-section sec-pad">
+    <section class="visa-section sec-pad hser">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-5.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title centred mb_50">
@@ -40,7 +40,7 @@
             </div>
             <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
                 @foreach($services as $service)
-                <div class="visa-block-one vfrd_2">
+               <div class="visa-block-one">
                     <div class="inner-box">
                         <figure class="image-box"><img src="{{ asset($service->image) }}" alt=""></figure>
                         <div class="lower-content">

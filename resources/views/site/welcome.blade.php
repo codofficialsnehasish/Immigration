@@ -57,7 +57,7 @@
                             <p>Maximize your Chancenkarte success with our  strategic consultation and tailored solutions. </p>
                             <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
                         </div>
-                        <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Chicago" class="d-block w-100">
+                        <img src="{{ asset('assets/site-assets/images/banner/banner-6.jpg') }}" alt="Chicago" class="d-block w-100">
                     </div>
                 </div>
 
@@ -296,7 +296,7 @@
                 <p>The Opportunity Card operates on a points-based system, designed to assess candidates across various criteria, such as age, qualifications, professional experience, and language proficiency.</p>
                 <p>Chancenkarte Points System Overview</p>
             </div>
-            <div class="row clearfix">
+            <div class="row clearfix xsep">
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
                     <div class="single-item">
                         <div class="inner-box">
@@ -334,7 +334,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                
+                <div class="col-lg-6 col-md-6 col-sm-12 single-column hje_1">
                     <div class="single-item">
                         <div class="inner-box">
                             <div class="icon-box">
@@ -347,7 +348,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+                <div class="col-lg-6 col-md-6 col-sm-12 single-column hje_1">
                     <div class="single-item">
                         <div class="inner-box">
                             <div class="icon-box">

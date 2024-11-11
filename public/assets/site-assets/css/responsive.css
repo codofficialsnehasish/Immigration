@@ -782,7 +782,7 @@
   }
 
   .banner-style-three{
-    padding: 170px 0px 310px 0px;
+    padding: 96px 0px 50px 0px;
   }
 
   .about-style-three .pattern-layer{
@@ -1048,6 +1048,18 @@
   .clients-section.about-page{
     padding-bottom: 70px;
   }
+
+
+
+.banner_text {width: 80%;top: 38px;}
+.banner_text h2 {font-size: 16px;}
+.banner_text p {font-size: 12px;line-height: normal;padding-bottom: 0;}
+.banner_text a {font-size: 12px;padding: 0px 10px;}
+.chooseus-block {padding-left: 22px;}
+.visa-block-one .inner-box figure.image-box {width: 100%;}
+.visa-block-one .inner-box .lower-content {width: 100%; padding: 20px;}
+.visa-block-one .inner-box {display: block;}
+
 
 
 }
