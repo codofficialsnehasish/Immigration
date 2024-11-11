@@ -78,19 +78,13 @@
                     Opportunities in Germany and Build a Successful Career.</p>
             </div>
             <div class="">
-                @foreach($services as $service)
+                {{-- @foreach($services as $service)
                 <div class="visa-block-one">
                     <div class="inner-box">
                         <figure class="image-box"><img src="{{ asset($service->image) }}" alt=""></figure>
                         <div class="lower-content">
                             <div class="icon-box"><i class="icon-12"></i></div>
                             <h3><a href="{{ route('service.details',$service->id) }}">{{ $service->name }}</a></h3>
-                            {{-- <p>Sed gravida nisl a porta tincidunt. Integertheoo aliquam nisi sit amet.</p>
-                            <ul class="list-style-one clearfix">
-                                <li>Nulla nulla erat, gravida at leo</li>
-                                <li>Amet minim mollit no duis deserut</li>
-                                <li>dolor do amet sint Velit officia</li>
-                            </ul> --}}
                             {!! $service->description !!}
                             <div class="link-btn">
                                 <a href="{{ route('service.details',$service->id) }}"><span>Read More</span></a>
@@ -98,7 +92,77 @@
                         </div>
                     </div>
                 </div>
-                @endforeach
+                @endforeach --}}
+
+                <div class="visa-block-one">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-1.jpg') }}" alt=""></figure>
+                        <div class="lower-content">
+                            <div class="icon-box"><i class="icon-12"></i></div>
+                            <h3><a href="">Essential Chancenkarte Guidance</a></h3>
+                            <p>Our "Essential Chancenkarte Guidance" package offers all the foundational support you need to develop a strong visa application.</p>
+                            <ul class="list-style-one clearfix">
+                                <li> <b>Eligibility & Points Assessment: </b> A precise evaluation of your profile 
+                                    against Germany’s Chancenkarte criteria.</li>
+                                <li><b>Anabin & ZAB Guidance: </b>Step-by-step guidance on using Anabin for 
+                                    degree recognition and deep insights into ZAB processes.</li>
+                                <li><b>Customized Document Checklist: </b>Comprehensive checklist of required 
+                                    documents, including any certification requirements for your educational 
+                                    background.</li>
+                                <li><b>CV & LinkedIn Review: </b>Customized assistance to refine your CV and 
+                                    LinkedIn profile. We also create a concise interview summary to highlight 
+                                    your strengths for a competitive edge.</li>
+                                <li><b>Job Search Strategy: </b>Insider recommendations on job boards and 
+                                    networking approaches in Germany.</li>
+                                <li><b>Blocked Account Information: </b>Clear guidance on setting up a blocked 
+                                    account to meet financial requirements.</li>
+                                <li><b>Health Insurance Overview: </b>Overview of compliant health insurance 
+                                    options.</li>
+                                <li><b>Email Support: </b>Dedicated support throughout your journey.</li>
+                            </ul>
+                            <p><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
+                                high-quality, expert guidance for a confident application.
+                                </p>
+                            <div class="link-btn">
+                                <a href="{{ route('service.details',1) }}"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visa-block-one">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-2.jpg') }}" alt=""></figure>
+                        <div class="lower-content">
+                            <div class="icon-box"><i class="icon-12"></i></div>
+                            <h3><a href="">Comprehensive Chancenkarte Concierge</a></h3>
+                            <p>For those looking for an end-to-end solution, our “Comprehensive Chancenkarte 
+                                Concierge” package offers exhaustive assistance at every stage of the process.</p>
+                            <ul class="list-style-one clearfix">
+                                <li> <b>Eligibility Optimization: </b> Personalized strategies designed by our 
+                                    immigration specialists to maximize your Chancenkarte potential.</li>
+                                <li><b>Anabin, ZAB, and Vocational Qualification Recognition: </b>Comprehensive support for accurate qualification recognition.</li>
+                                <li><b>Federal Employment Agency Registration: </b>Assistance with 
+                                    Bundesagentur für Arbeit registration for employment readiness.</li>
+                                <li><b>CV, LinkedIn, Cover Letter & Interview Coaching: </b>Guided coaching 
+                                    and profile enhancements for professional success.</li>
+                                <li><b>Custom Job Search Strategy: </b>Advanced networking strategies and 
+                                    employer connections.</li>
+                                <li><b>Blocked Account & Health Insurance Assistance: </b>Guidance through 
+                                    financial and insurance processes.</li>
+                                <li><b>Post-Approval Support: </b>Resources for residency registration and 
+                                    integration into German society.</li>
+                            </ul>
+                            <p><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
+                                Chancenkarte application journey and transition to Germany.
+                                </p>
+                            <div class="link-btn">
+                                <a href="{{ route('service.details',2) }}"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
