@@ -12,14 +12,14 @@
 
     <!-- page-title -->
     <section class="page-title centred p_relative">
-        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
+        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/contact.jpg') }});"></div>
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
         <div class="auto-container">
             <div class="content-box">
                 <h1>Contact Us</h1>
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>contact us</li>
+                    <li>Contact Us</li>
                 </ul>
             </div>
         </div>
@@ -29,10 +29,10 @@
 
 
 
-    <section class="contact-style-two p_relative">
+    <section class="contact-style-two p_relative gtbge">
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="col-lg-6 col-md-12 col-sm-12 content-column ghj">
                     <div class="content-box">
                         <div class="sec-title mb_30">
                             <span class="sub-title">Quick Contact</span>
@@ -85,7 +85,7 @@
                         </div>--}}
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 form-column">
+                <div class="col-lg-6 col-md-12 col-sm-12 form-column ghj2">
                     <div class="form-inner">
                         <div class="sec-title mb_40">
                             <span class="sub-title">Let’s Connect</span>
@@ -107,10 +107,15 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                     <input type="text" name="subject" value="{{ old('subject') }}" placeholder="Subject" required="" aria-required="true">
                                 </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <textarea name="message" placeholder="Your message here">{{ old('message') }}</textarea>
                                 </div>
-                                {{-- <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <div class="custom-controls-stacked pb_20">
                                         <label class="custom-control material-checkbox">
                                             <input type="checkbox" class="material-control-input">
@@ -118,7 +123,7 @@
                                             <span class="description">Save my name, email, and website in this browser for the next time I comment.</span>
                                         </label>
                                     </div>
-                                </div> --}}
+                                </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                                     <button type="submit" class="theme-btn btn-two" name="submit-form"><span>Message</span></button>
                                 </div>

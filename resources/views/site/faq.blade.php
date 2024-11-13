@@ -88,7 +88,7 @@
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 faq-column">
                     <div class="faq-content">
-                        <h3>General Questions</h3>
+                        <h3>Frequently Asked Questions</h3>
                         <ul class="accordion-box">
                             @foreach($faqs as $faqs)
                             <li class="accordion block @if($loop->iteration == 1) active-block @endif">

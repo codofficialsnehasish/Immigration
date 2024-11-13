@@ -12,7 +12,7 @@
     
     <!-- page-title -->
     <section class="page-title centred p_relative">
-        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
+        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/resource/how-it-works.jpg') }});"></div>
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
         <div class="auto-container">
             <div class="content-box">
@@ -28,12 +28,12 @@
 
 
     <!-- chooseus-section -->
-    <section class="chooseus-section p_relative hrwa">
+    <section class="chooseus-section p_relative hrwa gred_1">
         <div class="auto-container">
             <div class="sec-title centred mb_60">
                 <span class="sub-title">Step By Step Process</span>
                 <h2>Your Chancenkarte Success, Powered by Expertise.</h2>
-                <p>We spearhead your Chancenkarte journey, guiding you from initial consultation to a successful migration. Here's a step-by-step breakdown of our approach:</p>
+                <p>Guiding you from initial consultation to a successful migration. Here's a step-by-step breakdown of our approach:</p>
             </div>
             <div class="row clearfix">
                 
@@ -47,11 +47,13 @@
                         
                         <div class="inner-box">
                              <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/icon-1.png') }}" alt=""></div>
+                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-1.png') }}" alt=""></div>
                             </div>
                              <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
                             <h3><a href="javascript:void(0);">Consultation & Eligibility Check</a></h3>
-                            <p>Begin with a personalized assessment to verify your eligibility based on Germany's Chancenkarte criteria. We'll ensure you're aligned and ready to proceed.</p>
+                            <p>Begin with a personalized assessment to confirm your Chancenkarte
+                                eligibility based on Germany’s criteria, ensuring you’re aligned for 
+                                success.</p>
                             <div class="link-btn">
                                 <a href="javascript:void(0);"><span>Check Your Eligibility Now</span></a>
                             </div>
@@ -65,11 +67,13 @@
                           <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/icon-2.png') }}" alt=""></div>
+                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-2.png') }}" alt=""></div>
                             </div>
                              <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
                             <h3><a href="javascript:void(0);">Document Preparation & Verification</a></h3>
-                            <p>Get a tailored document checklist and expert guidance on verifying your qualifications through Anabin and ZAB, ensuring your credentials are sound and watertight.</p>
+                            <p>Receive a custom document checklist and expert guidance on Anabin and 
+                                ZAB qualification verification, ensuring your credentials meet German 
+                                standards.</p>
                             {{-- <div class="link-btn">
                                 <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
                             </div> --}}
@@ -82,11 +86,12 @@
                      <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="400ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                              <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/icon-3.png') }}" alt=""></div>
+                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-3.png') }}" alt=""></div>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
                             <h3><a href="javascript:void(0);">Profile Enhancement</a></h3>
-                            <p>Our specialists will refine your CV and LinkedIn profile, preparing you to stand out in the German job market.</p>
+                            <p>Refine your CV and LinkedIn profile with our experts, helping you stand 
+                                out in Germany’s job market.</p>
                             {{-- <div class="link-btn">
                                 <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
                             </div> --}}
@@ -100,10 +105,12 @@
                      <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="600ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/icon-4.png') }}" alt=""></div></div>
+                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-4.png') }}" alt=""></div></div>
                             <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
                             <h3><a href="javascript:void(0);">Application Submission</a></h3>
-                            <p>With all documents in order, we assist you in the final submission, ensuring compliance.</p>
+                            <p>We’ll assist in submitting your application with complete compliance for 
+                                the best possible outcome.
+                                </p>
                             {{-- <div class="link-btn">
                                 <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
                             </div> --}}
@@ -115,11 +122,12 @@
                      <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/icon-2.png') }}" alt=""></div>
+                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-5.png') }}" alt=""></div>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
                             <h3><a href="javascript:void(0);">Post-Approval Support</a></h3>
-                            <p>Once approved, we provide resources to augment your transition into Germany, including local registration and integration guidance.</p>
+                            <p>Benefit from resources to support your transition, including guidance on 
+                                local registration and integration into German society.</p>
                             {{-- <div class="link-btn">
                                 <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
                             </div> --}}
@@ -151,31 +159,28 @@
     <!-- chooseus-section end -->
 
     <!-- about-style-three -->
-    <section class="about-section p_relative hrwa">
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-6.png') }});"></div>
+    <section class="about-section p_relative hrwa fufdg">
+        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/banner/banner-6.jpg') }});"></div>
         <div class="auto-container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-4 col-sm-12 image-column">
                     <div class="image_block_one">
-                        <div class="image-box p_relative d_block">
+                       <!--  <div class="image-box p_relative d_block">
                             <figure class="image image-1"><img src="{{ asset('assets/site-assets/images/resource/about-1.jpg') }}" alt=""></figure>
                             <figure class="image image-2"><img src="{{ asset('assets/site-assets/images/resource/about-2.jpg') }}" alt=""></figure>
-                            <!--<figure class="certificate-box"><img src="{{ asset('assets/site-assets/images/icons/certificate-1.png') }}" alt=""></figure>-->
-                        </div>
+                            <figure class="certificate-box"><img src="{{ asset('assets/site-assets/images/icons/certificate-1.png') }}" alt=""></figure>
+                        </div> -->
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 content-column">
+                <div class="col-lg-8 col-md-8 col-sm-12 content-column fhto">
                     <div class="content_block_one">
                         <div class="content-box p_relative ml_110">
-                            <div class="sec-title mb_30">
+                            <div class="sec-title dfew">
                                 {{-- <span class="sub-title">We are looking for</span> --}}
                                 <h2>Ready to Begin?</h2>
                             </div>
-                            <div class="text mb_30">
-                                <p>Choose Your Package</p>
-                            </div>
                             <div class="btn-box">
-                                <a href="{{ route('service') }}" class="theme-btn btn-one"><span>Packages</span></a>
+                                <a href="{{ route('service') }}" class="theme-btn btn-one"><span>Choose Your Package</span></a>
                             </div>
                         </div>
                     </div>

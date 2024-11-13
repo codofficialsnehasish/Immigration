@@ -56,7 +56,7 @@
         <div class="auto-container">
             <div class="row">
                 <div class="col-md-4">
-                    <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-1.jpg') }}" alt=""></figure>
+                    <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-1.png') }}" alt=""></figure>
                 </div>
                 <div class="col-md-8">
                     <h2><b>Essential Chancenkarte Guidance</b></h2>
@@ -101,7 +101,7 @@
         <div class="auto-container">
             <div class="row">
                 <div class="col-md-4">
-                    <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-2.jpg') }}" alt=""></figure>
+                    <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-2.png') }}" alt=""></figure>
                 </div>
                 <div class="col-md-8">
                     <h2><b>Comprehensive Chancenkarte Concierge</b></h2>

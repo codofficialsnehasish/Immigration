@@ -31,6 +31,7 @@
                                 <li><a href="{{ route('service') }}">Our Services</a></li>
                                 <li><a href="#">Blog & Resources</a></li>
                                 <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                <li><a href="{{ route('faq') }}">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +64,6 @@
                                 <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                                 <li><a href="{{ route('data-security-measures') }}">Data Security Measures</a></li>
                                 <li><a href="{{ route('terms-conditions') }}">Terms & Conditions</a></li>
-                                <li><a href="{{ route('faq') }}">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="copyright">
-                <div class="rio"><p>Copyright By &copy; <a href="{{ route('home') }}">immigratie</a> - 2023</p></div>
+                <div class="rio"><p>Copyright By &copy; <a href="{{ route('home') }}">{{ config('app.name') }}</a> - 2023</p></div>
                 <div class="rio2"><img src="{{ asset('assets/site-assets/images/payment.png') }}" alt=""></div>
             </div>
         </div>

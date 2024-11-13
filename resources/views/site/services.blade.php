@@ -12,7 +12,7 @@
     
     <!-- page-title -->
     <section class="page-title centred p_relative">
-        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
+        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/service.jpg') }});"></div>
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
         <div class="auto-container">
             <div class="content-box">
@@ -96,9 +96,9 @@
 
                 <div class="visa-block-one">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-1.jpg') }}" alt=""></figure>
+                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-1.png') }}" alt=""></figure>
                         <div class="lower-content">
-                            <div class="icon-box"><i class="icon-12"></i></div>
+                            {{-- <div class="icon-box"><i class="icon-12"></i></div> --}}
                             <h3><a href="">Essential Chancenkarte Guidance</a></h3>
                             <p>Our "Essential Chancenkarte Guidance" package offers all the foundational support you need to develop a strong visa application.</p>
                             <ul class="list-style-one clearfix">
@@ -120,7 +120,7 @@
                                     options.</li>
                                 <li><b>Email Support: </b>Dedicated support throughout your journey.</li>
                             </ul>
-                            <p><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
+                            <p style="font-style: italic;"><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
                                 high-quality, expert guidance for a confident application.
                                 </p>
                             <div class="link-btn">
@@ -132,9 +132,9 @@
 
                 <div class="visa-block-one">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/visa-2.jpg') }}" alt=""></figure>
+                        <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-2.png') }}" alt=""></figure>
                         <div class="lower-content">
-                            <div class="icon-box"><i class="icon-12"></i></div>
+                            {{-- <div class="icon-box"><i class="icon-12"></i></div> --}}
                             <h3><a href="">Comprehensive Chancenkarte Concierge</a></h3>
                             <p>For those looking for an end-to-end solution, our “Comprehensive Chancenkarte 
                                 Concierge” package offers exhaustive assistance at every stage of the process.</p>
@@ -153,7 +153,7 @@
                                 <li><b>Post-Approval Support: </b>Resources for residency registration and 
                                     integration into German society.</li>
                             </ul>
-                            <p><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
+                             <p style="font-style: italic;"><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
                                 Chancenkarte application journey and transition to Germany.
                                 </p>
                             <div class="link-btn">

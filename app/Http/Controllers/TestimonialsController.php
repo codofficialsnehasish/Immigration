@@ -33,7 +33,7 @@ class TestimonialsController extends Controller
             'title' => 'nullable|max:255',
             'description' => 'required',
             'rating' => 'required|numeric|between:1,5',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'is_visible' => 'required|in:0,1'
         ]);
         if ($validator->fails()) {

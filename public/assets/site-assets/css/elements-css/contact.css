@@ -186,7 +186,7 @@
 }
 
 .contact-style-two .form-inner .sec-title p{
-  color: #07407D;
+  color: #000000;
   margin-top: 20px;
   max-width: 570px;
 }
@@ -211,7 +211,7 @@
   background: #F7F7F7;
   border: 1px solid #F7F7F7;
   font-size: 14px;
-  color: var(--main-color);
+  color: #000000;
   padding: 10px 30px;
   transition: all 500ms ease;
 }

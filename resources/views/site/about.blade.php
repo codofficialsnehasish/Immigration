@@ -16,10 +16,10 @@
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
         <div class="auto-container">
             <div class="content-box">
-                <h1>About</h1>
+                <h1>About Us</h1>
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>About Immigratie</li>
+                    <li>About Chancenkarte</li>
                 </ul>
             </div>
         </div>
@@ -41,11 +41,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-12 col-sm-12 content-column">
+                <div class="col-lg-8 col-md-12 col-sm-12 content-column abou_tm">
                     <div class="content_block_one">
                         <div class="content-box p_relative ml_110">
                             <div class="sec-title mb_30">
-                                <span class="sub-title">About Us</span>
+                                <!-- <span class="sub-title">About Us</span> -->
                                 <h2>Welcome to Immigration — Your Trusted Partner to a New Life in Germany. </h2>
                             </div>
                             <div class="text mb_30">

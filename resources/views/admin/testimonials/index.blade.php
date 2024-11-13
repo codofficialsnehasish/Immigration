@@ -109,8 +109,8 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="description" class="form-label">Description</label>
-                                <textarea type="text" name="description" class="form-control editor" id="description" style="min-height: 150px !important;" placeholder="Enter Description" required=""></textarea>
+                                <label for="descriptions" class="form-label">Description</label>
+                                <textarea name="description" class="form-control" id="descriptions" placeholder="Enter Description" required=""></textarea>
                                 <div class="valid-tooltip">
                                     Looks good!
                                 </div>
@@ -183,7 +183,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="description" class="form-label">Description</label>
-                                <textarea type="text" name="description" class="form-control editor" id="description" style="min-height: 150px !important;" placeholder="Enter Description" required="">{{ $testimonial->description }}</textarea>
+                                <textarea name="description" class="form-control editor" id="description" placeholder="Enter Description" required="">{{ $testimonial->description }}</textarea>
                                 <div class="valid-tooltip">
                                     Looks good!
                                 </div>

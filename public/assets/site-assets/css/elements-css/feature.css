@@ -1,6 +1,7 @@
 
 .feature-section{
   position: relative;
+  padding-bottom: 0;
 }
 
 .feature-section .inner-container{
@@ -77,6 +78,7 @@
 .feature-section.alternat-3 .feature-block-one .inner-box h3 a,
 .feature-section.alternat-3 .feature-block-one .inner-box p{
   color: #ffffff;
+  text-align: justify;
 }
 
 .feature-section.alternat-3 .feature-block-one .inner-box h3 a:hover{
@@ -215,3 +217,6 @@
     margin-top: 20px;
 }
 
+.centred h2 {
+    padding-bottom: 10px;
+}

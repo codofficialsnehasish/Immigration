@@ -26,6 +26,7 @@
 
 .content_block_two .content-box .text p{
   color: #000000;
+  text-align: justify;
 }
 
 .content_block_two .content-box .list-item{

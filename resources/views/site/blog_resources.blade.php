@@ -12,14 +12,14 @@
 
     <!-- page-title -->
     <section class="page-title centred p_relative">
-        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
+        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/blog.jpg') }});"></div>
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
         <div class="auto-container">
             <div class="content-box">
-                <h1>Blog</h1>
+                <h1>Blog & Resources</h1>
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>Blog</li>
+                    <li>Blog & Resources</li>
                 </ul>
             </div>
         </div>

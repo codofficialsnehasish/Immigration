@@ -51,23 +51,23 @@
                         <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Los Angeles" class="d-block w-100">
                     </div>
 
-                    <div class="carousel-item">
+                  <!--   <div class="carousel-item">
                         <div class="banner_text">
                             <h2>Achieve Your German Dream with Chancenkarte Support </h2>
                             <p>Let Your Germany Dream Become Reality with Professional Immigration Support Tailored for Chancenkarte Success. </p>
                             <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
                         </div>
                         <img src="{{ asset('assets/site-assets/images/banner/banner-6.jpg') }}" alt="Chicago" class="d-block w-100">
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+               <!--  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
-                </button>
+                </button> -->
             </div>
         </div>
     </section>
@@ -114,10 +114,10 @@
         <figure class="image-layer"><img src="{{ asset('assets/site-assets/images/resource/men-2.png') }}" alt=""></figure>
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="col-lg-4 col-md-12 col-sm-12 content-column offset-lg-3">
+                <div class="col-lg-5 col-md-12 col-sm-12 content-column offset-lg-2">
                     <div class="content_block_six">
                         <div class="content-box mr_20">
-                            <div class="sec-title mb_20">
+                            <div class="sec-title frei_6">
                                 {{-- <span class="sub-title">Why Choose Us ?</span> --}}
                                 <h2>Why Choose Us ?</h2>
                             </div>
@@ -128,7 +128,7 @@
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Trusted Immigration Expertise for Germany</h5>
-                                    <p style="font-size:14px;">With in-depth knowledge of German immigration policies and Chancenkarte Visa 
+                                    <p style="font-size:16px;">With in-depth knowledge of German immigration policies and Chancenkarte Visa 
                                         requirements, we are your trusted partners in securing a successful visa 
                                         application. Our expert advice is rooted in legal precision and transparency, 
                                         ensuring you receive reliable, compliant support throughout the Chancenkarte 
@@ -137,7 +137,7 @@
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Precision-Driven Approach</h5>
-                                    <p style="font-size:14px;">We prioritize attention to detail and accuracy in managing your Chancenkarte
+                                    <p style="font-size:16px;">We prioritize attention to detail and accuracy in managing your Chancenkarte
                                         Visa application. From initial assessments to final approvals, our team ensures 
                                         flawless documentation, strict adherence to German visa policies, and a thorough 
                                         process to give your Opportunity Card application the best chance of success. </p>
@@ -145,7 +145,7 @@
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Personalized Guidance and Support </h5>
-                                    <p style="font-size:14px;">Our seasoned immigration professionals provide personalized guidance tailored 
+                                    <p style="font-size:16px;">Our seasoned immigration professionals provide personalized guidance tailored 
                                         to your unique needs. You’re not just a client – you’re a partner, and we are here 
                                         to make your Chancenkarte application process smooth, reliable, and stress-free.  </p>
                                 </div>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12 col-sm-12 image-column">
+                <div class="col-lg-5 col-md-12 col-sm-12 image-column ghsw">
                     <div class="image-inner clearfix">
                         <!-- <div class="image-shape" style="background-image: url(assets/images/shape/shape-44.png);"></div> -->
                         <div class="image-box">
@@ -184,7 +184,7 @@
                 </div>
                 <div class="content_block_two">
                     <div class="content-box p_relative d_block">
-                        <div class="sec-title light mb_20">
+                        <div class="sec-title light tywq">
                             <span class="sub-title">Our Services</span>
                             <h2>Chancenkarte Consulting</h2>
                         </div>
@@ -299,7 +299,7 @@
 
 
     <!-- help-section -->
-    <section class="help-section p_relative dfgfg">
+    <section class="help-section p_relative dfgfg frae_5">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-45.png') }});"></div>
             <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-46.png') }});"></div>
@@ -309,15 +309,14 @@
             <div class="sec-title light mb_60">
                 {{-- <span class="sub-title">HOW WE HELP CLIENTS</span> --}}
                 <h2>Eligibility Assessment Section</h2>
-                <p>The Opportunity Card operates on a points-based system, designed to assess candidates across various criteria, such as age, qualifications, professional experience, and language proficiency.</p>
-                <p>Chancenkarte Points System Overview</p>
+                <p>The Opportunity Card operates on a points-based system, designed to assess candidates across various criteria, such as age, qualifications, professional experience, and language proficiency. Chancenkarte Points System Overview</p>
             </div>
             <div class="row clearfix xsep">
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <div class="single-item">
+                    <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
-                                <div class="icon mb_18"><i class="icon-42"></i></div>
+                                <!-- <div class="icon mb_18"><i class="icon-42"></i></div> -->
                                 <span class="count-text">01</span>
                             </div>
                             <h3><a href="javascript:void(0);">Basic Requirements</a></h3>
@@ -326,11 +325,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <div class="single-item">
+                    <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
                                 <span class="count-text">02</span>
-                                <div class="icon mt_18"><i class="icon-43"></i></div>
+                                <!-- <div class="icon mt_18"><i class="icon-43"></i></div> -->
                             </div>
                             <h3><a href="javascript:void(0);">4 Points</a></h3>
                             <p>Awarded for partial recognition of foreign professional qualifications or permission to practice a regulated profession (e.g., teacher, nurse, engineer). These criteria are met by a select number of applicants.</p>
@@ -338,10 +337,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <div class="single-item">
+                    <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
-                                <div class="icon mb_13"><i class="icon-44"></i></div>
+                                <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
                                 <span class="count-text">03</span>
                             </div>
                             <h3><a href="javascript:void(0);">3 Points</a></h3>
@@ -352,10 +351,10 @@
                 </div>
                 
                 <div class="col-lg-6 col-md-6 col-sm-12 single-column hje_1">
-                    <div class="single-item">
+                    <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
-                                <div class="icon mb_13"><i class="icon-44"></i></div>
+                                <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
                                 <span class="count-text">04</span>
                             </div>
                             <h3><a href="javascript:void(0);">2 Points</a></h3>
@@ -365,10 +364,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 single-column hje_1">
-                    <div class="single-item">
+                    <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
-                                <div class="icon mb_13"><i class="icon-44"></i></div>
+                                <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
                                 <span class="count-text">05</span>
                             </div>
                             <h3><a href="javascript:void(0);">1 Point</a></h3>
@@ -599,7 +598,7 @@
     <section class="testimonial-style-three">
         <div class="auto-container">
             <div class="sec-title">
-                <h6>Client Reviews</h6>
+                <!-- <h6>Client Reviews</h6> -->
                 <h2>Feedback From Our Clients</h2>
             </div>
             <div class="three-item-carousel owl-carousel owl-theme owl-dots-none owl-loaded owl-drag">
@@ -611,7 +610,9 @@
                                 <div class="inner-box">
                                     <div class="quote"><img src="" alt=""></div>
                                     <div class="author-box">
+                                        @if(!empty($testimonial->image))
                                         <figure class="author-thumb"><img src="{{ asset($testimonial->image) }}" alt=""></figure>
+                                        @endif
                                         <h4>{{ $testimonial->name }}</h4>
                                         <span class="designation">{{ $testimonial->title }}</span>
                                     </div>
