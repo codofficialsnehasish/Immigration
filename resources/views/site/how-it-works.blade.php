@@ -11,12 +11,12 @@
 @section('content')
     
     <!-- page-title -->
-    <section class="page-title centred p_relative">
+    <section class="page-title centred p_relative"> {{--  gered --}}
         <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/resource/how-it-works.jpg') }});"></div>
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
+        <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="auto-container">
             <div class="content-box">
-                <h1>How It Works</h1>
+                <!-- <h1>How It Works</h1> -->
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>How It Works</li>
@@ -54,9 +54,15 @@
                             <p>Begin with a personalized assessment to confirm your Chancenkarte
                                 eligibility based on Germany’s criteria, ensuring you’re aligned for 
                                 success.</p>
-                            <div class="link-btn">
-                                <a href="javascript:void(0);"><span>Check Your Eligibility Now</span></a>
+
+
+                             
+                           <!--   <div class="btn-box ddew">
+                               <a href="javascript:void(0);" class="theme-btn btn-one"><span>Check Your Eligibility Now</span></a>
                             </div>
+ -->
+
+
                             </div>
                             
                         </div>

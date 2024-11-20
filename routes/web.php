@@ -48,7 +48,7 @@ Route::controller(LegalInfo::class)->group( function() {
 
 Route::controller(BlogResources::class)->group( function() {
     Route::get('blogs-resources','index')->name('blogs-resources.index');
-    Route::get('blogs-resources/blogs-details','blog_details')->name('blogs-resources.details');
+    Route::get('blogs-details','blog_details')->name('blogs-resources.details');
 });
 
 Route::get('faq',[FAQController::class,'index'])->name('faq');

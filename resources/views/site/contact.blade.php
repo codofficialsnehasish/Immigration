@@ -12,11 +12,11 @@
 
     <!-- page-title -->
     <section class="page-title centred p_relative">
-        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/contact.jpg') }});"></div>
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
+        <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
+        <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="auto-container">
             <div class="content-box">
-                <h1>Contact Us</h1>
+                <!-- <h1>Contact Us</h1> -->
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Contact Us</li>
@@ -109,7 +109,7 @@
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <input class="form-control form-control-lg" id="formFileLg" type="file" />
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">

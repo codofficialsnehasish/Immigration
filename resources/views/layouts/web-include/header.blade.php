@@ -33,8 +33,8 @@
         <div class="auto-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <!-- <figure class="logo"><a href="{{ route('home')}}"><img src="assets/images/logo.png" alt=""></a></figure> -->
-                    <figure class="logo"><a href="{{ route('home')}}">{{ config('app.name') }} <span></span></a></figure>
+                    <figure class="logo"><a href="{{ route('home')}}"><img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" alt=""></a></figure>
+                    {{-- <figure class="logo"><a href="{{ route('home')}}">{{ config('app.name') }} <span></span></a></figure> --}}
                 </div>
                 <div class="menu-area clearfix">
                     <!--Mobile Navigation Toggler-->
@@ -146,8 +146,8 @@
         <div class="auto-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <!-- <figure class="logo"><a href="{{ route('home')}}"><img src="assets/images/logo.png" alt=""></a></figure> -->
-                    <figure class="logo"><a href="{{ route('home')}}">{{ config('app.name') }}</a></figure>
+                    <figure class="logo"><a href="{{ route('home')}}"><img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" alt=""></a></figure>
+                    {{-- <figure class="logo"><a href="{{ route('home')}}">{{ config('app.name') }}</a></figure> --}}
                 </div>
                 <div class="menu-area clearfix">
                     <nav class="main-menu clearfix">

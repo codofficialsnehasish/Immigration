@@ -13,10 +13,10 @@
     <!-- page-title -->
     <section class="page-title centred p_relative">
         <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
+        <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="auto-container">
             <div class="content-box">
-                <h1>Services Details</h1>
+                <!-- <h1>Services Details</h1> -->
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li><a href="{{ route('service') }}">Services</a></li>
@@ -58,7 +58,7 @@
                 <div class="col-md-4">
                     <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-1.png') }}" alt=""></figure>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 yter">
                     <h2><b>Essential Chancenkarte Guidance</b></h2>
                     <p>Our <b>Essential Chancenkarte Guidance</b> package provides the foundational 
                         support you need to create a strong visa application. From eligibility assessments 
@@ -86,9 +86,14 @@
                             options.</li>
                         <li><b>Email Support: </b>Dedicated support throughout your journey.</li>
                     </ul>
-                    <p><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
+                    <p style="font-style: italic;font-size: 16px;"><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
                         high-quality, expert guidance for a confident application.
                         </p>
+                    <p>Kickstart your Chancenkarte journey with expert assistance.</p>
+                    <p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>
+                    <!--<div class="btn-box">-->
+                    <!--    <a href="javascript:void(0);" class="theme-btn btn-two"><span>Get Started with Expert Guidance</span></a>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -96,7 +101,7 @@
 
     @elseif($id == 2)
 
-    <section class="visa-section sec-pad">
+    <section class="visa-section sec-pad yter">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-5.png') }});"></div>
         <div class="auto-container">
             <div class="row">
@@ -129,13 +134,18 @@
                         <li><b>Post-Approval Support: </b>Resources for residency registration and 
                             integration into German society.</li>
                     </ul>
-                    <p><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
+                    <span><p ><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
                         Chancenkarte application journey and transition to Germany.
-                        </p>
+                        </p></span>
+                    <p>Go all-in with premium support to make your move to Germany stress-free.</p>
+                    <p class="csi"><b>Price:</b> $1799 – Your success starts here.</p>
+                    <!--<div class="link-btn dftp">-->
+                    <!--    <a href="javascript:void(0);"><span>Choose Complete Care</span></a>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
     </section>
-    @endif
+    @endif 
     
 @endsection

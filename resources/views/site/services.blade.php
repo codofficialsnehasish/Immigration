@@ -13,10 +13,10 @@
     <!-- page-title -->
     <section class="page-title centred p_relative">
         <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/service.jpg') }});"></div>
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
+        <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="auto-container">
             <div class="content-box">
-                <h1>Services</h1>
+                <!-- <h1>Services</h1> -->
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Services</li>
@@ -53,7 +53,7 @@
                                 <li>dolor do amet sint Velit officia</li>
                             </ul> -->
                             {!! $service->description !!}
-                            <div class="link-btn">
+                            <div class="link-btn dftp">
                                 <a href="{{ route('service.details',$service->id) }}"><span>Read More</span></a>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
 
     @if($services->isNotEmpty())
     <!-- visa-section -->
-    <section class="visa-section sec-pad">
+    <section class="visa-section sec-pad frews">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-5.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title centred mb_50">
@@ -86,7 +86,7 @@
                             <div class="icon-box"><i class="icon-12"></i></div>
                             <h3><a href="{{ route('service.details',$service->id) }}">{{ $service->name }}</a></h3>
                             {!! $service->description !!}
-                            <div class="link-btn">
+                            <div class="link-btn dftp">
                                 <a href="{{ route('service.details',$service->id) }}"><span>Read More</span></a>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                 </div>
                 @endforeach --}}
 
-                <div class="visa-block-one">
+                <div class="visa-block-one frews">
                     <div class="inner-box">
                         <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-1.png') }}" alt=""></figure>
                         <div class="lower-content">
@@ -120,10 +120,12 @@
                                     options.</li>
                                 <li><b>Email Support: </b>Dedicated support throughout your journey.</li>
                             </ul>
-                            <p style="font-style: italic;"><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
+                            <p style="font-style: italic;font-size: 16px;"><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
                                 high-quality, expert guidance for a confident application.
                                 </p>
-                            <div class="link-btn">
+                            <!--<p>Kickstart your Chancenkarte journey with expert assistance.</p>-->
+                            <p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>
+                            <div class="link-btn dftp">
                                 <a href="{{ route('service.details',1) }}"><span>Read More</span></a>
                             </div>
                         </div>
@@ -153,10 +155,12 @@
                                 <li><b>Post-Approval Support: </b>Resources for residency registration and 
                                     integration into German society.</li>
                             </ul>
-                             <p style="font-style: italic;"><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
+                             <p style="font-style: italic;font-size: 16px;"><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
                                 Chancenkarte application journey and transition to Germany.
                                 </p>
-                            <div class="link-btn">
+                            <!--<p>Go all-in with premium support to make your move to Germany stress-free.</p>-->
+                            <p class="csi"><b>Price:</b> $1799 – Your success starts here.</p>
+                            <div class="link-btn dftp">
                                 <a href="{{ route('service.details',2) }}"><span>Read More</span></a>
                             </div>
                         </div>
@@ -206,7 +210,7 @@
                                     <li>Aenean in ipsum vel quam</li>
                                 </ul>
                             </div>
-                            <div class="btn-box">
+                            <div class="btn-box dftp">
                                 <a href="{{ route('about') }}" class="theme-btn btn-one"><span>More Details</span></a>
                             </div>
                         </div>

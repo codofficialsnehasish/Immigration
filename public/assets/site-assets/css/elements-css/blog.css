@@ -23,6 +23,7 @@
   padding-bottom: 0px;
   border-bottom: none;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .blog-details-content .content-one .post-info li{
@@ -89,7 +90,8 @@
 }
 
 .blog-details-content .content-one p{
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 .blog-details-content h3{
@@ -106,7 +108,7 @@
   font-size: 16px;
   line-height: 40px;
   font-weight: 500;
-  color: var(--main-color);
+  color: #000000;
   padding-left: 20px;
 }
 
@@ -296,6 +298,11 @@
   padding-top: 20px;
 }
 
+.mkp h1 {
+    font-size: 30px !important;!i;!;
+    line-height: normal !important;!i;!;
+    padding: 30px 0 0;!;
+}
 
 
 

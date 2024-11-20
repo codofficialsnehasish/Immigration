@@ -14,7 +14,7 @@
   <!-- page-title -->
     <section class="page-title centred p_relative">
         <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
+        <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="container">
             <div class="content-box">
                 <h1>Data Security Measures</h1>

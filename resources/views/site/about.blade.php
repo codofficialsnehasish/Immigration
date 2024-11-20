@@ -13,13 +13,14 @@
     <!-- page-title -->
     <section class="page-title centred p_relative">
         <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/page-title.jpg') }});"></div>
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
+        {{-- <div class="bg-layer") }});"></div> --}}
+        <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="auto-container">
             <div class="content-box">
-                <h1>About Us</h1>
+                <!-- <h1>About Us</h1> -->
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>About Chancenkarte</li>
+                    <li>About Us</li>
                 </ul>
             </div>
         </div>
@@ -34,10 +35,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-12 col-sm-12 image-column">
                     <div class="image_block_one">
-                        <div class="image-box p_relative d_block">
-                            <figure class="image image-1"><img src="{{ asset('assets/site-assets/images/resource/about-1.jpg') }}" alt=""></figure>
-                            <figure class="image image-2"><img src="{{ asset('assets/site-assets/images/resource/about-2.jpg') }}" alt=""></figure>
-                            <figure class="certificate-box"><img src="{{ asset('assets/site-assets/images/icons/certificate-1.png') }}" alt=""></figure>
+                        <div class="image-box p_relative d_block grio_r">
+                            {{-- <figure class="image image-1"><img src="{{ asset('assets/site-assets/images/resource/NEW.jpg') }}" alt=""></figure> --}}
+                            <figure class="image image-2"><img src="{{ asset('assets/site-assets/images/resource/NEW.jpg') }}" alt=""></figure>
+                            {{-- <figure class="certificate-box"><img src="{{ asset('assets/site-assets/images/icons/NEW.jpg') }}" alt=""></figure> --}}
                         </div>
                     </div>
                 </div>
@@ -426,7 +427,7 @@
 
 
     <!-- chooseus-section -->
-    {{-- <section class="chooseus-section p_relative">
+    {{-- <section class="chooseus-section p_relative frew33">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-71.png') }});"></div>
         <div class="auto-container">
             <div class="sec-title centred mb_60">
@@ -506,7 +507,7 @@
 
     @if($teams->isNotEmpty())
     <!-- team-section -->
-    <section class="team-section alternat-2 p_relative centred">
+    <!-- <section class="team-section alternat-2 p_relative centred">
         <div class="pattern-layer">
             <div class="pattern-4" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-30.png') }});"></div>
             <div class="pattern-5" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-31.png') }});"></div>
@@ -541,7 +542,7 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- team-section end -->
     @endif
     

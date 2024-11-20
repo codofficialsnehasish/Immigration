@@ -27,57 +27,100 @@
         </div> -->
     </section> --}}
     <!-- banner-style-three end -->
+    
+    
 
     <!-- banner-style-three -->
-    <section class="banner-style-three p_relative">
-        <div class="pattern-layer">
+    <!--<section class="banner-style-three p_relative">-->
+    <!--    <div class="pattern-layer">-->
             <!-- Carousel -->
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!--        <div id="demo" class="carousel slide" data-bs-ride="carousel">-->
                 <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    {{-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> --}}
-                </div>
+    <!--            <div class="carousel-indicators">-->
+    <!--                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>-->
+    <!--                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>-->
+    <!--                {{-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> --}}-->
+    <!--            </div>-->
 
                 <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="banner_text">
-                            <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>
-                            <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>
-                            <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
-                        </div>
-                        <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Los Angeles" class="d-block w-100">
-                    </div>
+    <!--            <div class="carousel-inner">-->
+    <!--                <div class="carousel-item active">-->
+    <!--                    <div class="banner_text">-->
+    <!--                        <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>-->
+    <!--                        <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>-->
+    <!--                        <a href="{{ route('contact') }}" class="theme-btn btn-two">Request a Consultation Today</a>-->
+    <!--                    </div>-->
+    <!--                    <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Los Angeles" class="d-block w-100">-->
+    <!--                </div>-->
 
                   <!--   <div class="carousel-item">
-                        <div class="banner_text">
-                            <h2>Achieve Your German Dream with Chancenkarte Support </h2>
-                            <p>Let Your Germany Dream Become Reality with Professional Immigration Support Tailored for Chancenkarte Success. </p>
-                            <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>
-                        </div>
-                        <img src="{{ asset('assets/site-assets/images/banner/banner-6.jpg') }}" alt="Chicago" class="d-block w-100">
-                    </div> -->
-                </div>
+    <!--                    <div class="banner_text">-->
+    <!--                        <h2>Achieve Your German Dream with Chancenkarte Support </h2>-->
+    <!--                        <p>Let Your Germany Dream Become Reality with Professional Immigration Support Tailored for Chancenkarte Success. </p>-->
+    <!--                        <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>-->
+    <!--                    </div>-->
+    <!--                    <img src="{{ asset('assets/site-assets/images/banner/banner-6.jpg') }}" alt="Chicago" class="d-block w-100">-->
+    <!--                </div> -->-->
+    <!--            </div>-->
 
                 <!-- Left and right controls/icons -->
                <!--  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button> -->
+    <!--                <span class="carousel-control-prev-icon"></span>-->
+    <!--            </button>-->
+    <!--            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">-->
+    <!--                <span class="carousel-control-next-icon"></span>-->
+    <!--            </button> -->-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    <!-- banner-style-three end -->
+
+
+
+
+<section class="about-section p_relative hrwa sadfwq">
+        <div class="pattern-layer"></div>
+        <div class="auto-container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12 col-sm-12 image-column">
+                    <div class="image_block_one">
+                        <div class="image-box p_relative d_block grio_r">
+                            
+                            <figure class="image image-2"><img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt=""></figure>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 content-column abou_tm">
+                    <div class="content_block_one">
+                        <div class="content-box p_relative">
+                            <div class="sec-title mb_30">
+                                <!-- <span class="sub-title">About Us</span> -->
+                                <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>
+                            </div>
+                            <div class="text mb_30">
+                                <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>
+                            </div>
+                            
+                            <div class="btn-box">
+                                <a href="{{ route('contact') }}" class="theme-btn btn-two">Request a Consultation Today</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- banner-style-three end -->
+
+
+
+
 
 
     <!-- feature-section -->
     <section class="feature-section alternat-3">
         <div class="auto-container">
-            <div class="inner-container">
+            <div class="inner-container hfrp">
                 <!-- <div class="shape-2" style="background-image: url(assets/images/shape/shape-41.png);"></div> -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-6 col-sm-12 feature-block">
@@ -86,13 +129,64 @@
                                 <!-- <div class="icon-box"><i class="icon-17"></i></div> -->
                                 <h3><a href="{{ route('contact') }}" style="color: #fff !important;font-size: 26px;">What is a Chancenkarte Visa or an Opportunity Card ?</a></h3>
                                 <p>
-                                    The Chancenkarte Visa also known as the Opportunity Card is a German work 
-                                    visa that helps skilled professionals find job opportunities in Germany. 
-                                    Chancenkarte allows eligible candidates to live in Germany and search for 
-                                    employment in their field. 
+                                    The Chancenkarte Visa (Opportunity card) offers skilled professionals the
+                                    chance to move to Germany without a job offer and explore exciting career
+                                    opportunities in tech, engineering, healthcare, and more. With access to a thriving
+                                    job market, competitive salaries, and a great work-life balance, this visa also
+                                    provides a clear path to permanent residency - all while allowing you to bring your
+                                    family along. Seize the opportunity and start your new life in Germany today.
                                 </p>
+                                
+                                
+                                <div class="res_m">
+                                <h1>Benefits of Opportunity Card:</h1>
+                                 <div class="row">
+                                 <div class="col-lg-6 col-md-6 col-sm-12">
+                                       <ul>
+                                    <li>
+                                        <h1>No Job Offer Needed:</h1>
+                                    <p>Say goodbye to the stress of securing a job before
+                                        you move. With the Opportunity card, you can arrive in Germany and
+                                        explore exciting job opportunities in your field — without the pressure of a
+                                        pre-arranged job offer.</p>
+                                    </li>
+                                    <li><h1>A Clear Path to Permanent Residency:</h1>
+                                    <p>Not only does the Opportunity
+                                            card get you started in Germany, but it also offers a seamless route to
+                                            permanent residency once you secure a job and meet the required criteria.</p>
+                                    </li>
+                                   
+                                </ul>
+                                 </div>
+                                 
+                                
+                                 <div class="col-lg-6 col-md-6 col-sm-12">
+                                       <ul>
+                                   
+                                    <li>
+                                        <h1>Competitive Pay and Work-Life Balance: </h1>
+                                        <p>Germany is known for offering
+                                            top-tier salaries, incredible work-life balance, and strong employee benefits.
+                                            It’s the perfect place for professionals seeking both career growth and
+                                            personal well-being.</p>
+                                    </li>
+                                    <li>
+                                        <h1>Experience Life in Germany: </h1>
+                                        <p>Immerse yourself in a dynamic, innovative
+                                            work environment, while enjoying the high standard of living that Germany
+                                            is famous for. The Opportunity card is more than just a work permit — it’s
+                                            a chance to experience life in one of Europe’s most exciting countries.</p>
+                                    </li>
+                                </ul>
+                                 </div>
+                                 </div>
+                                
+                              
+                                </div>
+                                
+                                
                                 <div class="btn-box">
-                                    <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Get an Expert Consultation Today</span></a>
+                                    <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Learn More about Germany Opportunity Card</span></a>
                                 </div>
                             </div>
                         </div>
@@ -111,10 +205,10 @@
             <div class="pattern-2" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-43.png') }});"></div>
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-42.png') }});"></div>
         </div>
-        <figure class="image-layer"><img src="{{ asset('assets/site-assets/images/resource/men-2.png') }}" alt=""></figure>
+        <!--<figure class="image-layer"><img src="{{ asset('assets/site-assets/images/resource/men-2.png') }}" alt=""></figure>-->
         <div class="auto-container">
             <div class="row clearfix">
-                <div class="col-lg-5 col-md-12 col-sm-12 content-column offset-lg-2">
+                <div class="col-lg-7 col-md-12 col-sm-12 content-column">
                     <div class="content_block_six">
                         <div class="content-box mr_20">
                             <div class="sec-title frei_6">
@@ -128,7 +222,7 @@
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Trusted Immigration Expertise for Germany</h5>
-                                    <p style="font-size:16px;">With in-depth knowledge of German immigration policies and Chancenkarte Visa 
+                                    <p style="font-size:17px;">With in-depth knowledge of German immigration policies and Chancenkarte Visa 
                                         requirements, we are your trusted partners in securing a successful visa 
                                         application. Our expert advice is rooted in legal precision and transparency, 
                                         ensuring you receive reliable, compliant support throughout the Chancenkarte 
@@ -137,7 +231,7 @@
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Precision-Driven Approach</h5>
-                                    <p style="font-size:16px;">We prioritize attention to detail and accuracy in managing your Chancenkarte
+                                    <p style="font-size:17px;">We prioritize attention to detail and accuracy in managing your Chancenkarte
                                         Visa application. From initial assessments to final approvals, our team ensures 
                                         flawless documentation, strict adherence to German visa policies, and a thorough 
                                         process to give your Opportunity Card application the best chance of success. </p>
@@ -145,7 +239,7 @@
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
                                     <h5>Personalized Guidance and Support </h5>
-                                    <p style="font-size:16px;">Our seasoned immigration professionals provide personalized guidance tailored 
+                                    <p style="font-size:17px;">Our seasoned immigration professionals provide personalized guidance tailored 
                                         to your unique needs. You’re not just a client – you’re a partner, and we are here 
                                         to make your Chancenkarte application process smooth, reliable, and stress-free.  </p>
                                 </div>
@@ -308,77 +402,131 @@
         <div class="auto-container">
             <div class="sec-title light mb_60">
                 {{-- <span class="sub-title">HOW WE HELP CLIENTS</span> --}}
+
                 <h2>Eligibility Assessment Section</h2>
-                <p>The Opportunity Card operates on a points-based system, designed to assess candidates across various criteria, such as age, qualifications, professional experience, and language proficiency. Chancenkarte Points System Overview</p>
+                <p>The Opportunity Card operates on a points-based system, designed to assess candidates across 
+                    various criteria, such as age, qualifications, professional experience, and language proficiency. 
+                    Chancenkarte Points System Overview</p>
             </div>
             <div class="row clearfix xsep">
-                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12 single-column gjuq_p">
+
                     <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
                                 <!-- <div class="icon mb_18"><i class="icon-42"></i></div> -->
-                                <span class="count-text">01</span>
+                                <!--<span class="count-text">01</span>-->
                             </div>
                             <h3><a href="javascript:void(0);">Basic Requirements</a></h3>
-                            <p> Applicants must demonstrate sufficient German (A1) or English (B2) language skills and at least two years of vocational training, compliant with standards in their home country. Adequate financial means are also required, such as an employment contract for a part-time position (up to 20 hours weekly).</p>
+                            {{-- <p> Applicants must demonstrate sufficient German (A1) or English (B2) language skills and at least two years of vocational training, compliant with standards in their home country. Adequate financial means are also required, such as an employment contract for a part-time position (up to 20 hours weekly).</p> --}}
+                                <ul>
+                                    <li> Applicants must demonstrate sufficient German (A1) or English (B2) language skills and 
+                                        at least two years of vocational training, compliant with standards in their home country. </li>
+                                    <li>Adequate financial means are also required, such as an employment contract for a part-time position (up to 20 hours weekly).</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <div class="single-item gse_r">
+
+
+                      <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
-                                <span class="count-text">02</span>
+                                <!--<span class="count-text">02</span>-->
                                 <!-- <div class="icon mt_18"><i class="icon-43"></i></div> -->
                             </div>
                             <h3><a href="javascript:void(0);">4 Points</a></h3>
-                            <p>Awarded for partial recognition of foreign professional qualifications or permission to practice a regulated profession (e.g., teacher, nurse, engineer). These criteria are met by a select number of applicants.</p>
+                            <ul><li>Awarded for partial recognition of foreign professional qualifications or permission to practice a regulated profession (e.g., teacher, nurse, engineer). These criteria are met by a select number of applicants.</li></ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <div class="single-item gse_r">
+
+                        <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
                                 <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
-                                <span class="count-text">03</span>
+                                <!--<span class="count-text">03</span>-->
                             </div>
                             <h3><a href="javascript:void(0);">3 Points</a></h3>
-                            <p>EThese points are available to those with five years of professional experience (within the last seven years) in their field and two years of initial training according to home country standards. Alternatively, B2-level German language proficiency also earns three points.
+                            {{-- <p>EThese points are available to those with five years of professional experience (within the last seven years) in their field and two years of initial training according to home country standards. Alternatively, B2-level German language proficiency also earns three points.
+                            </p> --}}
+                            <p>
+                                <ul>
+                                    <li> These points are available to those with five years of professional experience (within the 
+                                        last seven years) in their field and two years of initial training according to home country 
+                                        standards. </li>
+                                    <li>Alternatively, B2-level German language proficiency also earns three points.</li>
+                                </ul>
                             </p>
                         </div>
                     </div>
                 </div>
-                
+
+
+
+
+
+
+
+
+
+
+
                 <div class="col-lg-6 col-md-6 col-sm-12 single-column hje_1">
                     <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
                                 <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
-                                <span class="count-text">04</span>
+                                <!--<span class="count-text">04</span>-->
                             </div>
                             <h3><a href="javascript:void(0);">2 Points</a></h3>
-                            <p>Awarded for two years of recent work experience preceded by vocational training (within the last five years). Applicants under 35 or with B1-level German skills also qualify for two points.
+                            {{-- <p>Awarded for two years of recent work experience preceded by vocational training (within the last five years). Applicants under 35 or with B1-level German skills also qualify for two points.
+                            </p> --}}
+                            <p>
+                                <ul>
+                                    <li>Awarded for two years of recent work experience preceded by vocational training (within 
+                                        the last five years). </li>
+                                    <li>Applicants under 35 or with B1-level German skills also qualify for two points.</li>
+                                </ul>
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 single-column hje_1">
-                    <div class="single-item gse_r">
+
+                       <div class="single-item gse_r">
                         <div class="inner-box">
                             <div class="icon-box">
                                 <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
-                                <span class="count-text">05</span>
+                                <!--<span class="count-text">05</span>-->
                             </div>
                             <h3><a href="javascript:void(0);">1 Point</a></h3>
-                            <p>Given to applicants under 40 or those with documented prior stays in Germany (minimum six months; tourist visits excluded). Additional points are awarded for:
+                            {{-- <p>Given to applicants under 40 or those with documented prior stays in Germany (minimum six months; tourist visits excluded). Additional points are awarded for:
                                 - High-level English proficiency (C1) or moderate German skills (A2).
                          - A degree or vocational training in an area identified as a labor shortage in Germany.
                                 - Applying for the Opportunity Card jointly with a spouse.
+                            </p> --}}
+                            <p>
+                                <ul>
+                                    <li>Given to applicants under 40 or those with documented prior stays in Germany (minimum 
+                                        six months; tourist visits excluded). </li>
+                                    <li>
+                                        Additional points are awarded for: -
+                                        <ol>
+                                            <li>High-level English proficiency (C1) or moderate German skills (A2). </li>
+                                            <li>A degree or vocational training in an area identified as a labor shortage in Germany.</li>
+                                            <li>Applying for the Opportunity Card jointly with a spouse.</li>
+                                        </ol>
+                                    </li>
+                                </ul>
                             </p>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
             </div>
         </div>
     </section>
@@ -448,7 +596,7 @@
             <div class="content_block_three">
                 <div class="content-box p_relative d_block">
                     <h2>Check your eligibility for the Chancenkarte instantly.</h2>
-                    <p>Our Eligibility Assessment tool is designed to help you know your Chancenkarte eligibility in a few easy steps.</p>
+                    <p>Our experts will help you determine your eligibility for Chancenkarte Visa and provide you with the guidance you need.</p>
                     {{-- <ul class="country-list">
                         <li>
                             <div class="flag"><img src="{{ asset('assets/site-assets/images/icons/flag-1.png') }}" alt=""></div>
@@ -468,7 +616,7 @@
                         </li>
                     </ul> --}}
                     <div class="btn-box">
-                        <a href="javascript:void(0);" class="theme-btn"><span>Take the First Step to Chancenkarte Now. </span></a>
+                        <a href="javascript:void(0);" class="theme-btn"><span>Get in Touch With Our Experts Today. </span></a>
                     </div>
                 </div>
             </div>

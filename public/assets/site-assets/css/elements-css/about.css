@@ -190,6 +190,7 @@
 .content_block_six .content-box{
   position: relative;
   display: block;
+  margin-right: 41px;
 }
 
 .content_block_six .content-box p{
@@ -229,6 +230,7 @@
   position: relative;
   display: block;
   min-width: 830px;
+  right: 30px;
 }
 
 .about-style-three .image-inner .image{

@@ -6,10 +6,10 @@
             <div class="row clearfix">
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget logo-widget">
-                        <!-- <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt=""></a></figure> -->
-                        <figure class="footer-logo"><a href="{{ route('home') }}">{{ config('app.name') }}</a></figure>
+                        <figure class="footer-logo"><a href="{{ route('home') }}"><img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" alt=""></a></figure>
+                        {{-- <figure class="footer-logo"><a href="{{ route('home') }}">{{ config('app.name') }}</a></figure> --}}
                         <div class="text">
-                            <p>Your Partner in Achieving Career Success in Germany.</p>
+                            <p>Your Partner in Achieving <br>Career Success in Germany.</p>
                             <ul class="social-links clearfix">
                                 <li><a href="#"><i class="icon-4"></i></a></li>
                                 <li><a href="#"><i class="icon-5"></i></a></li>
@@ -29,7 +29,7 @@
                                 <li><a href="{{ route('about') }}">About Us</a></li>
                                 <li><a href="{{ route('how-it-works') }}">How It Works</a></li>
                                 <li><a href="{{ route('service') }}">Our Services</a></li>
-                                <li><a href="#">Blog & Resources</a></li>
+                                <li><a href="{{ route('blogs-resources.index') }}">Blog & Resources</a></li>
                                 <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                 <li><a href="{{ route('faq') }}">FAQ</a></li>
                             </ul>
@@ -62,7 +62,7 @@
                         <div class="widget-content">
                             <ul class="links-list clearfix">
                                 <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
-                                <li><a href="{{ route('data-security-measures') }}">Data Security Measures</a></li>
+                                {{-- <li><a href="{{ route('data-security-measures') }}">Data Security Measures</a></li> --}}
                                 <li><a href="{{ route('terms-conditions') }}">Terms & Conditions</a></li>
                             </ul>
                         </div>

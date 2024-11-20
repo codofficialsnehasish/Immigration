@@ -13,10 +13,10 @@
     <!-- page-title -->
     <section class="page-title centred p_relative">
         <div class="bg-layer" style="background-image: url({{ asset('assets/site-assets/images/background/blog.jpg') }});"></div>
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div>
+        <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="auto-container">
             <div class="content-box">
-                <h1>Blog & Resources</h1>
+                <!-- <h1>Blog & Resources</h1> -->
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Blog & Resources</li>
@@ -42,15 +42,23 @@
                                         <li><i class="icon-56"></i>Feb 6, 2022 </li>
                                         <li><i class="icon-57"></i><a href="{{ route('blogs-resources.details') }}">03 Comments</a></li>
                                     </ul>
-                                    <h3><a href="{{ route('blogs-resources.details') }}">Project Concepts or Related Queries Should be</a></h3>
-                                    <p>Nemo ipsam egestas volute turpis dolores and aliquam quaerat in which toil and pain procure him some great foresee the pain and trouble that are bound not know how to pursue pleasure rationally.</p>
+                                    <h3><a href="{{ route('blogs-resources.details') }}">What is the Chancenkarte Visa? A Step-by-Step Guide to Germany’s Opportunity Card</a></h3>
+                                    <p>Germany, known for its booming economy, world-class infrastructure, and rich cultural 
+                                        heritage, is one of the top destinations for professionals seeking global career opportunities. In 
+                                        2024, the German government introduced a game-changing immigration initiative — the 
+                                        Chancenkarte Visa, or the Germany Opportunity Card. Think of it as your golden ticket to 
+                                        unlock the door to endless career prospects, a high standard of living, and the chance to become 
+                                        a part of one of Europe’s strongest job markets. But what exactly is the Chancenkarte Visa? 
+                                        How can you apply for it? And what makes it different from other visas like the German Job 
+                                        Seeker Visa?
+                                    </p>
                                     <div class="link-btn">
                                         <a href="{{ route('blogs-resources.details') }}"><span>Read More</span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="news-block-one">
+                        {{-- <div class="news-block-one">
                             <div class="inner-box">
                                 <figure class="image-box"><a href="{{ route('blogs-resources.details') }}"><img src="{{ asset('assets/site-assets/images/news/news-8.jpg') }}" alt=""></a></figure>
                                 <div class="lower-content">
@@ -93,7 +101,7 @@
                                 <li><a href="blog.html">5</a></li>
                                 <li><a href="blog.html"><i class="icon-59"></i></a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
@@ -125,7 +133,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="sidebar-widget post-widget">
+
+                        {{-- <div class="sidebar-widget post-widget">
                             <div class="widget-title">
                                 <h3>Popular Post</h3>
                             </div>
@@ -147,6 +156,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="sidebar-widget gallery-widget">
                             <div class="widget-title">
                                 <h3>Our Gallery</h3>
@@ -180,6 +190,7 @@
                                 </ul>
                             </div>
                         </div>
+
                         <div class="sidebar-widget travel-widget">
                             <div class="widget-content p_relative">
                                 <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/travel-1.jpg') }}" alt=""></figure>
@@ -193,6 +204,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="sidebar-widget tags-widget">
                             <div class="widget-title">
                                 <h3>Popular Tags</h3>
@@ -204,7 +216,7 @@
                                     <li><a href="{{ route('blogs-resources.details') }}"># Career</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
