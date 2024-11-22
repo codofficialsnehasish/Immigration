@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Contact Us')
+@section('title','Enquiry')
 
 @section('content')
 <!--start main wrapper-->
@@ -14,7 +14,7 @@
                     <ol class="breadcrumb mb-0 p-0">
                         <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        <li class="breadcrumb-item active" aria-current="page">Enquiry</li>
                     </ol>
                 </nav>
             </div>
@@ -33,6 +33,7 @@
                                     <th class="text-wrap">Email</th>
                                     <th class="text-wrap">Phone</th>
                                     <th class="text-wrap">Subject</th>
+                                    <th class="text-wrap">Media</th>
                                     <th class="text-wrap">Message</th>
                                     <th class="text-wrap">Created At</th>
                                     <th class="text-wrap">Action</th>
@@ -47,6 +48,41 @@
                                             <td class="text-wrap">{{ $item->email }}</td>
                                             <td class="text-wrap">{{ $item->phone }}</td>
                                             <td class="text-wrap">{{ $item->subject }}</td>
+                                            {{-- <td class="text-wrap">{{ $item->getFirstMediaUrl() }}</td> --}}
+                                            <td class="text-wrap">
+                                                @php
+                                                    $media = $item->getFirstMedia(); // Get the media object
+                                                @endphp
+                                            
+                                                @if($media)
+                                                    @php
+                                                        $mediaUrl = $media->getUrl();
+                                                        $mimeType = $media->mime_type;
+                                                    @endphp
+                                            
+                                                    @if(Str::startsWith($mimeType, 'image/'))
+                                                        <!-- Display as an image -->
+                                                        <img src="{{ $mediaUrl }}" alt="Media" style="max-width: 100px; max-height: 100px;">
+                                                    @elseif($mimeType === 'application/pdf')
+                                                        <!-- Link to view/download the PDF -->
+                                                        <a href="{{ $mediaUrl }}" target="_blank">View PDF</a>
+                                                    @elseif(Str::startsWith($mimeType, 'video/'))
+                                                        <!-- Embed a video player -->
+                                                        <video controls style="max-width: 200px; max-height: 150px;">
+                                                            <source src="{{ $mediaUrl }}" type="{{ $mimeType }}">
+                                                            Your browser does not support the video tag.
+                                                        </video>
+                                                    @else
+                                                        <!-- Display as a download link for other file types -->
+                                                        <a href="{{ $mediaUrl }}" target="_blank">Download File</a>
+                                                    @endif
+                                                @else
+                                                    <!-- Display a placeholder or message when no media is available -->
+                                                    <span>No media available</span>
+                                                @endif
+                                            </td>
+                                            
+                                            
                                             <td class="text-wrap">{{ $item->message }}</td>
                                             <td class="text-wrap">{{ \Carbon\Carbon::parse($item->created_at)->format('M d, Y h:i A') }}</td>
                                             <td>

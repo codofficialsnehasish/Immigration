@@ -9,43 +9,32 @@ use Illuminate\Support\Facades\Validator;
 
 class BannerController extends Controller
 {
-    public function index()
-    {
+    public function index(){
         $banners = Banner::all();
         return view('admin.banner.index',compact('banners'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
+    public function create(){
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
+    public function store(Request $request){
         $validator = Validator::make($request->all(), [
-            'title' => 'nullable',
-            'title' => 'nullable',
+            'title' => 'required',
+            'description' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg',
             'visibility' => 'required|in:0,1'
         ]);
+
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
         $banner = new Banner();
         $banner->title = $request->title;
+        $banner->description = $request->description;
         if ($request->hasFile('image')) {
-            $img = $request->file('image');
-            $filename = time(). '_' .$img->getClientOriginalName();
-            $directory = public_path('web-directory/banner');
-            $img->move($directory, $filename);
-            $filePath = "web-directory/banner/".$filename;
-            $banner->image = $filePath;
+            $banner->addMedia($request->file('image'))->toMediaCollection();
         }
         $banner->visibility = $request->visibility;
         $res = $banner->save();
@@ -78,8 +67,9 @@ class BannerController extends Controller
     public function update(Request $request, string $id)
     {
         $validator = Validator::make($request->all(), [
-            'title' => 'nullable',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'title' => 'required',
+            'description' => 'required',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg',
             'visibility' => 'required|in:0,1'
         ]);
         if ($validator->fails()) {
@@ -88,19 +78,23 @@ class BannerController extends Controller
 
         $banner = Banner::find($id);
         $banner->title = $request->title;
+        $banner->description = $request->description;
         if ($request->hasFile('image')) {
-            if ($banner->image) {
-                $existingImagePath = public_path($banner->image);
-                if (file_exists($existingImagePath)) {
-                    unlink($existingImagePath);
-                }
-            }
-            $img = $request->file('image');
-            $filename = time(). '_' .$img->getClientOriginalName();
-            $directory = public_path('web-directory/banner');
-            $img->move($directory, $filename);
-            $filePath = "web-directory/banner/".$filename;
-            $banner->image = $filePath;
+            $banner->clearMediaCollection();
+            $banner->addMedia($request->file('image'))->toMediaCollection();
+
+            // if ($banner->image) {
+            //     $existingImagePath = public_path($banner->image);
+            //     if (file_exists($existingImagePath)) {
+            //         unlink($existingImagePath);
+            //     }
+            // }
+            // $img = $request->file('image');
+            // $filename = time(). '_' .$img->getClientOriginalName();
+            // $directory = public_path('web-directory/banner');
+            // $img->move($directory, $filename);
+            // $filePath = "web-directory/banner/".$filename;
+            // $banner->image = $filePath;
         }
         $banner->visibility = $request->visibility;
         $res = $banner->update();
@@ -118,23 +112,14 @@ class BannerController extends Controller
     {
         $banner = Banner::find($id);
         if($banner){
-            if ($banner->image) {
-                $existingImagePath = public_path($banner->image);
-                if (file_exists($existingImagePath)) {
-                    unlink($existingImagePath);
-                }
-            }
             $res = $banner->delete();
             if($res){
                 return back()->with('success','Deleted Successfully');
-                // return response()->json(['success' => 'Banner deleted successfully.']);
             }else{
                 return back()->with('error','Not Deleted');
-                // return response()->json(['error' => 'Banner Not Deleted.']);
             }
         }else{
             return back()->with('error','Not Found');
-            // return response()->json(['error' => 'Banner Not Found.']);
         }
     }
 }

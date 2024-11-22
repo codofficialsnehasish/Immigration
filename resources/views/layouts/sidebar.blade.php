@@ -38,6 +38,13 @@
             </li>
 
             <li>
+                <a href="{{ route('about-us.index') }}" class="">
+                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="menu-title">About Us</div>
+                </a>
+            </li>
+
+            <li>
                 <a href="{{ route('services.index') }}" class="">
                     <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
                     <div class="menu-title">Services</div>
@@ -52,9 +59,16 @@
             </li>
 
             <li>
+                <a href="{{ route('contact.contact-us-index') }}" class="">
+                    <div class="parent-icon"><i class="material-icons-outlined">call</i></div>
+                    <div class="menu-title">Contact Us</div>
+                </a>
+            </li>
+
+            <li>
                 <a href="{{ route('contact.index') }}" class="">
                     <div class="parent-icon"><i class="material-icons-outlined">call</i></div>
-                    <div class="menu-title">Contacts</div>
+                    <div class="menu-title">Enquiry</div>
                 </a>
             </li>
 

@@ -3,91 +3,70 @@
 @section('title', 'Home')
 
 @section('content')
-
-    <!-- banner-style-three -->
-    {{-- <section class="banner-style-three p_relative">
-        <div class="pattern-layer">
-            <!-- <div class="pattern-1" style="background-image: url(assets/images/shape/shape-38.png);"></div>
-            <div class="pattern-2" style="background-image: url(assets/images/shape/shape-39.png);"></div> -->
-            @if(!empty($banner->image))
-            <div class="pattern-3" style="background-image: url({{ asset($banner->image) }});"></div>
-            @else
-            <div class="pattern-3" style="background-image: url({{ asset('assets/site-assets/images/banner/banner-1.jpg') }});"></div>
-            @endif
-        </div>
-        <!-- <figure class="image-layer"><img src="assets/images/banner/banner-img-2.png" alt=""></figure> -->
-        <!-- <div class="auto-container">
-            <div class="content-box">
-                <h2>People Immigration <span>Confidently...</span></h2>
-                <p>MCS has been recruiting and prepping talented professionals for over twenty years. We provide a unique value proposition.</p>
-                <div class="btn-box">
-                    <a href="{{ route('home') }}" class="theme-btn btn-two"><span>View The Categories</span></a>
-                </div>
-            </div> 
-        </div> -->
-    </section> --}}
-    <!-- banner-style-three end -->
     
     
 
-    <!-- banner-style-three -->
-    <!--<section class="banner-style-three p_relative">-->
-    <!--    <div class="pattern-layer">-->
-            <!-- Carousel -->
-    <!--        <div id="demo" class="carousel slide" data-bs-ride="carousel">-->
-                <!-- Indicators/dots -->
-    <!--            <div class="carousel-indicators">-->
-    <!--                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>-->
-    <!--                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>-->
-    <!--                {{-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> --}}-->
-    <!--            </div>-->
+    {{-- 
+        <!-- banner-style-three -->
+        <!--<section class="banner-style-three p_relative">-->
+        <!--    <div class="pattern-layer">-->
+                <!-- Carousel -->
+        <!--        <div id="demo" class="carousel slide" data-bs-ride="carousel">-->
+                    <!-- Indicators/dots -->
+        <!--            <div class="carousel-indicators">-->
+        <!--                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>-->
+        <!--                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>-->
+        <!--                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> -->
+        <!--            </div>-->
 
-                <!-- The slideshow/carousel -->
-    <!--            <div class="carousel-inner">-->
-    <!--                <div class="carousel-item active">-->
-    <!--                    <div class="banner_text">-->
-    <!--                        <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>-->
-    <!--                        <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>-->
-    <!--                        <a href="{{ route('contact') }}" class="theme-btn btn-two">Request a Consultation Today</a>-->
-    <!--                    </div>-->
-    <!--                    <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Los Angeles" class="d-block w-100">-->
-    <!--                </div>-->
+                    <!-- The slideshow/carousel -->
+        <!--            <div class="carousel-inner">-->
+        <!--                <div class="carousel-item active">-->
+        <!--                    <div class="banner_text">-->
+        <!--                        <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>-->
+        <!--                        <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>-->
+        <!--                        <a href="{{ route('contact') }}" class="theme-btn btn-two">Request a Consultation Today</a>-->
+        <!--                    </div>-->
+        <!--                    <img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt="Los Angeles" class="d-block w-100">-->
+        <!--                </div>-->
 
-                  <!--   <div class="carousel-item">
-    <!--                    <div class="banner_text">-->
-    <!--                        <h2>Achieve Your German Dream with Chancenkarte Support </h2>-->
-    <!--                        <p>Let Your Germany Dream Become Reality with Professional Immigration Support Tailored for Chancenkarte Success. </p>-->
-    <!--                        <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>-->
-    <!--                    </div>-->
-    <!--                    <img src="{{ asset('assets/site-assets/images/banner/banner-6.jpg') }}" alt="Chicago" class="d-block w-100">-->
-    <!--                </div> -->-->
-    <!--            </div>-->
+                    <!--   <div class="carousel-item">
+        <!--                    <div class="banner_text">-->
+        <!--                        <h2>Achieve Your German Dream with Chancenkarte Support </h2>-->
+        <!--                        <p>Let Your Germany Dream Become Reality with Professional Immigration Support Tailored for Chancenkarte Success. </p>-->
+        <!--                        <a href="{{ route('contact') }}" class="theme-btn btn-two">Appointment</a>-->
+        <!--                    </div>-->
+        <!--                    <img src="{{ asset('assets/site-assets/images/banner/banner-6.jpg') }}" alt="Chicago" class="d-block w-100">-->
+        <!--                </div> -->-->
+        <!--            </div>-->
 
-                <!-- Left and right controls/icons -->
-               <!--  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <!--                <span class="carousel-control-prev-icon"></span>-->
-    <!--            </button>-->
-    <!--            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">-->
-    <!--                <span class="carousel-control-next-icon"></span>-->
-    <!--            </button> -->-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!-- banner-style-three end -->
+                    <!-- Left and right controls/icons -->
+                <!--  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <!--                <span class="carousel-control-prev-icon"></span>-->
+        <!--            </button>-->
+        <!--            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">-->
+        <!--                <span class="carousel-control-next-icon"></span>-->
+        <!--            </button> -->-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!-- banner-style-three end --> 
+    --}}
 
 
-
-
-<section class="about-section p_relative hrwa sadfwq">
+    <!-- Dynamic by snehasish at 20-11-2024 04:12pm -->
+    <section class="about-section p_relative hrwa sadfwq">
         <div class="pattern-layer"></div>
         <div class="auto-container">
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-12 col-sm-12 image-column">
                     <div class="image_block_one">
                         <div class="image-box p_relative d_block grio_r">
-                            
+                            @if(!empty($banner->image))
+                            <figure class="image image-2"><img src="{{ asset($banner->image) }}" alt=""></figure>
+                            @else
                             <figure class="image image-2"><img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt=""></figure>
-                            
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -95,11 +74,18 @@
                     <div class="content_block_one">
                         <div class="content-box p_relative">
                             <div class="sec-title mb_30">
-                                <!-- <span class="sub-title">About Us</span> -->
+                                @if(!empty($banner->title))
+                                <h2>{{ $banner->title }}</h2>
+                                @else
                                 <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>
+                                @endif
                             </div>
                             <div class="text mb_30">
+                                @if(!empty($banner->description))
+                                <p>{!! $banner->description !!}</p>
+                                @else
                                 <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>
+                                @endif
                             </div>
                             
                             <div class="btn-box">
@@ -111,8 +97,6 @@
             </div>
         </div>
     </section>
-
-
 
 
 
@@ -186,7 +170,7 @@
                                 
                                 
                                 <div class="btn-box">
-                                    <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Learn More about Germany Opportunity Card</span></a>
+                                    <a href="{{ route('blogs-resources.details') }}" class="theme-btn btn-two"><span>Learn More about Germany Opportunity Card</span></a>
                                 </div>
                             </div>
                         </div>

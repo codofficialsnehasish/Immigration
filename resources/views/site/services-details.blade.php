@@ -86,14 +86,15 @@
                             options.</li>
                         <li><b>Email Support: </b>Dedicated support throughout your journey.</li>
                     </ul>
-                    <p style="font-style: italic;font-size: 16px;"><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
+                    <p style="font-style: italic;font-size: 16px;"><i><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
                         high-quality, expert guidance for a confident application.
-                        </p>
-                    <p>Kickstart your Chancenkarte journey with expert assistance.</p>
-                    <p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>
-                    <!--<div class="btn-box">-->
-                    <!--    <a href="javascript:void(0);" class="theme-btn btn-two"><span>Get Started with Expert Guidance</span></a>-->
-                    <!--</div>-->
+                        </i></p>
+                    {{-- <p>Kickstart your Chancenkarte journey with expert assistance.</p> --}}
+                    <!--<p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>-->
+                    <p class="csi"><b>Price:</b> $999 </p>
+                    <div class="btn-box ghse">
+                        <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Get Started with Expert Guidance</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,14 +135,16 @@
                         <li><b>Post-Approval Support: </b>Resources for residency registration and 
                             integration into German society.</li>
                     </ul>
-                    <span><p ><b>Ideal for:</b> Individuals seeking premium, end-to-end support through their 
+                    <span><p ><b>Ideal for:</b> <i>Individuals seeking premium, end-to-end support through their 
                         Chancenkarte application journey and transition to Germany.
-                        </p></span>
-                    <p>Go all-in with premium support to make your move to Germany stress-free.</p>
-                    <p class="csi"><b>Price:</b> $1799 – Your success starts here.</p>
-                    <!--<div class="link-btn dftp">-->
-                    <!--    <a href="javascript:void(0);"><span>Choose Complete Care</span></a>-->
-                    <!--</div>-->
+                        </i></p></span>
+                    {{-- <p>Go all-in with premium support to make your move to Germany stress-free.</p> --}}
+                    <!--<p class="csi"><b>Price:</b> $1799 – Your success starts here.</p>-->
+                    <p class="csi"><b>Price:</b> $1799 </p>
+ 
+                    <div class="btn-box ghse">
+                        <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Choose Complete Care</span></a>
+                    </div>
                 </div>
             </div>
         </div>

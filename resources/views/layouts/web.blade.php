@@ -41,6 +41,8 @@
         <link href="{{ asset('assets/site-assets/css/responsive.css') }}" rel="stylesheet">
         
         @yield('css')
+
+        @livewireStyles
         
     </head>
 
@@ -77,12 +79,14 @@
         <script src="{{ asset('assets/site-assets/js/script.js') }}"></script>
 
         <script src="{{ asset('assets/dashboard_asset/assets/plugins/notifications/js/lobibox.min.js') }}"></script>
-	<script src="{{ asset('assets/dashboard_asset/assets/plugins/notifications/js/notifications.min.js') }}"></script>
-	<script src="{{ asset('assets/dashboard_asset/assets/plugins/notifications/js/notification-custom-script.js') }}"></script>
+        <script src="{{ asset('assets/dashboard_asset/assets/plugins/notifications/js/notifications.min.js') }}"></script>
+        <script src="{{ asset('assets/dashboard_asset/assets/plugins/notifications/js/notification-custom-script.js') }}"></script>
 
         @include('layouts.notification')
 
         @yield('script')
+
+        @livewireScripts
 
     </body>
     <!-- End of .page_wrapper -->

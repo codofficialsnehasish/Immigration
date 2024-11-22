@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactUs;
+use App\Models\ContactInformation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -17,12 +18,28 @@ class ContactUsController extends Controller
         return view('admin.contact-us.index',compact('contacts'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function contact_us_index()
     {
-        //
+        $contact = ContactInformation::findOrFail(1);
+        return view('admin.contact-us.contact-us',compact('contact'));
+    }
+
+    public function create(Request $request)
+    {
+        $contactInformation = ContactInformation::find(1);
+        $contactInformation->title = $request->title;
+        $contactInformation->heading = $request->heading;
+        $contactInformation->description = $request->description;
+        $contactInformation->form_title = $request->form_title;
+        $contactInformation->form_heading = $request->form_heading;
+        $contactInformation->form_description = $request->form_description;
+        $res = $contactInformation->update();
+
+        if($res){
+            return back()->with('success','Data Stored Successfully');
+        }else{
+            return back()->with('error','Failed, Please try again');
+        }
     }
 
     /**
@@ -46,6 +63,9 @@ class ContactUsController extends Controller
         $contact->email = $request->email;
         $contact->phone = $request->phone;
         $contact->subject = $request->subject;
+        if ($request->hasFile('file')) {
+            $contact->addMedia($request->file('file'))->toMediaCollection();
+        }
         $contact->message = $request->message;
         $res = $contact->save();
         if($res){

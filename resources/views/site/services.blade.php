@@ -124,7 +124,8 @@
                                 high-quality, expert guidance for a confident application.
                                 </p>
                             <!--<p>Kickstart your Chancenkarte journey with expert assistance.</p>-->
-                            <p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>
+                            <!--<p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>-->
+                            <p class="csi"><b>Price:</b> $999 </p>
                             <div class="link-btn dftp">
                                 <a href="{{ route('service.details',1) }}"><span>Read More</span></a>
                             </div>
@@ -159,7 +160,8 @@
                                 Chancenkarte application journey and transition to Germany.
                                 </p>
                             <!--<p>Go all-in with premium support to make your move to Germany stress-free.</p>-->
-                            <p class="csi"><b>Price:</b> $1799 – Your success starts here.</p>
+                            <!--<p class="csi"><b>Price:</b> $1799 – Your success starts here.</p>-->
+                             <p class="csi"><b>Price:</b> $1799 </p>
                             <div class="link-btn dftp">
                                 <a href="{{ route('service.details',2) }}"><span>Read More</span></a>
                             </div>

@@ -4129,7 +4129,8 @@ img {
   -op-animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  background: #C0C0C0;
+  background: #ffffff;
+  box-shadow: 0px 0px 9px 0px #2b47778a;
 }
 
 
@@ -4460,7 +4461,7 @@ img {
   -o-transition:all 500ms ease;
   transition:all 500ms ease;
   /* text-transform: uppercase; */
-  border: 1px solid #c0c0c0;
+  border: 1px solid #ffffff;
 }
 
 .main-menu .navigation > li.current > a,
@@ -5580,7 +5581,9 @@ div#mCSB_1_container{
   position: absolute;
   left: 0px;
   width: 100%;
-  background: #C0C0C0;
+  background: #ffffff;
+  /* border-bottom: 2px solid #2b4777; */
+  box-shadow: 0px 0px 9px 0px #2b47778a;
 }
 
 .main-footer.style-three .widget-section{
@@ -6938,6 +6941,7 @@ section.about-section.p_relative.hrwa {
 .res_m ul li {
     color: #fff;
     text-align: justify;
+    list-style: disc;
 }
 
 .res_m {
@@ -6955,7 +6959,7 @@ section.about-section.p_relative.hrwa {
 }
 
 .res_m ul li p {
-    text-align: left !important;!i;!;
+    text-align: justify !important;!i;!;
     padding-bottom: 10px;
 }
 
@@ -6986,5 +6990,8 @@ p.csi {
     margin-top: 18px !important;
 }
 
-
+.ghse a {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
 

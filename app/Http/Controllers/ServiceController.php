@@ -23,13 +23,17 @@ class ServiceController extends Controller
         $service = new Service();
         $service->name = $request->name;
         $service->description = $request->description;
+        $service->price = $request->price;
         if ($request->hasFile('image')) {
-            $img = $request->file('image');
-            $filename = time(). '_' .$img->getClientOriginalName();
-            $directory = public_path('web-directory/services');
-            $img->move($directory, $filename);
-            $filePath = "web-directory/services/".$filename;
-            $service->image = $filePath;
+            /*
+                $img = $request->file('image');
+                $filename = time(). '_' .$img->getClientOriginalName();
+                $directory = public_path('web-directory/services');
+                $img->move($directory, $filename);
+                $filePath = "web-directory/services/".$filename;
+                $service->image = $filePath;
+            */
+            $service->addMedia($request->file('image'))->toMediaCollection();
         }
         $service->visibility = $request->visibility;
         $res = $service->save();
@@ -59,19 +63,23 @@ class ServiceController extends Controller
         $service = Service::find($id);
         $service->name = $request->name;
         $service->description = $request->description;
+        $service->price = $request->price;
         if ($request->hasFile('image')) {
-            if ($service->image) {
-                $existingImagePath = public_path($service->image);
-                if (file_exists($existingImagePath)) {
-                    unlink($existingImagePath);
+            /*  if ($service->image) {
+                    $existingImagePath = public_path($service->image);
+                    if (file_exists($existingImagePath)) {
+                        unlink($existingImagePath);
+                    }
                 }
-            }
-            $img = $request->file('image');
-            $filename = time(). '_' .$img->getClientOriginalName();
-            $directory = public_path('web-directory/services');
-            $img->move($directory, $filename);
-            $filePath = "web-directory/services/".$filename;
-            $service->image = $filePath;
+                $img = $request->file('image');
+                $filename = time(). '_' .$img->getClientOriginalName();
+                $directory = public_path('web-directory/services');
+                $img->move($directory, $filename);
+                $filePath = "web-directory/services/".$filename;
+                $service->image = $filePath;
+            */
+            $service->clearMediaCollection();
+            $service->addMedia($request->file('image'))->toMediaCollection();
         }
         $service->visibility = $request->visibility;
         $res = $service->update();
@@ -89,12 +97,12 @@ class ServiceController extends Controller
     {
         $service = Service::find($id);
         if($service){
-            if ($service->image) {
+            /*if ($service->image) {
                 $existingImagePath = public_path($service->image);
                 if (file_exists($existingImagePath)) {
                     unlink($existingImagePath);
                 }
-            }
+            }*/
             $res = $service->delete();
             if($res){
                 return back()->with('success','Deleted Successfully');

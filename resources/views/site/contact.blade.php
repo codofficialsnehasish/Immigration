@@ -35,16 +35,11 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column ghj">
                     <div class="content-box">
                         <div class="sec-title mb_30">
-                            <span class="sub-title">Quick Contact</span>
-                            <h2>Have Questions? <br>Get in Touch with Us!</h2>
+                            <span class="sub-title">{{ $content->title }}</span>
+                            <h2>{!! $content->heading !!}</h2>
                         </div>
                         <div class="text mb_30">
-                            <p>The <strong>Chancenkarte</strong>, also known as the <strong>Opportunity Card</strong>, connects skilled 
-                                professionals with German employers seeking talent. Whether you are looking to 
-                                launch your career or take the next step in Germany, we are here to guide you 
-                                every step of the way. Don’t hesitate to reach out – we’re here to provide the 
-                                clarity and guidance you need.
-                                </p>
+                            {!! $content->description !!}
                         </div>
                         {{-- <div class="location-box pb_40 mb_110">
                             <div class="icon-box"><i class="icon-61"></i></div>
@@ -88,11 +83,11 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 form-column ghj2">
                     <div class="form-inner">
                         <div class="sec-title mb_40">
-                            <span class="sub-title">Let’s Connect</span>
-                            <h2>Send Your Message</h2>
-                            <p>Talk to us today to evaluate your eligibility and make an informed decision.</p>
+                            <span class="sub-title">{{ $content->form_title }}</span>
+                            <h2>{{ $content->form_heading }}</h2>
+                            <p>{!! $content->form_description !!}</p>
                         </div>
-                        <form method="post" action="{{ route('contact.store') }}" id="contact-form" novalidate="novalidate"> 
+                        <form method="post" action="{{ route('contact.store') }}" id="contact-form" novalidate="novalidate" enctype="multipart/form-data"> 
                             @csrf
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -109,7 +104,7 @@
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                <input class="form-control form-control-lg" id="formFileLg" type="file" name="file" />
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -129,6 +124,10 @@
                                 </div>
                             </div>
                         </form>
+
+                        {{-- <livewire:contactus-component /> --}}
+                        {{-- <livewire:test-component /> --}}
+                        {{-- @livewire('contactus_component') --}}
                     </div>
                 </div>
             </div>

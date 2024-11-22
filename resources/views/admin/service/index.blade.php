@@ -38,6 +38,7 @@
                                     <th class="text-wrap">Sl. No.</th>
                                     <th class="text-wrap">Name</th>
                                     <th class="text-wrap">Description</th>
+                                    <th class="text-wrap">Price</th>
                                     <th class="text-wrap">Image</th>
                                     <th class="text-wrap">Visibility</th>
                                     <th class="text-wrap">Created At</th>
@@ -51,7 +52,8 @@
                                             <td class="text-wrap">{{ $loop->iteration }}</td>
                                             <td class="text-wrap">{{ $item->name }}</td>
                                             <td class="text-wrap">{!! $item->description !!}</td>
-                                            <td class="text-wrap"><img class="img-thumbnail rounded me-2" src="{{ asset($item->image) }}" width="200" alt=""></td>
+                                            <td class="text-wrap">{{ $item->price }}</td>
+                                            <td class="text-wrap"><img class="img-thumbnail rounded me-2" src="{{ $item->getFirstMediaUrl() }}" width="200" alt=""></td>
                                             <td>{!! check_visibility($item->visibility) !!}</td>
                                             <td class="text-wrap">{{ \Carbon\Carbon::parse($item->created_at)->format('M d, Y h:i A') }}</td>
                                             <td>
@@ -91,11 +93,20 @@
                     <form action="{{ route('services.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="service-name" class="form-label">Service Name</label>
-                            <input type="text" name="name" class="form-control" id="service-name" placeholder="Enter Service Name" required="">
-                            <div class="valid-tooltip">
-                                Looks good!
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <label for="service-name" class="form-label">Service Name</label>
+                                <input type="text" name="name" class="form-control" id="service-name" placeholder="Enter Service Name" required="">
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="service-price" class="form-label">Service Price</label>
+                                <input type="number" name="price" class="form-control" value="" id="service-price" placeholder="Enter Service Price" required="" step="0.01">
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -148,11 +159,20 @@
                     @csrf
                     @method('PUT')
                     <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="service-name" class="form-label">Service Name</label>
-                            <input type="text" name="name" class="form-control" value="{{ $service->name }}" id="service-name" placeholder="Enter Service Name" required="">
-                            <div class="valid-tooltip">
-                                Looks good!
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <label for="service-name" class="form-label">Service Name</label>
+                                <input type="text" name="name" class="form-control" value="{{ $service->name }}" id="service-name" placeholder="Enter Service Name" required="">
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="service-price" class="form-label">Service Price</label>
+                                <input type="number" name="price" class="form-control" value="{{ $service->price }}" id="service-price" placeholder="Enter Service Price" required="" step="0.01">
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -164,7 +184,7 @@
                         </div>
                         <div>
                             <div class="mb-3">
-                                <img class="img-thumbnail rounded me-2" id="blahedit" alt="" width="200" src="{{ asset($service->image) }}" data-holder-rendered="true" style="display: {{ !empty($item->image) ? 'block' : 'none' }};">
+                                <img class="img-thumbnail rounded me-2" id="blahedit" alt="" width="200" src="{{ $item->getFirstMediaUrl() }}" data-holder-rendered="true" style="display: {{ is_have_image($item->getFirstMediaUrl()) }};">
                             </div>
                             <div class="mb-3">
                                 <label for="imgInpedit" class="form-label">Service Image</label>

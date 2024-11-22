@@ -18,9 +18,9 @@
                     </ol>
                 </nav>
             </div>
-            <div class="ms-auto">
+            {{-- <div class="ms-auto">
                 <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-plus-lg me-2"></i>Add New</button>
-            </div>
+            </div> --}}
         </div>
         <!--end breadcrumb-->
 
@@ -28,14 +28,15 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table id="example2" class="table table-striped table-bordered">
+                        <table class="table table-striped table-bordered">
                             <thead>
                                 <tr>
-                                    <th class="text-wrap">Sl. No.</th>
+                                    {{-- <th class="text-wrap">Sl. No.</th> --}}
                                     <th class="text-wrap">Title</th>
+                                    <th class="text-wrap">Description</th>
                                     <th class="text-wrap">Image</th>
-                                    <th class="text-wrap">Visibility</th>
-                                    <th class="text-wrap">Created At</th>
+                                    <th>Visibility</th>
+                                    <th class="text-wrap">Last Updated</th>
                                     <th class="text-wrap">Action</th>
                                 </tr>
                             </thead>
@@ -43,21 +44,22 @@
                                 @if ($banners->isNotEmpty())
                                     @foreach ($banners as $item)
                                         <tr>
-                                            <td class="text-wrap">{{ $loop->iteration }}</td>
+                                            {{-- <td class="text-wrap">{{ $loop->iteration }}</td> --}}
                                             <td class="text-wrap">{{ $item->title }}</td>
-                                            <td class="text-wrap"><img class="img-thumbnail rounded me-2" src="{{ asset($item->image) }}" width="200" alt=""></td>
-                                            <td class="text-wrap">{!! check_visibility($item->visibility) !!}</td>
-                                            <td class="text-wrap">{{ format_datetime($item->created_at) }}</td>
+                                            <td class="text-wrap">{!! $item->description !!}</td>
+                                            <td class="text-wrap"><img class="img-thumbnail rounded me-2" src="{{ $item->getFirstMediaUrl() }}" width="200" alt=""></td>
+                                            <td>{!! check_visibility($item->visibility) !!}</td>
+                                            <td class="text-wrap">{{ format_datetime($item->updated_at) }}</td>
                                             <td>
                                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdropedit{{ $item->id }}" style="margin-right: 10px;"> 
                                                     <i class="text-primary" data-feather="edit"></i>
                                                 </button>
 
-                                                <form action="{{ route('banner.destroy', $item->id) }}" onsubmit="return confirm('Are you sure?')" method="POST" style="display:inline;">
+                                                {{-- <form action="{{ route('banner.destroy', $item->id) }}" onsubmit="return confirm('Are you sure?')" method="POST" style="display:inline;">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn" type="submit"><i class="text-danger" data-feather="trash-2"></i></button>
-                                                </form>
+                                                </form> --}}
                                             </td>
                                         </tr>
                                     @endforeach
@@ -73,6 +75,9 @@
             </div>
         </div>
 
+
+
+        <!-- Add Banner Modal -->
         <div class="modal fade modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -89,6 +94,10 @@
                             <div class="valid-tooltip">
                                 Looks good!
                             </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea name="description" class="form-control editor" id="description" placeholder="Enter Description"></textarea>
                         </div>
                         <div>
                             <div class="mb-3">
@@ -140,9 +149,13 @@
                                 Looks good!
                             </div>
                         </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea name="description" class="form-control editor" id="description" placeholder="Enter Description">{{ $banner->description }}</textarea>
+                        </div>
                         <div>
                             <div class="mb-3">
-                                <img class="img-thumbnail rounded me-2" id="blahedit{{ $banner->id }}" alt="" width="200" src="{{ asset($banner->image) }}" data-holder-rendered="true" style="display: {{ !empty($banner->image) ? 'block' : 'none' }};">
+                                <img class="img-thumbnail rounded me-2" id="blahedit{{ $banner->id }}" alt="" width="200" src="{{ $item->getFirstMediaUrl() }}" data-holder-rendered="true" style="display: {{ is_have_image($item->getFirstMediaUrl()) }};">
                             </div>
                             <div class="mb-3">
                                 <label for="imgInpedit{{ $banner->id }}" class="form-label">Image</label>
@@ -152,12 +165,12 @@
                         <div class="mb-3">
                             <label class="form-label mb-3 d-flex">Visibility</label>
                             <div class="form-check form-check-inline">
-                                <input type="radio" id="customRadioInline1" name="visibility" class="form-check-input" value="1"  {{ check_uncheck($banner->visibility,1) }}>
-                                <label class="form-check-label" for="customRadioInline1">Visible</label>
+                                <input type="radio" id="banner-visible" name="visibility" class="form-check-input" value="1"  {{ check_uncheck($banner->visibility,1) }}>
+                                <label class="form-check-label" for="banner-visible">Visible</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input type="radio" id="customRadioInline2" name="visibility" class="form-check-input" value="0" {{ check_uncheck($banner->visibility,0) }}>
-                                <label class="form-check-label" for="customRadioInline2">Invisible</label>
+                                <input type="radio" id="banner-invisible" name="visibility" class="form-check-input" value="0" {{ check_uncheck($banner->visibility,0) }}>
+                                <label class="form-check-label" for="banner-invisible">Invisible</label>
                             </div>
                         </div>
                     </div>
