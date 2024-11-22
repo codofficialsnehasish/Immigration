@@ -33,7 +33,26 @@
             <div class="row clearfix">
                 <div class="col-lg-8 col-md-12 col-sm-12 content-side">
                     <div class="blog-standard-content">
+
+                        @foreach($blogs as $blog)
                         <div class="news-block-one">
+                            <div class="inner-box">
+                                <figure class="image-box"><a href="{{ route('blogs-resources.details',$blog->slug) }}"><img src="{{ $blog->getFirstMediaUrl() }}" alt=""></a></figure>
+                                <div class="lower-content">
+                                    <ul class="post-info clearfix">
+                                        <li><i class="icon-27"></i><a href="{{ route('blogs-resources.details',$blog->slug) }}">{{ $blog->author_name }}</a></li>
+                                        <li><i class="icon-56"></i>{{ format_datetime($blog->created_at) }} </li>
+                                    </ul>
+                                    <h3><a href="{{ route('blogs-resources.details',$blog->slug) }}">{{ $blog->title }}</a></h3>
+                                    {!! $blog->short_content !!}
+                                    <div class="link-btn">
+                                        <a href="{{ route('blogs-resources.details',$blog->slug) }}"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                        {{-- <div class="news-block-one">
                             <div class="inner-box">
                                 <figure class="image-box"><a href="{{ route('blogs-resources.details') }}"><img src="{{ asset('assets/site-assets/images/news/news-7.jpg') }}" alt=""></a></figure>
                                 <div class="lower-content">
@@ -57,7 +76,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         {{-- <div class="news-block-one">
                             <div class="inner-box">
                                 <figure class="image-box"><a href="{{ route('blogs-resources.details') }}"><img src="{{ asset('assets/site-assets/images/news/news-8.jpg') }}" alt=""></a></figure>
@@ -111,7 +130,7 @@
                                 <h3>Search</h3>
                             </div>
                             <div class="search-form">
-                                <form action="blog.html" method="post">
+                                <form action="">
                                     <div class="form-group">
                                         <input type="search" name="search-field" placeholder="Keyword ..." required>
                                         <button type="submit"><i class="icon-8"></i></button>

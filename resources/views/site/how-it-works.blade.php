@@ -42,111 +42,24 @@
                 <div class="col-lg-8 col-md-8 col-sm-12 chooseus-block">
                     
                     
-                    
+                    @foreach($how_it_works as $how_it_work)
                     <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        
-                        <div class="inner-box">
-                             <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-1.png') }}" alt=""></div>
-                            </div>
-                             <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
-                            <h3><a href="javascript:void(0);">Consultation & Eligibility Check</a></h3>
-                            <p>Begin with a personalized assessment to confirm your Chancenkarte
-                                eligibility based on Germany’s criteria, ensuring you’re aligned for 
-                                success.</p>
-
-
-                             
-                           <!--   <div class="btn-box ddew">
-                               <a href="javascript:void(0);" class="theme-btn btn-one"><span>Check Your Eligibility Now</span></a>
-                            </div>
- -->
-
-
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                    
-                          <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="inner-box">
                             <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-2.png') }}" alt=""></div>
-                            </div>
-                             <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
-                            <h3><a href="javascript:void(0);">Document Preparation & Verification</a></h3>
-                            <p>Receive a custom document checklist and expert guidance on Anabin and 
-                                ZAB qualification verification, ensuring your credentials meet German 
-                                standards.</p>
-                            {{-- <div class="link-btn">
-                                <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
-                            </div> --}}
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                     <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                             <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-3.png') }}" alt=""></div>
+                                <div class="icon-box d-flex justify-content-center">
+                                    <img src="{{ $how_it_work->getFirstMediaUrl() }}" alt="">
+                                </div>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
-                            <h3><a href="javascript:void(0);">Profile Enhancement</a></h3>
-                            <p>Refine your CV and LinkedIn profile with our experts, helping you stand 
-                                out in Germany’s job market.</p>
-                            {{-- <div class="link-btn">
-                                <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
-                            </div> --}}
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    
-                     <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-4.png') }}" alt=""></div></div>
-                            <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
-                            <h3><a href="javascript:void(0);">Application Submission</a></h3>
-                            <p>We’ll assist in submitting your application with complete compliance for 
-                                the best possible outcome.
-                                </p>
-                            {{-- <div class="link-btn">
-                                <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
-                            </div> --}}
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                     <div class="chooseus-block-one wow fadeInUp animated fg" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="col-lg-2 col-md-2 col-sm-12 chooseus-block">
-                            <div class="icon-box d-flex justify-content-center"><img src="{{ asset('assets/site-assets/images/icons/new-site-icon/icon-5.png') }}" alt=""></div>
+                                <h3><a href="javascript:void(0);">{{ $how_it_work->title }}</a></h3>
+                                <p>{!! $how_it_work->description !!}</p>
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-12 chooseus-block">
-                            <h3><a href="javascript:void(0);">Post-Approval Support</a></h3>
-                            <p>Benefit from resources to support your transition, including guidance on 
-                                local registration and integration into German society.</p>
-                            {{-- <div class="link-btn">
-                                <a href="javascript:void(0);"><span>Read More</span><i class="icon-9"></i></a>
-                            </div> --}}
-                        </div>
                         </div>
                     </div>
-                    
+                    @endforeach
                 </div>
-            
-                </div>
-               
-
             </div>
+        </div>
             
             
             

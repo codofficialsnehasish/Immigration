@@ -23,6 +23,7 @@ class ServiceController extends Controller
         $service = new Service();
         $service->name = $request->name;
         $service->description = $request->description;
+        $service->long_description = $request->longs_description;
         $service->price = $request->price;
         if ($request->hasFile('image')) {
             /*
@@ -63,6 +64,7 @@ class ServiceController extends Controller
         $service = Service::find($id);
         $service->name = $request->name;
         $service->description = $request->description;
+        $service->long_description = $request->long_description;
         $service->price = $request->price;
         if ($request->hasFile('image')) {
             /*  if ($service->image) {

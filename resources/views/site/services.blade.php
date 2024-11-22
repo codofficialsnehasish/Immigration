@@ -78,27 +78,29 @@
                     Opportunities in Germany and Build a Successful Career.</p>
             </div>
             <div class="">
-                {{-- @foreach($services as $service)
-                <div class="visa-block-one">
+                
+                @foreach($services as $service)
+                <div class="visa-block-one frews">
                     <div class="inner-box">
-                        <figure class="image-box"><img src="{{ asset($service->image) }}" alt=""></figure>
+                        <figure class="image-box"><img src="{{ $service->getFirstMediaUrl() }}" alt=""></figure>
                         <div class="lower-content">
-                            <div class="icon-box"><i class="icon-12"></i></div>
                             <h3><a href="{{ route('service.details',$service->id) }}">{{ $service->name }}</a></h3>
                             {!! $service->description !!}
+                            <!--<p>Kickstart your Chancenkarte journey with expert assistance.</p>-->
+                            <!--<p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>-->
+                            <p class="csi"><b>Price:</b> ${{ $service->price }} </p>
                             <div class="link-btn dftp">
                                 <a href="{{ route('service.details',$service->id) }}"><span>Read More</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                @endforeach --}}
+                @endforeach
 
-                <div class="visa-block-one frews">
+                {{-- <div class="visa-block-one frews">
                     <div class="inner-box">
                         <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-1.png') }}" alt=""></figure>
                         <div class="lower-content">
-                            {{-- <div class="icon-box"><i class="icon-12"></i></div> --}}
                             <h3><a href="">Essential Chancenkarte Guidance</a></h3>
                             <p>Our "Essential Chancenkarte Guidance" package offers all the foundational support you need to develop a strong visa application.</p>
                             <ul class="list-style-one clearfix">
@@ -137,7 +139,6 @@
                     <div class="inner-box">
                         <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-2.png') }}" alt=""></figure>
                         <div class="lower-content">
-                            {{-- <div class="icon-box"><i class="icon-12"></i></div> --}}
                             <h3><a href="">Comprehensive Chancenkarte Concierge</a></h3>
                             <p>For those looking for an end-to-end solution, our “Comprehensive Chancenkarte 
                                 Concierge” package offers exhaustive assistance at every stage of the process.</p>
@@ -167,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
         </div>

@@ -31,6 +31,20 @@
             </li>
 
             <li>
+                <a href="{{ route('how-it-work.index') }}" class="">
+                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="menu-title">How It Works</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('blogs.index') }}" class="">
+                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="menu-title">Blogs</div>
+                </a>
+            </li>
+
+            <li>
                 <a href="{{ route('testimonials.index') }}" class="">
                     <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
                     <div class="menu-title">Testimonials</div>

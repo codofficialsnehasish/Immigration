@@ -10,28 +10,31 @@ use App\Http\Controllers\{
     LegalInformationController,
     FaqControllers,
     AboutUsController,
+    HowItWorksController,
+    BlogController
 };
 
 use App\Http\Controllers\Site\{
     ServicesController,
-    AboutUs,
+    AboutUss,
     HomeController,
     LegalInfo,
     BlogResources,
     FAQController,
     ContactUs,
+    HowItWork,
 };
 
 use Illuminate\Support\Facades\Route;
 
+
+// ================================= Site Routes ===============================
+
 Route::get('/',[HomeController::class,'index'])->name('home');
 
-Route::get('/how-it-works', function () {
-    return view('site.how-it-works');
-})->name('how-it-works');
+Route::get('how-it-works',[HowItWork::class,'index'])->name('how-it-works');
 
-
-Route::get('about',[AboutUs::class,'index'])->name('about');
+Route::get('about',[AboutUss::class,'index'])->name('about');
 
 
 Route::get('service',[ServicesController::class,'index'])->name('service');
@@ -47,11 +50,15 @@ Route::controller(LegalInfo::class)->group( function() {
 
 Route::controller(BlogResources::class)->group( function() {
     Route::get('blogs-resources','index')->name('blogs-resources.index');
-    Route::get('blogs-details','blog_details')->name('blogs-resources.details');
+    Route::get('blogs-details/{slug?}','blog_details')->name('blogs-resources.details');
 });
 
 Route::get('faq',[FAQController::class,'index'])->name('faq');
 Route::get('contact-us',[ContactUs::class,'index'])->name('contact');
+
+
+
+// ========================================= Admin Routes ===============================
 
 Route::get('/dashboard', function () {
     return view('site.user-dashboard.dashboard');
@@ -81,6 +88,8 @@ Route::middleware(['auth:admin', 'verified'])->group(function () {
     Route::resource('legal-information',LegalInformationController::class);
     Route::resource('faqs',FaqControllers::class);
     Route::resource('about-us',AboutUsController::class);
+    Route::resource('how-it-work',HowItWorksController::class);
+    Route::resource('blogs',BlogController::class);
 });
 
 require __DIR__.'/auth.php';

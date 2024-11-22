@@ -15,9 +15,13 @@ class BlogResources extends Controller
         return view('site.blog_resources',compact('blogs'));
     }
 
-    public function blog_details(string $id = null)
+    public function blog_details(Request $request)
     {
-        $blog = Blog::find($id);
-        return view('site.blog-details',compact('blog'));
+        $blog = Blog::where('slug',$request->slug)->first();
+        if($blog){
+            return view('site.blog-details',compact('blog'));
+        }else{
+            return back()->with('error','Not found any blog');
+        }
     }
 }

@@ -7,59 +7,86 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $blogs = Blog::all();
+        return view('admin.blogs.index',compact('blogs'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        return view('admin.blogs.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $blog = new Blog();
+        $blog->title = $request->title;
+        $blog->content = $request->content;
+        $blog->short_content = $request->short_content;
+        $blog->slug = createSlug($request->title,Blog::class);
+        $blog->author_name = 'Admin';
+        if ($request->hasFile('image')) {
+            $blog->addMedia($request->file('image'))->toMediaCollection();
+        }
+        $blog->is_visible = $request->is_visible;
+        $res = $blog->save();
+
+        if($res){
+            return back()->with('success','Created Successfully');
+        }else{
+            return back()->with('success','Not Created');
+        }
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Blog $blog)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Blog $blog)
+    public function edit(string $id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+        return view('admin.blogs.edit',compact('blog'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Blog $blog)
+    public function update(Request $request, string $id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+        $blog->title = $request->title;
+        $blog->content = $request->content;
+        $blog->short_content = $request->short_content;
+        if($blog->title !== $request->title){
+            return 'changed';
+            $blog->slug = createSlug($request->title,Blog::class);
+        }
+        $blog->author_name = 'Admin';
+        if ($request->hasFile('image')) {
+            $blog->clearMediaCollection();
+            $blog->addMedia($request->file('image'))->toMediaCollection();
+        }
+        $blog->is_visible = $request->is_visible;
+        $res = $blog->update();
+
+        if($res){
+            return back()->with('success','Updated Successfully');
+        }else{
+            return back()->with('success','Not Updated');
+        }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Blog $blog)
+    public function destroy(string $id)
     {
-        //
+        $blog = Blog::findOrFail($id);
+        if($blog){
+            $res = $blog->delete();
+            if($res){
+                return back()->with('success','Deleted Successfully');
+            }else{
+                return back()->with('error','Not Deleted');
+            }
+        }else{
+            return back()->with('error','Not Found');
+        }
     }
 }

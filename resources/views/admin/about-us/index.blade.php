@@ -42,7 +42,7 @@
                                 </div>
                                 <div>
                                     <div class="mb-3">
-                                        <img class="img-thumbnail rounded me-2" id="blah" alt="" width="200" src="" data-holder-rendered="true" style="display: none;">
+                                        <img class="img-thumbnail rounded me-2" id="blah" alt="" width="200" src="{{ $about->getFirstMediaUrl() }}" data-holder-rendered="true" style="display: {{ is_have_image($about->getFirstMediaUrl()) }};">
                                     </div>
                                     <div class="mb-3">
                                         <label for="imgInp" class="form-label">Image</label>
