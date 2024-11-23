@@ -2,11 +2,12 @@
 <aside class="sidebar-wrapper" data-simplebar="true">
 
     <div class="sidebar-header">
-        <div class="logo-icon">
-            <img src="{{ asset('dashboard_asset/assets/images/logo-icon.png') }}" class="logo-img" alt="">
-        </div>
-        <div class="logo-name flex-grow-1">
-            <h5 class="mb-0">{{ config('app.name') }}</h5>
+        {{-- <div class="logo-icon">
+            <img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" class="logo-img" alt="">
+        </div> --}}
+        <div class="logo-name flex-grow-1 text-center">
+            {{-- <h5 class="mb-0">{{ config('app.name') }}</h5> --}}
+            <img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" class="logo-img" alt="" style="width: 116px !important;">
         </div>
         <div class="sidebar-close">
             <span class="material-icons-outlined">close</span>

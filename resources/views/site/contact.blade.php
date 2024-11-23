@@ -41,43 +41,6 @@
                         <div class="text mb_30">
                             {!! $content->description !!}
                         </div>
-                        {{-- <div class="location-box pb_40 mb_110">
-                            <div class="icon-box"><i class="icon-61"></i></div>
-                            <h3>Location</h3>
-                            <p>141, First Floor, 12 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
-                        </div> 
-                        <div class="inner-box">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                    <div class="single-item">
-                                        <div class="icon-box"><i class="icon-62"></i></div>
-                                        <h3>Quick Contact</h3>
-                                        <ul class="info-list clearfix">
-                                            <li>
-                                                <h5>Phone:</h5>
-                                                <p><a href="tel:18963648018">+1 89-636-48018</a></p>
-                                            </li>
-                                            <li>
-                                                <h5>Email:</h5>
-                                                <p><a href="mailto:yourmail@info.com">yourmail@info.com</a></p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                                    <div class="single-item">
-                                        <div class="icon-box"><i class="icon-63"></i></div>
-                                        <h3>Opening Hrs</h3>
-                                        <ul class="info-list clearfix">
-                                            <li>
-                                                <h5>Mon - Friday:</h5>
-                                                <p>09.00 am to 07.00 pm</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>--}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 form-column ghj2">
@@ -104,13 +67,14 @@
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <input class="form-control form-control-lg" id="formFileLg" type="file" name="file" />
+                                    <input class="form-control form-control-lg" id="formFileLg" type="file" name="file"/>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <textarea name="message" placeholder="Your message here">{{ old('message') }}</textarea>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+
+                                {{-- <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <div class="custom-controls-stacked pb_20">
                                         <label class="custom-control material-checkbox">
                                             <input type="checkbox" class="material-control-input">
@@ -118,16 +82,13 @@
                                             <span class="description">Save my name, email, and website in this browser for the next time I comment.</span>
                                         </label>
                                     </div>
-                                </div>
+                                </div> --}}
+
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                    <button type="submit" class="theme-btn btn-two" name="submit-form"><span>Message</span></button>
+                                    <button type="submit" class="theme-btn btn-two" name="submit-form"><span>Send Message</span></button>
                                 </div>
                             </div>
                         </form>
-
-                        {{-- <livewire:contactus-component /> --}}
-                        {{-- <livewire:test-component /> --}}
-                        {{-- @livewire('contactus_component') --}}
                     </div>
                 </div>
             </div>

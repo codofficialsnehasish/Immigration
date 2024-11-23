@@ -41,8 +41,6 @@
         <link href="{{ asset('assets/site-assets/css/responsive.css') }}" rel="stylesheet">
         
         @yield('css')
-
-        @livewireStyles
         
     </head>
 
@@ -85,8 +83,6 @@
         @include('layouts.notification')
 
         @yield('script')
-
-        @livewireScripts
 
     </body>
     <!-- End of .page_wrapper -->

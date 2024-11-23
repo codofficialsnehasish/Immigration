@@ -47,29 +47,9 @@
     </section> --}}
     <!-- visa-section end -->
 
-
-    <section class="visa-section sec-pad">
-        <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-5.png') }});"></div>
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-md-4">
-                    <figure class="image-box"><img src="{{ $service->getFirstMediaUrl() }}" alt=""></figure>
-                </div>
-                <div class="col-md-8 yter">
-                    <h2><b>{{ $service->name }}</b></h2>
-                    {!! $service->long_description !!}
-                    <p class="csi"><b>Price:</b> ${{ $service->price }} </p>
-                    <div class="btn-box ghse">
-                        <a href="{{ route('contact') }}" class="theme-btn btn-two"><span>Get Started with Expert Guidance</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     
 
-    {{-- @if($id == 1)
+    @if($id == 1)
 
     <section class="visa-section sec-pad">
         <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-5.png') }});"></div>
@@ -109,7 +89,7 @@
                     <p style="font-style: italic;font-size: 16px;"><i><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
                         high-quality, expert guidance for a confident application.
                         </i></p>
-                    <!-- <p>Kickstart your Chancenkarte journey with expert assistance.</p> -->
+                    {{-- <p>Kickstart your Chancenkarte journey with expert assistance.</p> --}}
                     <!--<p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>-->
                     <p class="csi"><b>Price:</b> $999 </p>
                     <div class="btn-box ghse">
@@ -141,8 +121,8 @@
                         by our immigration specialists to maximize your Chancenkarte potential.
                     </p>
                     <ul class="list-style-one clearfix">
-                        <!-- <li> <b>Eligibility Optimization: </b> Personalized strategies designed by our 
-                            immigration specialists to maximize your Chancenkarte potential.</li> -->
+                        {{-- <li> <b>Eligibility Optimization: </b> Personalized strategies designed by our 
+                            immigration specialists to maximize your Chancenkarte potential.</li> --}}
                         <li><b>Anabin, ZAB, and Vocational Qualification Recognition: </b>Comprehensive support for accurate qualification recognition.</li>
                         <li><b>Federal Employment Agency Registration: </b>Assistance with 
                             Bundesagentur für Arbeit registration for employment readiness.</li>
@@ -158,7 +138,7 @@
                     <span><p ><b>Ideal for:</b> <i>Individuals seeking premium, end-to-end support through their 
                         Chancenkarte application journey and transition to Germany.
                         </i></p></span>
-                    <!-- <p>Go all-in with premium support to make your move to Germany stress-free.</p> -->
+                    {{-- <p>Go all-in with premium support to make your move to Germany stress-free.</p> --}}
                     <!--<p class="csi"><b>Price:</b> $1799 – Your success starts here.</p>-->
                     <p class="csi"><b>Price:</b> $1799 </p>
  
@@ -169,6 +149,6 @@
             </div>
         </div>
     </section>
-    @endif  --}}
+    @endif 
     
 @endsection
