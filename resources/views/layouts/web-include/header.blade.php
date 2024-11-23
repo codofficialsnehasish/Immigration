@@ -120,7 +120,7 @@
                                 <li @if(request()->segment(1) == 'about') class="active" @endif><a href="{{ route('about') }}">About Us</a></li> 
                                 <li @if(request()->segment(1) == 'how-it-works') class="active" @endif><a href="{{ route('how-it-works') }}">How It Works</a></li> 
                                 <li @if(request()->segment(1) == 'service') class="active" @endif><a href="{{ route('service') }}">Our Services</a></li> 
-                                <li @if(request()->segment(1) == 'blogs-resources') class="active" @endif><a href="{{ route('blogs-resources.index') }}">Blog & Resources</a></li> 
+                                <li @if(request()->segment(1) == 'blogs-resources' || request()->segment(1) == 'blogs-details') class="active" @endif><a href="{{ route('blogs-resources.index') }}">Blog & Resources</a></li> 
                                 <li @if(request()->segment(1) == 'contact-us') class="active" @endif><a href="{{ route('contact') }}">Contact Us</a></li> 
                                 @auth
                                 <li>
