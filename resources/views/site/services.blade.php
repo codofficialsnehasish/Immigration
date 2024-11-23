@@ -66,6 +66,7 @@
     <!-- visa-section end -->
     @endif --}}
 
+
     @if($services->isNotEmpty())
     <!-- visa-section -->
     <section class="visa-section sec-pad frews">
@@ -94,11 +95,52 @@
                 </div>
                 @endforeach --}}
 
+                @foreach($services as $service)
                 <div class="visa-block-one frews">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="{{ $service->getFirstMediaUrl() }}" alt=""></figure>
+                        <div class="lower-content">
+                            {{-- <div class="icon-box"><i class="icon-12"></i></div> --}}
+                            <h3><a href="{{ route('service.details',$service->id) }}">{{ $service->name }}</a></h3>
+                            {!! $service->description !!}
+                            {{-- <p>Our "Essential Chancenkarte Guidance" package offers all the foundational support you need to develop a strong visa application.</p>
+                            <ul class="list-style-one clearfix">
+                                <li> <b>Eligibility & Points Assessment: </b> A precise evaluation of your profile 
+                                    against Germany’s Chancenkarte criteria.</li>
+                                <li><b>Anabin & ZAB Guidance: </b>Step-by-step guidance on using Anabin for 
+                                    degree recognition and deep insights into ZAB processes.</li>
+                                <li><b>Customized Document Checklist: </b>Comprehensive checklist of required 
+                                    documents, including any certification requirements for your educational 
+                                    background.</li>
+                                <li><b>CV & LinkedIn Review: </b>Customized assistance to refine your CV and 
+                                    LinkedIn profile. We also create a concise interview summary to highlight 
+                                    your strengths for a competitive edge.</li>
+                                <li><b>Job Search Strategy: </b>Insider recommendations on job boards and 
+                                    networking approaches in Germany.</li>
+                                <li><b>Blocked Account Information: </b>Clear guidance on setting up a blocked 
+                                    account to meet financial requirements.</li>
+                                <li><b>Health Insurance Overview: </b>Overview of compliant health insurance 
+                                    options.</li>
+                                <li><b>Email Support: </b>Dedicated support throughout your journey.</li>
+                            </ul>
+                            <p style="font-style: italic;font-size: 16px;"><b>Ideal for:</b> Individuals in the initial stages of their Chancenkarte journey, seeking 
+                                high-quality, expert guidance for a confident application.
+                            </p> --}}
+                            <!--<p>Kickstart your Chancenkarte journey with expert assistance.</p>-->
+                            <!--<p class="csi"><b>Price:</b> $999 – Start Now with Confidence.</p>-->
+                            <p class="csi"><b>Price:</b> ${{ $service->price }} </p>
+                            <div class="link-btn dftp">
+                                <a href="{{ route('service.details',$service->id) }}"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+                {{-- <div class="visa-block-one frews">
                     <div class="inner-box">
                         <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-1.png') }}" alt=""></figure>
                         <div class="lower-content">
-                            {{-- <div class="icon-box"><i class="icon-12"></i></div> --}}
                             <h3><a href="">Essential Chancenkarte Guidance</a></h3>
                             <p>Our "Essential Chancenkarte Guidance" package offers all the foundational support you need to develop a strong visa application.</p>
                             <ul class="list-style-one clearfix">
@@ -137,7 +179,6 @@
                     <div class="inner-box">
                         <figure class="image-box"><img src="{{ asset('assets/site-assets/images/resource/SERVICE-2.png') }}" alt=""></figure>
                         <div class="lower-content">
-                            {{-- <div class="icon-box"><i class="icon-12"></i></div> --}}
                             <h3><a href="">Comprehensive Chancenkarte Concierge</a></h3>
                             <p>For those looking for an end-to-end solution, our “Comprehensive Chancenkarte 
                                 Concierge” package offers exhaustive assistance at every stage of the process.</p>
@@ -167,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
         </div>
