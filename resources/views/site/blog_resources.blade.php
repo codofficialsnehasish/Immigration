@@ -32,32 +32,32 @@
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-lg-8 col-md-12 col-sm-12 content-side">
-                    <div class="blog-standard-content">
+                    <div class="blog-standard-content">.
+
+                        @foreach($blogs as $blog)
                         <div class="news-block-one">
                             <div class="inner-box">
-                                <figure class="image-box"><a href="{{ route('blogs-resources.details') }}"><img src="{{ asset('assets/site-assets/images/news/news-7.jpg') }}" alt=""></a></figure>
+                                <figure class="image-box">
+                                    <a href="{{ route('blogs-resources.details',$blog->slug) }}">
+                                        <img src="{{ $blog->getFirstMediaUrl() }}" alt="">
+                                    </a>
+                                </figure>
                                 <div class="lower-content">
                                     <ul class="post-info clearfix">
-                                        <li><i class="icon-27"></i><a href="{{ route('blogs-resources.details') }}">Admin</a></li>
-                                        <li><i class="icon-56"></i>Feb 6, 2022 </li>
-                                        <li><i class="icon-57"></i><a href="{{ route('blogs-resources.details') }}">03 Comments</a></li>
+                                        <li><i class="icon-27"></i><a href="{{ route('blogs-resources.details',$blog->slug) }}">{{ $blog->author_name }}</a></li>
+                                        <li><i class="icon-56"></i>{{ format_date($blog->created_at) }} </li>
+                                        {{-- <li><i class="icon-57"></i><a href="{{ route('blogs-resources.details',$blog->slug) }}">03 Comments</a></li> --}}
                                     </ul>
-                                    <h3><a href="{{ route('blogs-resources.details') }}">What is the Chancenkarte Visa? A Step-by-Step Guide to Germany’s Opportunity Card</a></h3>
-                                    <p>Germany, known for its booming economy, world-class infrastructure, and rich cultural 
-                                        heritage, is one of the top destinations for professionals seeking global career opportunities. In 
-                                        2024, the German government introduced a game-changing immigration initiative — the 
-                                        Chancenkarte Visa, or the Germany Opportunity Card. Think of it as your golden ticket to 
-                                        unlock the door to endless career prospects, a high standard of living, and the chance to become 
-                                        a part of one of Europe’s strongest job markets. But what exactly is the Chancenkarte Visa? 
-                                        How can you apply for it? And what makes it different from other visas like the German Job 
-                                        Seeker Visa?
-                                    </p>
+                                    <h3><a href="{{ route('blogs-resources.details',$blog->slug) }}">{{ $blog->title }}</a></h3>
+                                    <p>{!! $blog->short_content !!}</p>
                                     <div class="link-btn">
-                                        <a href="{{ route('blogs-resources.details') }}"><span>Read More</span></a>
+                                        <a href="{{ route('blogs-resources.details',$blog->slug) }}"><span>Read More</span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
+
                         {{-- <div class="news-block-one">
                             <div class="inner-box">
                                 <figure class="image-box"><a href="{{ route('blogs-resources.details') }}"><img src="{{ asset('assets/site-assets/images/news/news-8.jpg') }}" alt=""></a></figure>
@@ -111,7 +111,7 @@
                                 <h3>Search</h3>
                             </div>
                             <div class="search-form">
-                                <form action="blog.html" method="post">
+                                <form action="">
                                     <div class="form-group">
                                         <input type="search" name="search-field" placeholder="Keyword ..." required>
                                         <button type="submit"><i class="icon-8"></i></button>

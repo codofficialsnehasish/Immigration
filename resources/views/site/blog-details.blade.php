@@ -17,7 +17,7 @@
         <!-- <div class="pattern-layer" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-67.png') }});"></div> -->
         <div class="auto-container">
             <div class="content-box mkp">
-                <h1>What is the Chancenkarte Visa?<br> A Step-by-Step Guide to Germany’s Opportunity Card</h1>
+                <h1>{{ $blog->title }}</h1>
             </div>
         </div>
     </section>
@@ -28,72 +28,38 @@
     <section class="sidebar-page-container blog-standard p_relative">
         <div class="auto-container">
             <div class="row clearfix">
-                
-                
                 <div class="col-lg-7 col-md-12 col-sm-12 content-side">
                     <div class="blog-details-content">
                         <div class="content-one mb_40">
-                            
-                           <figure class="image-box"><img src="https://codeofdolphins.com/chancenkarte/public/assets/site-assets/images/news/news-7.jpg" alt=""></figure>
-                           </div>
-                           </div>
+                           <figure class="image-box"><img src="{{ $blog->getFirstMediaUrl() }}" alt=""></figure>
+                        </div>
                     </div>
+                </div>
                     
                     
-                       <div class="col-lg-5 col-md-12 col-sm-12 content-side">
+                <div class="col-lg-5 col-md-12 col-sm-12 content-side">
                     <div class="blog-details-content">
                         <div class="content-one mb_40">
                              <ul class="post-info clearfix">
-                                <li><i class="icon-27"></i><a href="{{ route('blogs-resources.details') }}">Admin</a></li>
-                                <li><i class="icon-56"></i>Nov 15, 2024 </li>
+                                <li><i class="icon-27"></i><a href="javascript:void(0);">{{ $blog->author_name }}</a></li>
+                                <li><i class="icon-56"></i>{{ format_date($blog->created_at) }} </li>
                                 {{-- <li><i class="icon-57"></i><a href="{{ route('blogs-resources.details') }}">03 Comments</a></li> --}}
                             </ul>
-                           <div class="text">
-
-                                <p> Germany, known for its booming economy, world-class infrastructure, and  cultural 
-                                    heritage, is one of the top destinations for professionals seeking global career opportunities. In 
-                                    2024, the German government introduced a game-changing immigration initiative — the 
-                                    Chancenkarte Visa, or the Germany Opportunity Card. Think of it as your golden ticket to 
-                                    unlock the door to endless career prospects, a high standard of living, and the chance to become 
-                                    a part of one of Europe’s strongest job markets. But what exactly is the Chancenkarte Visa? 
-                                    How can you apply for it? And what makes it different from other visas like the German Job 
-                                    Seeker Visa?
-                                    </p>
-                                    <p>Let’s take a deep dive into this exciting new opportunity and explore everything you need to 
-                                    know about the Germany Opportunity Card.</p>
-                                    </div>
-                           </div>
-                           </div>
+                            <div class="text">
+                                {!! $blog->short_content !!}
+                            </div>
+                        </div>
                     </div>
+                </div>
                 
                 
                 
                 <div class="col-lg-12 col-md-12 col-sm-12 content-side">
                     <div class="blog-details-content">
                         <div class="content-one mb_40">
-                            
-                           <!--<figure class="image-box"><img src="https://codeofdolphins.com/chancenkarte/public/assets/site-assets/images/news/news-7.jpg" alt=""></figure>-->
-                           
-                            <!--<ul class="post-info clearfix">-->
-                            <!--    <li><i class="icon-27"></i><a href="{{ route('blogs-resources.details') }}">Admin</a></li>-->
-                            <!--    <li><i class="icon-56"></i>Nov 15, 2024 </li>-->
-                            <!--    {{-- <li><i class="icon-57"></i><a href="{{ route('blogs-resources.details') }}">03 Comments</a></li> --}}-->
-                            <!--</ul>-->
                             <div class="text">
-
-                                <!--<p> Germany, known for its booming economy, world-class infrastructure, and  cultural -->
-                                <!--    heritage, is one of the top destinations for professionals seeking global career opportunities. In -->
-                                <!--    2024, the German government introduced a game-changing immigration initiative — the -->
-                                <!--    Chancenkarte Visa, or the Germany Opportunity Card. Think of it as your golden ticket to -->
-                                <!--    unlock the door to endless career prospects, a high standard of living, and the chance to become -->
-                                <!--    a part of one of Europe’s strongest job markets. But what exactly is the Chancenkarte Visa? -->
-                                <!--    How can you apply for it? And what makes it different from other visas like the German Job -->
-                                <!--    Seeker Visa?-->
-                                <!--    </p>-->
-
-                                
-
-                                <h3>The Chancenkarte Visa: Unlocking Your Career in Germany</h3>
+                                {!! $blog->content !!}
+                                {{-- <h3>The Chancenkarte Visa: Unlocking Your Career in Germany</h3>
                                 <p>Picture this: You’re a skilled professional, brimming with experience and expertise, ready to 
                                     take your career to the next level. Germany, with its robust industries and innovative workforce, 
                                     beckons you. The Chancenkarte Visa Germany is Germany’s answer to attracting global talent 
@@ -250,7 +216,7 @@
                                     first step towards a bright future in Germany.</p>
                                 <p>So, why wait? Start preparing your application today and take the first step towards your dream 
                                     career in Germany. The Chancenkarte Visa might just be the opportunity you've been waiting 
-                                    for!</p>
+                                    for!</p> --}}
                             </div>
                         </div>
                         {{-- <div class="content-two mb_40">
