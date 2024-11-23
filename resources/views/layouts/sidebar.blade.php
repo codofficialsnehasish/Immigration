@@ -66,12 +66,12 @@
                 </a>
             </li>
 
-            <li>
+            {{-- <li>
                 <a href="{{ route('team.index') }}" class="">
                     <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
                     <div class="menu-title">Team's</div>
                 </a>
-            </li>
+            </li> --}}
 
             <li>
                 <a href="{{ route('contact.contact-us-index') }}" class="">

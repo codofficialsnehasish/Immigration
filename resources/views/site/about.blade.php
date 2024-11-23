@@ -37,7 +37,7 @@
                     <div class="image_block_one">
                         <div class="image-box p_relative d_block grio_r">
                             {{-- <figure class="image image-1"><img src="{{ asset('assets/site-assets/images/resource/NEW.jpg') }}" alt=""></figure> --}}
-                            <figure class="image image-2"><img src="{{ asset('assets/site-assets/images/resource/NEW.jpg') }}" alt=""></figure>
+                            <figure class="image image-2"><img src="{{ $about->getFirstMediaUrl() }}" alt=""></figure>
                             {{-- <figure class="certificate-box"><img src="{{ asset('assets/site-assets/images/icons/NEW.jpg') }}" alt=""></figure> --}}
                         </div>
                     </div>
@@ -47,32 +47,11 @@
                         <div class="content-box p_relative ml_110">
                             <div class="sec-title mb_30">
                                 <!-- <span class="sub-title">About Us</span> -->
-                                <h2>Welcome to Immigration — Your Trusted Partner to a New Life in Germany. </h2>
+                                <h2>{{ $about->about_title }}</h2>
                             </div>
                             <div class="text mb_30">
-                                <p>We specialize in helping skilled professionals obtain the Chancenkarte Visa (also 
-                                    known as the Opportunity Card) to unlock exciting career opportunities in 
-                                    Germany. With extensive expertise in German immigration policies and a 
-                                    commitment to providing personalized visa guidance, we ensure a smooth and 
-                                    efficient application process. Our team empowers job seekers by offering in-depth knowledge of the Chancenkarte visa application process, job market 
-                                    insights, and settlement strategies in Germany. Whether you are applying for the 
-                                    Opportunity Card or seeking advice on German work visas, we are your trusted 
-                                    partners, providing reliable solutions for long-term career success in one of 
-                                    Europe’s leading economies.
-                                    </p>
+                                <p>{!! $about->about_description !!}</p>
                             </div>
-                            {{-- <div class="list-inner mb_50 p_relative">
-                                <ul class="list-style-one clearfix">
-                                    <li>Nulla nulla erat, gravida at leo</li>
-                                    <li>Amet minim mollit no duis deserut</li>
-                                    <li>dolor do amet sint Velit officia</li>
-                                </ul>
-                                <ul class="list-style-one clearfix">
-                                    <li>Scelerisque eleifend magna sit</li>
-                                    <li>Pellentesque pretium elit augue</li>
-                                    <li>Aenean in ipsum vel quam</li>
-                                </ul>
-                            </div> --}}
                             <div class="btn-box">
                                 <a href="{{ route('contact') }}" class="theme-btn btn-one"><span>Get an Expert Consultation Today</span></a>
                             </div>
@@ -96,11 +75,7 @@
                             <div class="inner-box hsae">
                                 <div class="icon-box"><i class="icon-17"></i></div>
                                 <h3><a href="javascript:void(0);">Mission</a></h3>
-                                <p>Our mission is to provide tailored, expert guidance that ensures an effortless, 
-                                    results-driven journey for every client. We are committed to empowering skilled 
-                                    professionals to accomplish their career and lifestyle goals in <b>Germany</b>, offering 
-                                    clear, precise, and confident support throughout the <b>Chancenkarte Visa</b>
-                                    procedure.</p>
+                                <p>{!! $about->mission !!}</p>
                             </div>
                         </div>
                     </div>
@@ -109,12 +84,7 @@
                             <div class="inner-box hsae">
                                 <div class="icon-box"><i class="icon-19"></i></div>
                                 <h3><a href="javascript:void(0);">Vision</a></h3>
-                                <p>Our vision is to be the most trusted and reliable partner in <b>German immigration 
-                                    consulting</b>, setting the highest standard for excellence in <b>Chancenkarte 
-                                    services</b>. We aim to empower our clients with transparent, professional guidance, 
-                                    making their journey to <b>Germany</b> efficient, successful, and hassle-free. As a 
-                                    strategic ally, we are dedicated to helping our clients turn their dreams into reality 
-                                    with confidence and expertise.</p>
+                                <p>{!! $about->vision !!}</p>
                             </div>
                         </div>
                     </div>

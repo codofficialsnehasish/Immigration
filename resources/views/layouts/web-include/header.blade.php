@@ -155,7 +155,7 @@
                     </nav>
                 </div>
                 <div class="btn-box">
-                    <a href="javascript:void(0);" class="theme-btn btn-one"><span>Appointment</span></a>
+                    <a href="{{ route('login') }}" class="theme-btn btn-one" style="color: black !important;"><img src="{{ asset('assets/site-assets/images/user.png') }}" alt="">@auth {{ Auth::user()->name }} @endauth</a>
                 </div>
             </div>
         </div>
