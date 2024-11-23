@@ -70,7 +70,7 @@ class BannerController extends Controller
             'title' => 'required',
             'description' => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg',
-            'visibility' => 'required|in:0,1'
+            'visibility' => 'nullable|in:0,1'
         ]);
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
@@ -96,7 +96,7 @@ class BannerController extends Controller
             // $filePath = "web-directory/banner/".$filename;
             // $banner->image = $filePath;
         }
-        $banner->visibility = $request->visibility;
+        $banner->visibility = $request->visibility ?? 1;
         $res = $banner->update();
         if($res){
             return back()->with('success','Updated Successfully');

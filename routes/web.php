@@ -11,7 +11,8 @@ use App\Http\Controllers\{
     FaqControllers,
     AboutUsController,
     HowItWorksController,
-    BlogController
+    BlogController,
+    HomeDataController,
 };
 
 use App\Http\Controllers\Site\{
@@ -72,8 +73,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    Route::resource('services', ServiceController::class);
 });
 
 Route::middleware(['auth:admin', 'verified'])->group(function () {
@@ -90,6 +89,19 @@ Route::middleware(['auth:admin', 'verified'])->group(function () {
     Route::resource('about-us',AboutUsController::class);
     Route::resource('how-it-work',HowItWorksController::class);
     Route::resource('blogs',BlogController::class);
+    Route::resource('services', ServiceController::class);
+
+    Route::controller(HomeDataController::class)->group( function (){
+        Route::get('home-data','index')->name('home-data.index');
+
+        Route::post('home-data/why-choose-us-store','why_choose_us_store')->name('why-choose-us-store.store');
+        Route::put('home-data/{id}/why-choose-us-update','why_choose_us_update')->name('why-choose-us-store.update');
+        Route::delete('home-data/{id}/why-choose-us-destroy','why_choose_us_delete')->name('why-choose-us-store.destroy');
+        
+        Route::put('home-data/{id}/our-services-store','store_our_services')->name('our-services.store');
+
+        Route::put('home-data/{id}/update-home-about','update_home_about')->name('home-about.update');
+    });
 });
 
 require __DIR__.'/auth.php';

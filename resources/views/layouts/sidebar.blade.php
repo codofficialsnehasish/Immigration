@@ -24,9 +24,16 @@
             </li>
 
             <li>
-                <a href="{{ route('banner.index') }}" class="">
+                <a href="{{ route('home-data.index') }}" class="">
                     <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
-                    <div class="menu-title">Banner</div>
+                    <div class="menu-title">Home</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('about-us.index') }}" class="">
+                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="menu-title">About Us</div>
                 </a>
             </li>
 
@@ -48,13 +55,6 @@
                 <a href="{{ route('testimonials.index') }}" class="">
                     <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
                     <div class="menu-title">Testimonials</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="{{ route('about-us.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
-                    <div class="menu-title">About Us</div>
                 </a>
             </li>
 

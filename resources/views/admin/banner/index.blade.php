@@ -155,7 +155,7 @@
                         </div>
                         <div>
                             <div class="mb-3">
-                                <img class="img-thumbnail rounded me-2" id="blahedit{{ $banner->id }}" alt="" width="200" src="{{ $item->getFirstMediaUrl() }}" data-holder-rendered="true" style="display: {{ is_have_image($item->getFirstMediaUrl()) }};">
+                                <img class="img-thumbnail rounded me-2" id="blahedit{{ $banner->id }}" alt="" width="200" src="{{ $banner->getFirstMediaUrl() }}" data-holder-rendered="true" style="display: {{ is_have_image($banner->getFirstMediaUrl()) }};">
                             </div>
                             <div class="mb-3">
                                 <label for="imgInpedit{{ $banner->id }}" class="form-label">Image</label>
