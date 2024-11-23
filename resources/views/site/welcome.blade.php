@@ -3,34 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-
-    <!-- banner-style-three -->
-    {{-- <section class="banner-style-three p_relative">
-        <div class="pattern-layer">
-            <!-- <div class="pattern-1" style="background-image: url(assets/images/shape/shape-38.png);"></div>
-            <div class="pattern-2" style="background-image: url(assets/images/shape/shape-39.png);"></div> -->
-            @if(!empty($banner->image))
-            <div class="pattern-3" style="background-image: url({{ asset($banner->image) }});"></div>
-            @else
-            <div class="pattern-3" style="background-image: url({{ asset('assets/site-assets/images/banner/banner-1.jpg') }});"></div>
-            @endif
-        </div>
-        <!-- <figure class="image-layer"><img src="assets/images/banner/banner-img-2.png" alt=""></figure> -->
-        <!-- <div class="auto-container">
-            <div class="content-box">
-                <h2>People Immigration <span>Confidently...</span></h2>
-                <p>MCS has been recruiting and prepping talented professionals for over twenty years. We provide a unique value proposition.</p>
-                <div class="btn-box">
-                    <a href="{{ route('home') }}" class="theme-btn btn-two"><span>View The Categories</span></a>
-                </div>
-            </div> 
-        </div> -->
-    </section> --}}
-    <!-- banner-style-three end -->
-
-
-
-
     <section class="about-section p_relative hrwa sadfwq">
         <div class="pattern-layer"></div>
         <div class="auto-container">
@@ -38,7 +10,7 @@
                 <div class="col-lg-8 col-md-12 col-sm-12 image-column">
                     <div class="image_block_one">
                         <div class="image-box p_relative d_block grio_r">
-                            <figure class="image image-2"><img src="{{ asset('assets/site-assets/images/banner/banner-1.jpg') }}" alt=""></figure>
+                            <figure class="image image-2"><img src="{{ $banner->getFirstMediaUrl() }}" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -46,10 +18,10 @@
                     <div class="content_block_one">
                         <div class="content-box p_relative">
                             <div class="sec-title mb_30">
-                                <h2>Let Your Career Take Off with Germany’s Chancenkarte Visa </h2>
+                                <h2>{{ $banner->title }}</h2>
                             </div>
                             <div class="text mb_30">
-                                <p>Seamlessly Navigate Germany’s Opportunity Card Process with Strategic Consultation from Trusted Immigration Experts. </p>
+                                <p>{!! $banner->description !!} </p>
                             </div>
                             
                             <div class="btn-box">
@@ -63,10 +35,6 @@
     </section>
 
 
-
-
-
-
     <!-- feature-section -->
     <section class="feature-section alternat-3 mnbvz">
         <div class="outer-container">
@@ -76,68 +44,26 @@
                     <div class="col-lg-12 col-md-6 col-sm-12 feature-block">
                         <div class="feature-block-one">
                             <div class="inner-box cvfr">
-                                <!-- <div class="icon-box"><i class="icon-17"></i></div> -->
-                                <!--<h3><a href="{{ route('contact') }}" style="color: #fff !important;font-size: 26px;">What is a Chancenkarte Visa or an Opportunity Card ?</a></h3>-->
                                 <p style="text-align: justify !important;">
-                                    The Chancenkarte Visa (Opportunity card) offers skilled professionals the
-                                    chance to move to Germany without a job offer and explore exciting career
-                                    opportunities in tech, engineering, healthcare, and more. With access to a thriving
-                                    job market, competitive salaries, and a great work-life balance, this visa also
-                                    provides a clear path to permanent residency - all while allowing you to bring your
-                                    family along. Seize the opportunity and start your new life in Germany today.
+                                    {!! $home_about->description !!}
                                 </p>
                                 
                                 
                                 <div class="res_m">
-                                <h1>Benefits of Opportunity Card:</h1>
-                                 <div class="row">
-                                 <div class="col-lg-6 col-md-6 col-sm-12">
-                                       <ul>
-                                    <li>
-                                        <h1>No Job Offer Needed:</h1>
-                                    <p>Say goodbye to the stress of securing a job before
-                                        you move. With the Opportunity card, you can arrive in Germany and
-                                        explore exciting job opportunities in your field — without the pressure of a
-                                        pre-arranged job offer.</p>
-                                    </li>
-                                    <li><h1>A Clear Path to Permanent Residency:</h1>
-                                    <p>Not only does the Opportunity
-                                            card get you started in Germany, but it also offers a seamless route to
-                                            permanent residency once you secure a job and meet the required criteria.</p>
-                                    </li>
-                                   
-                                </ul>
-                                 </div>
+                                <h1>{{ $home_about->title }}</h1>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        {!! $home_about->left_description !!}
+                                    </div>
                                  
                                 
-                                 <div class="col-lg-6 col-md-6 col-sm-12">
-                                       <ul>
-                                   
-                                    <li>
-                                        <h1>Competitive Pay and Work-Life Balance: </h1>
-                                        <p>Germany is known for offering
-                                            top-tier salaries, incredible work-life balance, and strong employee benefits.
-                                            It’s the perfect place for professionals seeking both career growth and
-                                            personal well-being.</p>
-                                    </li>
-                                    <li>
-                                        <h1>Experience Life in Germany: </h1>
-                                        <p>Immerse yourself in a dynamic, innovative
-                                            work environment, while enjoying the high standard of living that Germany
-                                            is famous for. The Opportunity card is more than just a work permit — it’s
-                                            a chance to experience life in one of Europe’s most exciting countries.</p>
-                                    </li>
-                                </ul>
-                                 </div>
-                                 </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        {!! $home_about->right_description !!}
+                                    </div>
+                                </div>
                                 
                               
                                 </div>
-                                
-                                
-                                <!--<div class="btn-box">-->
-                                <!--    <a href="{{ route('blogs-resources.details') }}" class="theme-btn btn-two"><span>Learn More about Germany Opportunity Card</span></a>-->
-                                <!--</div>-->
                             </div>
                         </div>
                     </div>
@@ -169,34 +95,14 @@
                                 <p>Sed gravida nisl a porta tincidunt. Integer aliquam nisi sit amet magna suscipit, fermentum mattis erat rutrum.Porta semper lacus cursus.</p>
                             </div> --}}
                             <div class="inner-box mb_40">
+                                @foreach($why_choose_us as $why_choose)
                                 <div class="single-item">
                                     <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
-                                    <h5>Trusted Immigration Expertise for Germany</h5>
-                                    <p style="font-size:17px;">With in-depth knowledge of German immigration policies and Chancenkarte Visa 
-                                        requirements, we are your trusted partners in securing a successful visa 
-                                        application. Our expert advice is rooted in legal precision and transparency, 
-                                        ensuring you receive reliable, compliant support throughout the Chancenkarte 
-                                        application process. </p>
+                                    <h5>{{ $why_choose->title }}</h5>
+                                    <p style="font-size:17px;">{!! $why_choose->description !!}</p>
                                 </div>
-                                <div class="single-item">
-                                    <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
-                                    <h5>Precision-Driven Approach</h5>
-                                    <p style="font-size:17px;">We prioritize attention to detail and accuracy in managing your Chancenkarte
-                                        Visa application. From initial assessments to final approvals, our team ensures 
-                                        flawless documentation, strict adherence to German visa policies, and a thorough 
-                                        process to give your Opportunity Card application the best chance of success. </p>
-                                </div>
-                                <div class="single-item">
-                                    <div class="icon-box"><img src="{{ asset('assets/site-assets/images/icons/icon-13.png') }}" alt=""></div>
-                                    <h5>Personalized Guidance and Support </h5>
-                                    <p style="font-size:17px;">Our seasoned immigration professionals provide personalized guidance tailored 
-                                        to your unique needs. You’re not just a client – you’re a partner, and we are here 
-                                        to make your Chancenkarte application process smooth, reliable, and stress-free.  </p>
-                                </div>
+                                @endforeach
                             </div>
-                            {{-- <div class="btn-box">
-                                <a href="{{ route('about') }}" class="theme-btn btn-two"><span>More Details</span></a>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -229,20 +135,12 @@
                 <div class="content_block_two">
                     <div class="content-box p_relative d_block">
                         <div class="sec-title light tywq">
-                            <span class="sub-title">Our Services</span>
-                            <h2>Chancenkarte Consulting</h2>
+                            <span class="sub-title">{{ $ourservices->heading }}</span>
+                            <h2>{{ $ourservices->title }}</h2>
                         </div>
                         <div class="text mb_25">
-                            <p>We specialize in Chancenkarte Visa services that simplify your journey to 
-                                Germany. From eligibility assessments to seamless application support, our 
-                                experienced team is dedicated to helping skilled professionals turn career 
-                                aspirations into reality with the Opportunity Card. </p>
+                            <p>{!! $ourservices->description !!}</p>
                         </div>
-                        {{-- <ul class="list-item p_relative clearfix mb_50">
-                            <li><a href="{{ route('home') }}">1. Entering & Leaving From Country <i class="icon-9"></i></a></li>
-                            <li><a href="{{ route('home') }}">2. Help & Support <i class="icon-9"></i></a></li>
-                            <li><a href="{{ route('home') }}">3. Country Citizenship <i class="icon-9"></i></a></li>
-                        </ul> --}}
                         <div class="btn-box">
                             <a href="{{ route('service') }}" class="theme-btn"><span>Know More</span></a>
                         </div>
@@ -427,7 +325,7 @@
                         </li>
                     </ul> --}}
                     <div class="btn-box">
-                        <a href="javascript:void(0);" class="theme-btn"><span>Get in Touch With Our Experts Today. </span></a>
+                        <a href="{{ route('contact') }}" class="theme-btn"><span>Get in Touch With Our Experts Today </span></a>
                     </div>
                 </div>
             </div>
