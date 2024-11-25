@@ -6,15 +6,14 @@
             <div class="row clearfix">
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget logo-widget">
-                        <figure class="footer-logo"><a href="{{ route('home') }}"><img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" alt=""></a></figure>
+                        <figure class="footer-logo"><a href="{{ route('home') }}"><img src="{{ optional(general_settings())->getFirstMediaUrl('logo') ?? '' }}" alt=""></a></figure>
                         {{-- <figure class="footer-logo"><a href="{{ route('home') }}">{{ config('app.name') }}</a></figure> --}}
                         <div class="text">
                             <p>Your Partner in Achieving <br>Career Success in Germany.</p>
                             <ul class="social-links clearfix">
-                                <li><a href="#"><i class="icon-4"></i></a></li>
-                                <li><a href="#"><i class="icon-5"></i></a></li>
-                                <li><a href="#"><i class="icon-6"></i></a></li>
-                                <li><a href="#"><i class="icon-7"></i></a></li>
+                                <li><a href="{{ optional(general_settings())->facebook_link ?? '' }}"><i class="icon-4"></i></a></li>
+                                <li><a href="{{ optional(general_settings())->instagram_link ?? '' }}"><i class="icon-5"></i></a></li>
+                                <li><a href="{{ optional(general_settings())->twitter_link ?? '' }}"><i class="icon-6"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,8 +76,8 @@
                         </div>
                         <div class="widget-content">
                             <ul class="links-list foor_linj clearfix">
-                                <li><a href="#"><img src="{{ asset('assets/site-assets/images/ph_icon.png') }}" alt=""> +9159008855</a></li>
-                                <li><a href="#"><img src="{{ asset('assets/site-assets/images/cal_icon.png') }}" alt=""> info@test.com</a></li>
+                                <li><a href="#"><img src="{{ asset('assets/site-assets/images/ph_icon.png') }}" alt=""> {{ optional(general_settings())->primary_phone ?? '' }}</a></li>
+                                <li><a href="#"><img src="{{ asset('assets/site-assets/images/cal_icon.png') }}" alt=""> {{ optional(general_settings())->primary_email ?? '' }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,7 +88,7 @@
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="copyright">
-                <div class="rio"><p>Copyright By &copy; <a href="{{ route('home') }}">{{ config('app.name') }}</a> - 2023</p></div>
+                <div class="rio"><p>{{ optional(general_settings())->copyright ?? '' }}</p></div>
                 <div class="rio2"><img src="{{ asset('assets/site-assets/images/payment.png') }}" alt=""></div>
             </div>
         </div>

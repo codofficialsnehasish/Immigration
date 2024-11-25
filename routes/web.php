@@ -13,6 +13,7 @@ use App\Http\Controllers\{
     HowItWorksController,
     BlogController,
     HomeDataController,
+    SettingController,
 };
 
 use App\Http\Controllers\Site\{
@@ -90,6 +91,7 @@ Route::middleware(['auth:admin', 'verified'])->group(function () {
     Route::resource('how-it-work',HowItWorksController::class);
     Route::resource('blogs',BlogController::class);
     Route::resource('services', ServiceController::class);
+    Route::resource('settings', SettingController::class);
 
     Route::controller(HomeDataController::class)->group( function (){
         Route::get('home-data','index')->name('home-data.index');

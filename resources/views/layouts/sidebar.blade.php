@@ -7,7 +7,7 @@
         </div> --}}
         <div class="logo-name flex-grow-1 text-center">
             {{-- <h5 class="mb-0">{{ config('app.name') }}</h5> --}}
-            <img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" class="logo-img" alt="" style="width: 116px !important;">
+            <img src="{{ optional(general_settings())->getFirstMediaUrl('logo') ?? '' }}" class="logo-img" alt="" style="width: 116px !important;">
         </div>
         <div class="sidebar-close">
             <span class="material-icons-outlined">close</span>
@@ -25,9 +25,16 @@
             </li>
 
             <li>
+                <a href="{{ route('settings.index') }}" class="">
+                    <div class="parent-icon"><i class="material-icons-outlined">settings</i></div>
+                    <div class="menu-title">Settings</div>
+                </a>
+            </li>
+
+            <li>
                 <a href="{{ route('home-data.index') }}" class="">
                     <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
-                    <div class="menu-title">Home</div>
+                    <div class="menu-title">Home Page</div>
                 </a>
             </li>
 

@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Login | {{ config('app.name') }}</title>
+    <meta content="{{ optional(general_settings())->site_description ?? '' }}" name="description">
+    <title>Login | {{ optional(general_settings())->site_title ?? '' }}</title>
     <!--favicon-->
-	<link rel="icon" href="{{ asset('assets/dashboard_asset/assets/images/favicon-32x32.png') }}" type="image/png">
+	<link rel="icon" href="{{ optional(general_settings())->getFirstMediaUrl('favicon') ?? '' }}" type="image/png">
     <!-- loader-->
 	<link href="{{ asset('assets/dashboard_asset/assets/css/pace.min.css') }}" rel="stylesheet">
 	<script src="{{ asset('assets/dashboard_asset/assets/js/pace.min.js') }}"></script>
@@ -58,7 +59,7 @@
                     <div class="card rounded-4 mb-0 border-top border-4 border-primary" style="background-color: #ffffffb0 !important;">
                         <div class="card-body p-4">
                             <div class="text-center">
-                                <img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" class="mb-1" width="145" alt="">
+                                <img src="{{ optional(general_settings())->getFirstMediaUrl('logo') ?? '' }}" class="mb-1" width="145" alt="">
                             </div>
                             {{-- <h1 class="text-center">{{ config('app.name') }}</h1> --}}
         
