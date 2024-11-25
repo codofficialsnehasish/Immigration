@@ -410,9 +410,9 @@
                     <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="{{ route('profile.edit') }}">
                         <i class="material-icons-outlined">person_outline</i>Profile
                     </a>
-                    <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="">
+                    {{-- <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="">
                         <i class="material-icons-outlined">local_bar</i>Change Password
-                    </a>
+                    </a> --}}
                     <!--<a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;">
                         <i class="material-icons-outlined">dashboard</i>Dashboard
                     </a>

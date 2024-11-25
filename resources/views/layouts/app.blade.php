@@ -59,6 +59,9 @@
 
     <main class="main-wrapper">
         @yield('content')
+        @isset($slot)
+            {{ $slot }}
+        @endisset
     </main>
 
 
