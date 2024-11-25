@@ -255,7 +255,88 @@
                             </form>
                         </div>
                         <div class="tab-pane fade" id="warning-pills-eligibility" role="tabpanel">
-                            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                            <form action="{{ route('update-eligibility-assessment.update',$eligibility_assessment->id) }}" method="post" enctype="multipart/form-data">
+                                @csrf
+                                @method('PUT')
+                                <div class="mb-3">
+                                    <label for="heading" class="form-label">Heading</label>
+                                    <input type="text" value="{{ $eligibility_assessment->heading }}" name="heading" class="form-control" id="heading" placeholder="Enter Heading" required>
+                                    <div class="valid-tooltip">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="description{{ $eligibility_assessment->id }}" class="form-label">Description</label>
+                                    <textarea name="description" class="form-control editor" id="description{{ $eligibility_assessment->id }}" placeholder="Enter Description">{{ $eligibility_assessment->description }}</textarea>
+                                    <div class="valid-tooltip">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                <h1 class="text-center"> Add New </h1>
+                                <table width="100%" cellpadding="5" cellspacing="5" id="table_repeter">
+                                    <tr>
+                                        <th width="20%">Title</th>
+                                        <th width="30%">Description</th>
+                                        <th width="4%">&nbsp;</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="mb-3">
+                                                <input type="text" value="" name="title[]" class="form-control" id="heading" placeholder="Enter Title">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <textarea name="data_description[]" class="form-control editor" placeholder="Enter Description"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div  id="more1"><a class="btn btn-success btn-sm float-end" href="javascript:;" onClick="showMore_edit('field_1');"><i class="fa fa-plus"></i>Add More</a></div>
+                                <p>&nbsp;</p>
+                                <input type="hidden" name="cont" id="cont" value="1" />
+                                <div class="mb-3">
+                                    <button type="submit" class="btn btn-info">Save</button>
+                                </div>
+                            </form>
+                            <hr>
+                                <h1 class="text-center"> Details </h1>
+                                <div class="table-responsive">
+                                    <table id="example2" class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-wrap">Sl. No.</th>
+                                                <th class="text-wrap">Title</th>
+                                                <th class="text-wrap">Description</th>
+                                                <th class="text-wrap">Created At</th>
+                                                <th class="text-wrap">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @if ($eligibility_assessment->assessment_details->isNotEmpty())
+                                                @foreach ($eligibility_assessment->assessment_details as $item)
+                                                    <tr>
+                                                        <td class="text-wrap">{{ $loop->iteration }}</td>
+                                                        <td class="text-wrap">{{ $item->title }}</td>
+                                                        <td class="text-wrap">{!! $item->description !!}</td>
+                                                        <td class="text-wrap">{{ format_datetime($item->created_at) }}</td>
+                                                        <td>
+                                                            <form action="{{ route('delete-eligibility-assessment-details.destroy', $item->id) }}" onsubmit="return confirm('Are you sure?')" method="POST" style="display:inline;">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button class="btn" type="submit"><i class="text-danger" data-feather="trash-2"></i></button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                            @else
+                                                <tr>
+                                                    <td colspan="5" class="text-center">No data found.</td>
+                                                </tr>
+                                            @endif
+                                        </tbody>
+                                    </table>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -388,4 +469,64 @@
         });
     </script>
 
+    <script>
+        function showMore_edit(id){
+            var idd = id.split("_");
+            var idty = parseInt(idd[1]);
+            idty = idty + 1;
+            var table = document.getElementById("table_repeter");
+            console.log(table);
+            var rowCount = table.rows.length;
+            
+            var row = table.insertRow(rowCount);
+            var cell0 = row.insertCell(0);
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+            // console.log(cell0,cell1, cell2, cell3);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            document.getElementById("cont").value = idty;
+            
+                
+            cell1.innerHTML = '<input type="text" value="" name="title[]" class="form-control" id="heading" placeholder="Enter Title">';
+                
+            cell2.innerHTML = '<textarea name="data_description[]" class="form-control editor" id="description_${idty}" placeholder="Enter Description"></textarea>';
+                
+            cell3.innerHTML = "<a  href=\"javascript:;\" class=\"btn btn-danger btn-sm\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"Remove this Item\" onClick=\"deleteRow(this)\"><i class=\"text-danger\" data-feather=\"trash-2\"></i>Del</a>";
+
+                
+            document.getElementById("more1").innerHTML = "<a class=\"btn btn-success btn-sm float-end\" href=\"javascript:;\" onClick=\"showMore_edit('field_" + idty + "');\"><i class=\"fa fa-plus\"></i>Add More</a>";
+                
+            // Reinitialize TinyMCE for new elements
+            reinitializeTinyMCE();
+                
+        }
+    
+    
+        function setoptionval(valu,id){
+            // console.log(valu);
+            if(valu=='select' || valu=='radio' || valu=='checkbox'){
+                $('#option_'+id).show();
+            }
+            // if(valu == 'color'){
+            //     $('#coption_'+id).show();
+            // }
+            else{
+                $('#option_'+id).hide();
+            }
+        }
+
+        function deleteRow(btn) {
+            if (confirm("Are You Sure?") == true) {
+                var row = btn.parentNode.parentNode;
+                row.parentNode.removeChild(row);
+            } else { }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            reinitializeTinyMCE(); // Initialize TinyMCE for the first load
+        });
+    </script>
 @endsection

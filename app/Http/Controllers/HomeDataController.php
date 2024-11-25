@@ -7,6 +7,8 @@ use App\Models\Banner;
 use App\Models\WhyChooseUs;
 use App\Models\OurServices;
 use App\Models\HomeAbout;
+use App\Models\EligibilityAssessment;
+use App\Models\EligibilityAssessmentDetails;
 
 class HomeDataController extends Controller
 {
@@ -15,7 +17,8 @@ class HomeDataController extends Controller
         $why_choose_us = WhyChooseUs::all();
         $ourservices = OurServices::findOrFail(1);
         $home_about = HomeAbout::findOrFail(1);
-        return view('admin.home.index',compact('banner','why_choose_us','ourservices','home_about'));
+        $eligibility_assessment = EligibilityAssessment::findOrFail(1);
+        return view('admin.home.index',compact('banner','why_choose_us','ourservices','home_about','eligibility_assessment'));
     }
 
     public function why_choose_us_store(Request $request){
@@ -72,6 +75,42 @@ class HomeDataController extends Controller
             return back()->with('success','Data Updated Sucessfully');
         }else{
             return back()->with('error','Data Not Updated');
+        }
+    }
+
+    public function update_eligibility_assessment(Request $request, string $id){
+        // return $request->all();
+        $eligibility_assessment = EligibilityAssessment::find(1);
+        $eligibility_assessment->heading = $request->heading;
+        $eligibility_assessment->description = $request->description;
+        $res = $eligibility_assessment->update();
+
+        foreach($request->title as $key => $value){
+            $eligibility_assessment_details = new EligibilityAssessmentDetails();
+            $eligibility_assessment_details->eligibility_assessment_id = $eligibility_assessment->id;
+            $eligibility_assessment_details->title = $request->title[$key];
+            $eligibility_assessment_details->description = $request->data_description[$key];
+            $eligibility_assessment_details->save();
+        }
+
+        if($res){
+            return back()->with('success','Data Updated Sucessfully');
+        }else{
+            return back()->with('error','Data Not Updated');
+        }
+    }
+
+    public function delete_eligibility_assessment_details(string $id){
+        $eligibility_assessment_details = EligibilityAssessmentDetails::find($id);
+        if($eligibility_assessment_details){
+            $res = $eligibility_assessment_details->delete();
+            if($res){
+                return back()->with('success','Data Updated Sucessfully');
+            }else{
+                return back()->with('error','Data Not Updated');
+            }
+        }else{
+            return back()->with('error','Data Not Found');
         }
     }
 }

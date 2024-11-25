@@ -11,6 +11,7 @@ use App\Models\Service;
 use App\Models\WhyChooseUs;
 use App\Models\OurServices;
 use App\Models\HomeAbout;
+use App\Models\EligibilityAssessment;
 
 class HomeController extends Controller
 {
@@ -22,7 +23,8 @@ class HomeController extends Controller
         $why_choose_us = WhyChooseUs::where('is_visible',1)->get();
         $ourservices = OurServices::findOrFail(1);
         $home_about = HomeAbout::findOrFail(1);
+        $eligibility_assessment = EligibilityAssessment::findOrFail(1);
 
-        return view('site.welcome',compact('banner','testimonials','services','why_choose_us','ourservices','home_about'));
+        return view('site.welcome',compact('banner','testimonials','services','why_choose_us','ourservices','home_about','eligibility_assessment'));
     }
 }

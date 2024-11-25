@@ -153,6 +153,7 @@
 
 
     <!-- help-section -->
+    @if(!empty($eligibility_assessment))
     <section class="help-section p_relative dfgfg frae_5">
         <div class="pattern-layer">
             <div class="pattern-1" style="background-image: url({{ asset('assets/site-assets/images/shape/shape-45.png') }});"></div>
@@ -161,135 +162,47 @@
         </div>
         <div class="auto-container">
             <div class="sec-title light mb_60">
-                {{-- <span class="sub-title">HOW WE HELP CLIENTS</span> --}}
-
-                <h2>Eligibility Assessment Section</h2>
-                <p>The Opportunity Card operates on a points-based system, designed to assess candidates across 
-                    various criteria, such as age, qualifications, professional experience, and language proficiency. 
-                    Chancenkarte Points System Overview</p>
+                <h2>{{ $eligibility_assessment->heading }}</h2>
+                <p>{!! $eligibility_assessment->description !!}</p>
             </div>
+            @if ($eligibility_assessment->assessment_details->isNotEmpty())
             <div class="row clearfix xsep">
-
+                {{-- $eligibility_assessment->assessment_details --}}
+                @php
+                    $detailsArray = $eligibility_assessment->assessment_details->toArray();
+                    $splitIndex = ceil(count($detailsArray) / 2); // Half the data, rounded up
+                    $leftSide = array_slice($detailsArray, 0, $splitIndex);
+                    $rightSide = array_slice($detailsArray, $splitIndex);
+                @endphp
 
                 <div class="col-lg-6 col-md-6 col-sm-12 single-column gjuq_p">
-
+                    @foreach($leftSide as $data)
                     <div class="single-item gse_r">
                         <div class="inner-box">
-                            <div class="icon-box">
-                                <!-- <div class="icon mb_18"><i class="icon-42"></i></div> -->
-                                <!--<span class="count-text">01</span>-->
-                            </div>
-                            <h3><a href="javascript:void(0);">Basic Requirements</a></h3>
-                            {{-- <p> Applicants must demonstrate sufficient German (A1) or English (B2) language skills and at least two years of vocational training, compliant with standards in their home country. Adequate financial means are also required, such as an employment contract for a part-time position (up to 20 hours weekly).</p> --}}
-                                <ul>
-                                    <li> Applicants must demonstrate sufficient German (A1) or English (B2) language skills and 
-                                        at least two years of vocational training, compliant with standards in their home country. </li>
-                                    <li>Adequate financial means are also required, such as an employment contract for a part-time position (up to 20 hours weekly).</li>
-                                </ul>
-                            </p>
+                            <h3><a href="javascript:void(0);">{{ $data['title'] }}</a></h3>
+                            {!! $data['description'] !!}
                         </div>
                     </div>
-
-
-                      <div class="single-item gse_r">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <!--<span class="count-text">02</span>-->
-                                <!-- <div class="icon mt_18"><i class="icon-43"></i></div> -->
-                            </div>
-                            <h3><a href="javascript:void(0);">4 Points</a></h3>
-                            <ul><li>Awarded for partial recognition of foreign professional qualifications or permission to practice a regulated profession (e.g., teacher, nurse, engineer). These criteria are met by a select number of applicants.</li></ul>
-                        </div>
-                    </div>
-
-                        <div class="single-item gse_r">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
-                                <!--<span class="count-text">03</span>-->
-                            </div>
-                            <h3><a href="javascript:void(0);">3 Points</a></h3>
-                            {{-- <p>EThese points are available to those with five years of professional experience (within the last seven years) in their field and two years of initial training according to home country standards. Alternatively, B2-level German language proficiency also earns three points.
-                            </p> --}}
-                            <p>
-                                <ul>
-                                    <li> These points are available to those with five years of professional experience (within the 
-                                        last seven years) in their field and two years of initial training according to home country 
-                                        standards. </li>
-                                    <li>Alternatively, B2-level German language proficiency also earns three points.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-
-
-
-
-
-
-
-
-
-
 
                 <div class="col-lg-6 col-md-6 col-sm-12 single-column hje_1">
+                    @foreach($rightSide as $datas)
                     <div class="single-item gse_r">
                         <div class="inner-box">
-                            <div class="icon-box">
-                                <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
-                                <!--<span class="count-text">04</span>-->
-                            </div>
-                            <h3><a href="javascript:void(0);">2 Points</a></h3>
-                            {{-- <p>Awarded for two years of recent work experience preceded by vocational training (within the last five years). Applicants under 35 or with B1-level German skills also qualify for two points.
-                            </p> --}}
+                            <h3><a href="javascript:void(0);">{{ $datas['title'] }}</a></h3>
                             <p>
-                                <ul>
-                                    <li>Awarded for two years of recent work experience preceded by vocational training (within 
-                                        the last five years). </li>
-                                    <li>Applicants under 35 or with B1-level German skills also qualify for two points.</li>
-                                </ul>
+                                {!! $datas['description'] !!}
                             </p>
                         </div>
                     </div>
-
-                       <div class="single-item gse_r">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <!-- <div class="icon mb_13"><i class="icon-44"></i></div> -->
-                                <!--<span class="count-text">05</span>-->
-                            </div>
-                            <h3><a href="javascript:void(0);">1 Point</a></h3>
-                            {{-- <p>Given to applicants under 40 or those with documented prior stays in Germany (minimum six months; tourist visits excluded). Additional points are awarded for:
-                                - High-level English proficiency (C1) or moderate German skills (A2).
-                         - A degree or vocational training in an area identified as a labor shortage in Germany.
-                                - Applying for the Opportunity Card jointly with a spouse.
-                            </p> --}}
-                            <p>
-                                <ul>
-                                    <li>Given to applicants under 40 or those with documented prior stays in Germany (minimum 
-                                        six months; tourist visits excluded). </li>
-                                    <li>
-                                        Additional points are awarded for: -
-                                        <ol>
-                                            <li>High-level English proficiency (C1) or moderate German skills (A2). </li>
-                                            <li>A degree or vocational training in an area identified as a labor shortage in Germany.</li>
-                                            <li>Applying for the Opportunity Card jointly with a spouse.</li>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-
-
-
-
-
             </div>
+            @endif
         </div>
     </section>
+    @endif
     <!-- help-section end -->
 
 

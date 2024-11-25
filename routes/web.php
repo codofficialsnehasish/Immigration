@@ -103,6 +103,10 @@ Route::middleware(['auth:admin', 'verified'])->group(function () {
         Route::put('home-data/{id}/our-services-store','store_our_services')->name('our-services.store');
 
         Route::put('home-data/{id}/update-home-about','update_home_about')->name('home-about.update');
+
+
+        Route::put('home-data/{id}/update-eligibility-assessment','update_eligibility_assessment')->name('update-eligibility-assessment.update');
+        Route::delete('home-data/{id}/delete-eligibility-assessment-details','delete_eligibility_assessment_details')->name('delete-eligibility-assessment-details.destroy');
     });
 });
 
