@@ -16,13 +16,15 @@
         <div class="row">
 
             <div class="col-12 col-lg-4 col-xxl-3 d-flex">
-                <div class="card rounded-4 w-100 bg-info">
-                    <div class="card-body d-flex align-items-center">
-                        <div>
-                            <h4 class="mb-0 text-light">{{ 0 }}</h4>
-                            <h5 class="mt-3 text-light">Enquiry</h5>
+                <div class="card rounded-4 w-100 bg-success">
+                    <a href="{{ route('contact.index') }}">
+                        <div class="card-body d-flex align-items-center">
+                            <div>
+                                <h4 class="mb-0 text-light">{{ $contacts }}</h4>
+                                <h5 class="mt-3 text-light">Enquiry</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
