@@ -62,7 +62,7 @@
                     </nav>
                 </div>
                 <div class="btn-box">
-                    <a href="{{ route('login') }}" class="theme-btn btn-one" style="color: black !important;"><img src="{{ asset('assets/site-assets/images/user.png') }}" alt="">@auth {{ Auth::user()->name }} @endauth</a>
+                    <a href="{{ route('login') }}" class="theme-btn btn-one" style="color: black !important;"><img src="{{ asset('assets/site-assets/images/user.png') }}" alt="">@auth {{ explode(' ', Auth::user()->name)[0] }} @endauth</a>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
         <div class="auto-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <figure class="logo"><a href="{{ route('home')}}"><img src="{{ asset('assets/site-assets/images/resource/Chancenkarte.png') }}" alt=""></a></figure>
+                    <figure class="logo"><a href="{{ route('home')}}"><img src="{{ optional(general_settings())->getFirstMediaUrl('logo') ?? '' }}" alt=""></a></figure>
                     {{-- <figure class="logo"><a href="{{ route('home')}}">{{ config('app.name') }}</a></figure> --}}
                 </div>
                 <div class="menu-area clearfix">
@@ -82,7 +82,7 @@
                     </nav>
                 </div>
                 <div class="btn-box">
-                    <a href="{{ route('login') }}" class="theme-btn btn-one" style="color: black !important;"><img src="{{ asset('assets/site-assets/images/user.png') }}" alt="">@auth {{ Auth::user()->name }} @endauth</a>
+                    <a href="{{ route('login') }}" class="theme-btn btn-one" style="color: black !important;"><img src="{{ asset('assets/site-assets/images/user.png') }}" alt="">@auth {{ explode(' ', Auth::user()->name)[0] }} @endauth</a>
                 </div>
             </div>
         </div>
