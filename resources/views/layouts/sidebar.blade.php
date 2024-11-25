@@ -33,42 +33,42 @@
 
             <li>
                 <a href="{{ route('home-data.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">info</i></div>
                     <div class="menu-title">Home Page</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('about-us.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">group</i></div>
                     <div class="menu-title">About Us</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('how-it-work.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">timeline</i></div>
                     <div class="menu-title">How It Works</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('blogs.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">article</i></div>
                     <div class="menu-title">Blogs</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('testimonials.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">rate_review</i></div>
                     <div class="menu-title">Testimonials</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('services.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">design_services</i></div>
                     <div class="menu-title">Services</div>
                 </a>
             </li>
@@ -82,28 +82,28 @@
 
             <li>
                 <a href="{{ route('contact.contact-us-index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">call</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">support_agent</i></div>
                     <div class="menu-title">Contact Us</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('contact.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">call</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">help_outline</i></div>
                     <div class="menu-title">Enquiry</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('legal-information.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">call</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">policy</i></div>
                     <div class="menu-title">Legal Information</div>
                 </a>
             </li>
 
             <li>
                 <a href="{{ route('faqs.index') }}" class="">
-                    <div class="parent-icon"><i class="material-icons-outlined">call</i></div>
+                    <div class="parent-icon"><i class="material-icons-outlined">chat_bubble_outline</i></div>
                     <div class="menu-title">FAQ</div>
                 </a>
             </li>
